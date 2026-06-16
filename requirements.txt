@@ -16,7 +16,7 @@ alembic==1.13.1
 
 # --- RAG & Embeddings ---
 sentence-transformers==3.0.1
-faiss-cpu==1.8.0
+faiss-cpu==1.14.3
 numpy==1.26.4
 torch==2.3.0
 
