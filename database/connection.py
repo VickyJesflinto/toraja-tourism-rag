@@ -30,7 +30,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 def init_db() -> None:
     """Create all tables if they don't exist."""
     try:
-        Base.meta_data.create_all(bind=engine)
+        Base.metadata.create_all(bind=engine)
         logger.info("Database tables initialized successfully.")
     except Exception as e:
         logger.error(f"Database initialization failed: {e}")
