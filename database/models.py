@@ -147,7 +147,7 @@ class DocumentChunk(Base):
     document_id = Column(Integer, ForeignKey("documents.id"), nullable=False)
     chunk_index = Column(Integer, nullable=False)
     content     = Column(Text, nullable=False)
-    meta_data    = Column(JSON)                         # page, row, sheet, etc.
+    meta_data    = Column("metadata", JSON)                         # page, row, sheet, etc.
     faiss_id    = Column(BigInteger, unique=True)      # index in FAISS
     created_at  = Column(DateTime, default=datetime.utcnow)
 

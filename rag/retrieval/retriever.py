@@ -59,14 +59,14 @@ class RetrievedChunk:
         score:     float,
         mmr_score: float,
         source:    str,
-        meta_data:  Dict[str, Any],
+        metadata:  Dict[str, Any],
     ):
         self.chunk_id  = chunk_id
         self.content   = content
         self.score     = score       # cosine similarity asli ke query
         self.mmr_score = mmr_score   # skor MMR akhir (= score jika mode standard)
         self.source    = source
-        self.meta_data  = meta_data
+        self.metadata  = metadata
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -75,7 +75,7 @@ class RetrievedChunk:
             "score":     round(self.score, 4),
             "mmr_score": round(self.mmr_score, 4),
             "source":    self.source,
-            "meta_data":  self.meta_data,
+            "metadata":  self.metadata,
         }
 
 
@@ -181,12 +181,12 @@ def _compute_final_mmr_scores(
 # ─── DB helper ────────────────────────────────────────────────────────────────
 
 class _DBChunk:
-    __slots__ = ("chunk_id", "content", "source", "meta_data")
-    def __init__(self, chunk_id, content, source, meta_data):
+    __slots__ = ("chunk_id", "content", "source", "metadata")
+    def __init__(self, chunk_id, content, source, metadata):
         self.chunk_id = chunk_id
         self.content  = content
         self.source   = source
-        self.meta_data = meta_data
+        self.metadata = metadata
 
 
 def _fetch_chunks(chunk_ids: List[int]) -> List[_DBChunk]:
@@ -202,7 +202,7 @@ def _fetch_chunks(chunk_ids: List[int]) -> List[_DBChunk]:
                 chunk_id = c.id,
                 content  = c.content,
                 source   = doc_map.get(c.document_id, "Unknown"),
-                meta_data = c.meta_data or {},
+                metadata = c.meta_data or {},
             )
             for c in chunks
         ]
@@ -308,7 +308,7 @@ class RAGRetriever:
                 score     = score_map.get(c.chunk_id, 0.0),
                 mmr_score = score_map.get(c.chunk_id, 0.0),
                 source    = c.source,
-                meta_data  = c.meta_data,
+                metadata  = c.metadata,
             )
             for c in db_chunks
         ]
@@ -380,7 +380,7 @@ class RAGRetriever:
                 score     = candidate_scores[pos],
                 mmr_score = mmr_scores.get(rank, candidate_scores[pos]),
                 source    = c.source,
-                meta_data  = c.meta_data,
+                metadata  = c.metadata,
             ))
 
         logger.debug(

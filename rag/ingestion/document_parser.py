@@ -15,7 +15,7 @@ from loguru import logger
 @dataclass
 class ParsedChunk:
     content: str
-    meta_data: Dict[str, Any] = field(default_factory=dict)
+    metadata: Dict[str, Any] = field(default_factory=dict)
 
 
 class DocumentParser:
@@ -63,7 +63,7 @@ class DocumentParser:
                     if text.strip():
                         chunks.append(ParsedChunk(
                             content=text.strip(),
-                            meta_data={"page": page_num, "source": path.name, "type": "pdf"}
+                            metadata={"page": page_num, "source": path.name, "type": "pdf"}
                         ))
                     # Also extract tables from PDF
                     tables = page.extract_tables()
@@ -73,7 +73,7 @@ class DocumentParser:
                         if table_text.strip():
                             chunks.append(ParsedChunk(
                                 content=table_text,
-                                meta_data={"page": page_num, "table": t_idx, "source": path.name, "type": "pdf_table"}
+                                metadata={"page": page_num, "table": t_idx, "source": path.name, "type": "pdf_table"}
                             ))
             return chunks
         except Exception as e:
@@ -93,7 +93,7 @@ class DocumentParser:
         header_text = f"CSV File: {path.name}\nKolom: {', '.join(df.columns.tolist())}\nTotal baris: {len(df)}"
         chunks.append(ParsedChunk(
             content=header_text,
-            meta_data={"source": path.name, "type": "csv_header"}
+            metadata={"source": path.name, "type": "csv_header"}
         ))
 
         # Chunk rows (50 rows per chunk)
@@ -103,7 +103,7 @@ class DocumentParser:
             text = subset.to_string(index=False)
             chunks.append(ParsedChunk(
                 content=text,
-                meta_data={"source": path.name, "rows": f"{start}-{start+len(subset)}", "type": "csv"}
+                metadata={"source": path.name, "rows": f"{start}-{start+len(subset)}", "type": "csv"}
             ))
         return chunks
 
@@ -128,17 +128,17 @@ class DocumentParser:
                     chunk_dict = dict(items[i:i+10])
                     chunks.append(ParsedChunk(
                         content=json.dumps(chunk_dict, ensure_ascii=False, indent=2),
-                        meta_data={"source": source, "type": "json", "keys": list(chunk_dict.keys())}
+                        metadata={"source": source, "type": "json", "keys": list(chunk_dict.keys())}
                     ))
             else:
                 chunks.append(ParsedChunk(
                     content=text,
-                    meta_data={"source": source, "type": "json"}
+                    metadata={"source": source, "type": "json"}
                 ))
         else:
             chunks.append(ParsedChunk(
                 content=str(data),
-                meta_data={"source": source, "type": "json_value"}
+                metadata={"source": source, "type": "json_value"}
             ))
         return chunks
 
@@ -149,7 +149,7 @@ class DocumentParser:
         # Split on double newlines (paragraphs)
         paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
         return [
-            ParsedChunk(content=p, meta_data={"source": path.name, "type": "txt", "para": i})
+            ParsedChunk(content=p, metadata={"source": path.name, "type": "txt", "para": i})
             for i, p in enumerate(paragraphs)
         ]
 
@@ -165,7 +165,7 @@ class DocumentParser:
                 if current_section:
                     chunks.append(ParsedChunk(
                         content="\n".join(current_section),
-                        meta_data={"source": path.name, "type": "docx"}
+                        metadata={"source": path.name, "type": "docx"}
                     ))
                     current_section = []
             else:
@@ -173,14 +173,14 @@ class DocumentParser:
         if current_section:
             chunks.append(ParsedChunk(
                 content="\n".join(current_section),
-                meta_data={"source": path.name, "type": "docx"}
+                metadata={"source": path.name, "type": "docx"}
             ))
         # Tables in docx
         for t_idx, table in enumerate(doc.tables):
             rows = [" | ".join(cell.text for cell in row.cells) for row in table.rows]
             chunks.append(ParsedChunk(
                 content="\n".join(rows),
-                meta_data={"source": path.name, "type": "docx_table", "table": t_idx}
+                metadata={"source": path.name, "type": "docx_table", "table": t_idx}
             ))
         return chunks
 
@@ -194,13 +194,13 @@ class DocumentParser:
             header = f"Sheet: {sheet} | Kolom: {', '.join(df.columns.astype(str).tolist())} | Baris: {len(df)}"
             chunks.append(ParsedChunk(
                 content=header,
-                meta_data={"source": path.name, "sheet": sheet, "type": "xlsx_header"}
+                metadata={"source": path.name, "sheet": sheet, "type": "xlsx_header"}
             ))
             for start in range(0, len(df), 50):
                 subset = df.iloc[start:start+50]
                 chunks.append(ParsedChunk(
                     content=subset.to_string(index=False),
-                    meta_data={"source": path.name, "sheet": sheet, "type": "xlsx",
+                    metadata={"source": path.name, "sheet": sheet, "type": "xlsx",
                               "rows": f"{start}-{start+len(subset)}"}
                 ))
         return chunks
@@ -221,7 +221,7 @@ class DocumentParser:
             if texts:
                 chunks.append(ParsedChunk(
                     content="\n".join(texts),
-                    meta_data={"source": path.name, "slide": slide_num, "type": "pptx"}
+                    metadata={"source": path.name, "slide": slide_num, "type": "pptx"}
                 ))
         return chunks
 
@@ -235,7 +235,7 @@ class DocumentParser:
         text = soup.get_text(separator="\n")
         paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
         return [
-            ParsedChunk(content=p, meta_data={"source": path.name, "type": "html"})
+            ParsedChunk(content=p, metadata={"source": path.name, "type": "html"})
             for p in paragraphs
         ]
 
@@ -247,6 +247,6 @@ class DocumentParser:
         text = soup.get_text(separator="\n")
         paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
         return [
-            ParsedChunk(content=p, meta_data={"source": path.name, "type": "xml"})
+            ParsedChunk(content=p, metadata={"source": path.name, "type": "xml"})
             for p in paragraphs
         ]

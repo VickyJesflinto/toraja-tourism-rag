@@ -101,7 +101,7 @@ class DocumentIndexer:
             # ── 3. Chunking untuk RAG ─────────────────────────────────────────
             all_chunks = []
             for pc in parsed_chunks:
-                sub = self.chunker.chunk(pc.content, pc.meta_data)
+                sub = self.chunker.chunk(pc.content, pc.metadata)
                 all_chunks.extend(sub)
             logger.info(f"Total text chunks after splitting: {len(all_chunks)}")
 
@@ -117,7 +117,7 @@ class DocumentIndexer:
                         document_id=document_id,
                         chunk_index=idx,
                         content=chunk.content,
-                        meta_data=chunk.meta_data,
+                        meta_data=chunk.metadata,
                         faiss_id=None,
                     )
                     session.add(db_chunk)

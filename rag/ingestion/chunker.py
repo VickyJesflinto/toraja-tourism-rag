@@ -11,7 +11,7 @@ from typing import Dict, Any
 class TextChunk:
     content: str
     chunk_index: int
-    meta_data: Dict[str, Any] = field(default_factory=dict)
+    metadata: Dict[str, Any] = field(default_factory=dict)
 
 
 class TextChunker:
@@ -24,14 +24,14 @@ class TextChunker:
         self.chunk_size = chunk_size
         self.overlap    = overlap
 
-    def chunk(self, text: str, base_meta_data: Dict[str, Any] = None) -> List[TextChunk]:
+    def chunk(self, text: str, base_metadata: Dict[str, Any] = None) -> List[TextChunk]:
         """Main entry: returns list of TextChunk."""
-        meta_data = base_meta_data or {}
+        metadata = base_metadata or {}
         if len(text) <= self.chunk_size:
-            return [TextChunk(content=text, chunk_index=0, meta_data=meta_data)]
+            return [TextChunk(content=text, chunk_index=0, metadata=metadata)]
 
         sentences = self._split_sentences(text)
-        return self._merge_sentences(sentences, meta_data)
+        return self._merge_sentences(sentences, metadata)
 
     def _split_sentences(self, text: str) -> List[str]:
         """Naive sentence splitter; handles Indonesian text well."""
@@ -39,7 +39,7 @@ class TextChunker:
         sentences = re.split(r'(?<=[.!?])\s+', text)
         return [s.strip() for s in sentences if s.strip()]
 
-    def _merge_sentences(self, sentences: List[str], meta_data: Dict[str, Any]) -> List[TextChunk]:
+    def _merge_sentences(self, sentences: List[str], metadata: Dict[str, Any]) -> List[TextChunk]:
         chunks = []
         current_chunk: List[str] = []
         current_len = 0
@@ -53,7 +53,7 @@ class TextChunker:
                 chunks.append(TextChunk(
                     content=" ".join(current_chunk),
                     chunk_index=chunk_index,
-                    meta_data=dict(meta_data)
+                    metadata=dict(metadata)
                 ))
                 chunk_index += 1
 
@@ -76,7 +76,7 @@ class TextChunker:
             chunks.append(TextChunk(
                 content=" ".join(current_chunk),
                 chunk_index=chunk_index,
-                meta_data=dict(meta_data)
+                metadata=dict(metadata)
             ))
 
         return chunks
