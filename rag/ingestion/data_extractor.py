@@ -164,7 +164,7 @@ Kembalikan JSON dengan struktur ini (kosongkan array jika tidak ada data):
       "year": 2024,
       "month": 1,
       "domestic": 0,
-      "foreign": 0,
+      "foreign_vis": 0,
       "revenue": 0.0
     }}
   ],
@@ -388,7 +388,7 @@ def _upsert_visitor_stats(
         if not (2000 <= year <= 2100): year = datetime.now().year
 
         dom = _to_int(item.get("domestic"))
-        frn = _to_int(item.get("foreign"))
+        frn = _to_int(item.get("foreign_vis"))
         rev = _to_float(item.get("revenue"))
 
         existing = session.query(VisitorStatistic).filter_by(
@@ -397,7 +397,7 @@ def _upsert_visitor_stats(
 
         if existing:
             existing.domestic = dom
-            existing.foreign  = frn
+            existing.foreign_vis  = frn
             existing.total    = dom + frn
             existing.revenue  = rev
             msg = f"UPDATE statistik {attr_name_raw} {year}/{month:02d}"
@@ -405,7 +405,7 @@ def _upsert_visitor_stats(
         else:
             session.add(VisitorStatistic(
                 attraction_id=attr_id, year=year, month=month,
-                domestic=dom, foreign=frn, total=dom+frn, revenue=rev,
+                domestic=dom, foreign_vis=frn, total=dom+frn, revenue=rev,
             ))
             msg = f"INSERT statistik {attr_name_raw} {year}/{month:02d}"
             dedup_log.append(msg)

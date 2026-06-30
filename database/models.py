@@ -54,7 +54,11 @@ class VisitorStatistic(Base):
     __tablename__ = "visitor_statistics"
 
     id            = Column(Integer, primary_key=True, autoincrement=True)
-    attraction_id = Column(Integer, ForeignKey("tourist_attractions.id"), nullable=False)
+    attraction_id = Column(
+        Integer,
+        ForeignKey("tourist_attractions.id", ondelete="CASCADE", onupdate="CASCADE"),
+        nullable=False,
+    )
     year          = Column(Integer, nullable=False)
     month         = Column(Integer, nullable=False)   # 1-12
     domestic      = Column(Integer, default=0)
@@ -132,7 +136,7 @@ class Document(Base):
     )
     chunk_count  = Column(Integer, default=0)
     error_msg    = Column(Text)
-    uploaded_by  = Column(Integer, ForeignKey("users.id"))
+    uploaded_by  = Column(Integer, ForeignKey("users.id", ondelete="SET NULL", onupdate="CASCADE"))
     created_at   = Column(DateTime, default=datetime.utcnow)
     updated_at   = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
@@ -144,7 +148,11 @@ class DocumentChunk(Base):
     __tablename__ = "document_chunks"
 
     id          = Column(Integer, primary_key=True, autoincrement=True)
-    document_id = Column(Integer, ForeignKey("documents.id"), nullable=False)
+    document_id = Column(
+        Integer,
+        ForeignKey("documents.id", ondelete="CASCADE", onupdate="CASCADE"),
+        nullable=False,
+    )
     chunk_index = Column(Integer, nullable=False)
     content     = Column(Text, nullable=False)
     meta_data    = Column("metadata", JSON)                         # page, row, sheet, etc.
@@ -159,7 +167,11 @@ class ChatSession(Base):
     __tablename__ = "chat_sessions"
 
     id         = Column(Integer, primary_key=True, autoincrement=True)
-    user_id    = Column(Integer, ForeignKey("users.id"), nullable=True)
+    user_id    = Column(
+        Integer,
+        ForeignKey("users.id", ondelete="SET NULL", onupdate="CASCADE"),
+        nullable=True,
+    )
     session_id = Column(String(64), unique=True, nullable=False)
     title      = Column(String(255), default="New Chat")
     created_at = Column(DateTime, default=datetime.utcnow)
@@ -174,7 +186,11 @@ class ChatMessage(Base):
     __tablename__ = "chat_messages"
 
     id             = Column(Integer, primary_key=True, autoincrement=True)
-    session_id     = Column(Integer, ForeignKey("chat_sessions.id"), nullable=False)
+    session_id     = Column(
+        Integer,
+        ForeignKey("chat_sessions.id", ondelete="CASCADE", onupdate="CASCADE"),
+        nullable=False,
+    )
     role           = Column(Enum("user", "assistant", "system"), nullable=False)
     content        = Column(Text, nullable=False)
     sources        = Column(JSON)                      # retrieved chunks info

@@ -570,7 +570,7 @@ def _tab_infrastruktur():
             with db_session() as s:
                 s.add(TourismInfrastructure(
                     name=inf_name.strip(), type=inf_type, location=inf_loc,
-                    condition=inf_cond, description=inf_desc, last_update=datetime.utcnow(),
+                    stat_condition=inf_cond, description=inf_desc, last_update=datetime.utcnow(),
                 ))
             st.success(f"✅ **{inf_name}** berhasil ditambahkan.")
             st.cache_data.clear(); st.rerun()

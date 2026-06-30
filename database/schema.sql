@@ -214,7 +214,7 @@ CREATE TABLE IF NOT EXISTS document_chunks (
     document_id INT UNSIGNED     NOT NULL                   COMMENT 'FK → documents',
     chunk_index INT UNSIGNED     NOT NULL                   COMMENT 'Urutan chunk dalam dokumen (0-based)',
     content     MEDIUMTEXT       NOT NULL                   COMMENT 'Isi teks chunk (maks ~1000 karakter)',
-    metadata    JSON             NULL                       COMMENT 'Info tambahan: page, sheet, slide, row, dll',
+    meta_data    JSON             NULL                       COMMENT 'Info tambahan: page, sheet, slide, row, dll',
     faiss_id    BIGINT UNSIGNED  NULL                       COMMENT 'Posisi vektor di FAISS index',
     created_at  DATETIME         NOT NULL DEFAULT CURRENT_TIMESTAMP,
 

@@ -24,8 +24,8 @@ def render_users_page():
     st.markdown("""
     <style>
     .user-card {
-        background: linear-gradient(135deg, #1E1C18 0%, #181510 100%);
-        border: 1px solid #B8860B33;
+        background:var(--bg-card);
+        border:1px solid var(--border);
         border-radius: 12px;
         padding: 1rem 1.2rem;
         margin-bottom: 0.5rem;
@@ -37,8 +37,8 @@ def render_users_page():
     """, unsafe_allow_html=True)
 
     st.markdown("""
-    <h2 style='color:#DAA520; font-family:Georgia,serif;'>👥 Kelola User</h2>
-    <p style='color:#A89070;'>Tambah, edit, reset password, dan kelola status akun pengguna.</p>
+    <h2 style='color:var(--gold); font-family:Georgia,serif;'>👥 Kelola User</h2>
+    <p style='color:var(--text-sub);'>Tambah, edit, reset password, dan kelola status akun pengguna.</p>
     """, unsafe_allow_html=True)
 
     tab_list, tab_add = st.tabs(["📋 Daftar User", "➕ Tambah User Baru"])
@@ -72,6 +72,7 @@ def render_users_page():
                 for e in errors:
                     st.error(f"⛔ {e}")
             else:
+                add_ok = False
                 with db_session() as s:
                     if s.query(User).filter_by(username=new_uname).first():
                         st.error(f"⛔ Username '{new_uname}' sudah digunakan.")
@@ -84,28 +85,22 @@ def render_users_page():
                             password=hash_password(new_pw),
                             role=new_role, is_active=True,
                         ))
-                        st.success(f"✅ Akun **{new_uname}** ({new_role}) berhasil dibuat.")
-                        st.rerun()
+                        add_ok = True
+                # st.rerun() dipanggil SETELAH commit selesai (di luar with db_session()),
+                # agar tidak ter-rollback oleh RerunException.
+                if add_ok:
+                    st.success(f"✅ Akun **{new_uname}** ({new_role}) berhasil dibuat.")
+                    st.rerun()
 
     # ── TAB DAFTAR ────────────────────────────────────────────────────────────
     with tab_list:
         # ── Filter & Search ───────────────────────────────────────────────────
         col_s, col_r, col_st = st.columns([3, 2, 2])
-
-        with col_s:
-            st.markdown(
-                "<p style='margin-bottom:0px; font-weight:500;'>Search</p>",
-                unsafe_allow_html=True
-            )  # atau st.caption / st.subheader
-            search_u = st.text_input(
-                "🔍 Cari username / email",
-                placeholder="Ketik untuk mencari...",
-                label_visibility="collapsed"
-            )
-        with col_r:
-            role_f = st.selectbox("Filter Role", ["Semua", "admin", "user"])
-        with col_st:
-            status_f = st.selectbox("Filter Status", ["Semua", "Aktif", "Nonaktif"])
+        search_u   = col_s.text_input("🔍 Cari username / email",
+                                      placeholder="Ketik untuk mencari...",
+                                      label_visibility="collapsed")
+        role_f     = col_r.selectbox("Filter Role",   ["Semua", "admin", "user"])
+        status_f   = col_st.selectbox("Filter Status", ["Semua", "Aktif", "Nonaktif"])
 
         with db_session() as s:
             q = s.query(User)
@@ -170,7 +165,7 @@ def render_users_page():
                 # ── Info ─────────────────────────────────────────────────────
                 st.markdown(
                     f"{role_badge} &nbsp; {status_badge} &nbsp;"
-                    f"<span style='color:#8B7355; font-size:0.8rem;'>Bergabung: {joined}</span>",
+                    f"<span style='color:var(--text-muted); font-size:0.8rem;'>Bergabung: {joined}</span>",
                     unsafe_allow_html=True
                 )
                 n_chat = _count_chats(uid)
@@ -257,6 +252,7 @@ def render_users_page():
                             for e in errors:
                                 st.error(f"⛔ {e}")
                         else:
+                            update_ok = False
                             with db_session() as s:
                                 # Cek duplikat username/email (selain user ini sendiri)
                                 dup_u = s.query(User).filter(
@@ -278,9 +274,14 @@ def render_users_page():
                                         usr.email      = e_email.lower().strip()
                                         usr.role       = e_role
                                         usr.updated_at = datetime.utcnow()
-                                    st.session_state.pop("editing_user", None)
-                                    st.success(f"✅ Data user **{e_uname}** berhasil diperbarui.")
-                                    st.rerun()
+                                    update_ok = True
+                            # st.rerun() dan st.success() dipanggil SETELAH `with db_session()`
+                            # selesai (commit sudah terjadi), supaya tidak ter-rollback oleh
+                            # RerunException yang dilempar st.rerun().
+                            if update_ok:
+                                st.session_state.pop("editing_user", None)
+                                st.success(f"✅ Data user **{e_uname}** berhasil diperbarui.")
+                                st.rerun()
                     if cx:
                         st.session_state.pop("editing_user", None)
                         st.rerun()
