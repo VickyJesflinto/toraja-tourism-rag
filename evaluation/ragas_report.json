@@ -1,0 +1,478 @@
+{
+  "generated_at": "2026-07-07T06:16:35.849269",
+  "dry_run": false,
+  "aggregated": {
+    "overall": {
+      "faithfulness": 0.1,
+      "answer_relevancy": 0.138,
+      "context_precision": 0.1139,
+      "context_recall": 0.1,
+      "overall_score": 0.113
+    },
+    "by_category": {
+      "akomodasi": {
+        "n_samples": 1,
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "overall_score": 0.0
+      },
+      "budaya": {
+        "n_samples": 1,
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "overall_score": 0.0
+      },
+      "destinasi": {
+        "n_samples": 3,
+        "faithfulness": 0.3333,
+        "answer_relevancy": 0.4599,
+        "context_precision": 0.3796,
+        "context_recall": 0.3333,
+        "overall_score": 0.3765
+      },
+      "event": {
+        "n_samples": 1,
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "overall_score": 0.0
+      },
+      "out_of_scope": {
+        "n_samples": 2,
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "overall_score": 0.0
+      },
+      "rekomendasi": {
+        "n_samples": 2,
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "overall_score": 0.0
+      }
+    },
+    "by_difficulty": {
+      "factual": {
+        "n_samples": 5,
+        "overall_score": 0.2259
+      },
+      "multi_hop": {
+        "n_samples": 1,
+        "overall_score": 0.0
+      },
+      "out_of_scope": {
+        "n_samples": 2,
+        "overall_score": 0.0
+      },
+      "reasoning": {
+        "n_samples": 2,
+        "overall_score": 0.0
+      }
+    },
+    "n_total_samples": 10
+  },
+  "per_sample_results": [
+    {
+      "question": "Apa itu Ke'te Kesu'?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.425,
+      "context_precision": 0.8056,
+      "context_recall": 1.0,
+      "overall": 0.8076
+    },
+    {
+      "question": "Berapa harga tiket masuk ke Londa?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9548,
+      "context_precision": 0.3333,
+      "context_recall": 0.0,
+      "overall": 0.322
+    },
+    {
+      "question": "Di mana lokasi Patung Yesus Memberkati?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    },
+    {
+      "question": "Kapan Toraja Highland Festival 2025 diadakan?",
+      "category": "event",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    },
+    {
+      "question": "Berapa kisaran harga kamar di Toraja Heritage Hotel?",
+      "category": "akomodasi",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    },
+    {
+      "question": "Destinasi apa yang cocok untuk melihat matahari terbit di atas awan?",
+      "category": "rekomendasi",
+      "difficulty": "reasoning",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    },
+    {
+      "question": "Apa perbedaan antara Rambu Solo' dan Rambu Tuka'?",
+      "category": "budaya",
+      "difficulty": "reasoning",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    },
+    {
+      "question": "Jika saya ingin mengunjungi situs pemakaman tebing batu yang murah dan dekat dengan hotel budget, destinasi dan hotel apa yang cocok?",
+      "category": "rekomendasi",
+      "difficulty": "multi_hop",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    },
+    {
+      "question": "Berapa total penduduk Kabupaten Toraja Utara tahun 2026?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    },
+    {
+      "question": "Siapa nama bupati Toraja Utara saat ini?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0
+    }
+  ],
+  "detailed_results": [
+    {
+      "question": "Apa itu Ke'te Kesu'?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.425,
+      "context_precision": 0.8056,
+      "context_recall": 1.0,
+      "overall": 0.8076,
+      "details": {
+        "actual_answer": "**Ke’te’ Kesu (Juga dikenal sebagai Desa Wisata Kete Kesu)** adalah sebuah kawasan wisata budaya dan sejarah yang terletak di **Kampung Bonoran, Kelurahan Tikunna‑Malenong, Kecamatan Sanggalangi, Toraja Utara, Sulawesi Selatan**.  \n\nBerikut beberapa fakta penting tentang Ke’te’ Kesu:\n\n| Aspek | Detail |\n|-------|--------|\n| **Sejarah & Budaya** | Tempat ini menyimpan jejak awal peradaban masyarakat Toraja. Di sini masih dapat dilihat **sisa‑sisa peninggalan bersejarah ratusan tahun**, seperti rumah tongkonan, ukiran dinding Höru, batu menhir, artefak‑artefak kuno, dan **makam gua serta tebing kaum bangsawan** yang diyakini menjadi tempat pemakaman tertua di dunia. |\n| **UNESCO** | Kuburan batu purbakala di Ke’te’ Kesu telah diakui sebagai **Situs Warisan Budaya Dunia UNESCO**. |\n| **Atraksi Utama** | • Deretan rumah adat Tongkonan khas Toraja<br>• Kuburan batu purbakala<br>• Menhir & artefak arkeologi |\n| **Akses & Biaya** | • Lokasi: Kampung Bonoran, LRT. <br>• Tiket masuk: **Rp 5.000** (dikenakan untuk masuk kawasan wisata). |\n| **Keterangan Tambahan** | Ke’te’ Kesu sering menjadi pilihan bagi wisatawan yang ingin mendalami sejarah dan budaya Toraja, serta melihat contoh awal peradaban Toraja yang masih terjaga hingga hari ini. |\n\nJadi, **Ke’te’ Kesu** adalah dispensasi wisata budaya dan arkeologi yang menampilkan warisan peradaban Toraja sejak zaman kuno, sekaligus menjadi situs UNESCO yang layak dikunjungi.",
+        "retrieved_contexts": [
+          "Link: https://mojok.co/terminal/7-destinasi-wisata-toraja-yang-tak-boleh-dilewatkan-wisatawan/",
+          "Selanjutnya adalah Ma’Popengkalo Alang. Yaitu perarakan jenazah ke lumbung\nsebagai tempat pemakaman. Yang Terakhir, ada prosesi Ma’Palao atau Ma’Pasonglo. Yaitu proses perarakan\njenazah dari Rumah Tongkonan ke pemakaman, yang biasa disebut dengan\nLakkian. Saat proses Rante selesai, maka berlanjut dengan pertunjukan kesenian. Biasanya\nterdiri dari perarakan kerbau, pertunjukan musik dari daerah, tarian adat, adu\nkerbau, sampai penyembelihan kerbau yang biasanya akan menjadi hewan kurban. Kerbau Termasuk Hewan yang Penting\nBagi masyarakat Tana Toraja, kerbau adalah hewan yang penting pada saat\nUpacara Adat Rambu Solo Toraja ini. Karena Kerbau akan menjadi hewan kurban\nyang wajib ada sebagai persembahan pada saat upacara berlangsung. Dalam kepercayaan masyarakat Toraja, kerbau sendiri adalah hewan yang dapat\nmenjadi kendaraan yang mengantarkan roh orang yang telah meninggal ke ‘puya’.",
+          "Untuk bisa menikmati sensai negeri di atas awan memang sangat bergantung pada “keberuntungan”. Dengan kata lain, tidak ada jadwal pasti kapan hamparan awan bisa muncul untuk memanjakan para pengunjung. Namun, berdasarkan pengalaman pribadi, untuk bisa mendapatkan view awan, kalian bisa mengunjungi tempat ini saat pagi buta. Jika takut terlambat, kalian bisa menginap dengan memanfaatkan fasilitas stay cation atau camping ground. #7 Ke’te’ Kesu\nSebagai salah satu destinasi wisata andalan Toraja, khususnya Toraja Utara, nama Ke’te’ Kesu’ memang sudah sangat populer. Menariknya, tempat ini bukan destinasi wisata biasa, melainkan sebagai salah satu tempat yang menyimpan sejarah awal mula peradaban masyarakat Toraja. Di tempat ini terdapat sisa-sisa peninggalan bersejarah yang berumur ratusan tahun, mulai dari rumah tongkonan, ukiran dinding, batu menhir, artefak, hingga makam gua dan tebing kaum bangsawan Toraja yang diyakini sebagai tempat pemakaman tertua di dunia.",
+          "Kamu juga dapat memanfaatkan beberapa fasilitas seperti rumah makan, toilet, hingga area parkir. Tiket masuk destinasi ini dibanderol sebesar Rp10.000 saja. 7. Desa Wisata Kete Kesu\nDesa Wisata Kete Kesu menjadi opsi wisata budaya, edukasi, dan sejarah yang tidak boleh dilewatkan selama liburan di Toraja. Desa wisata ini berlokasi di Kampung Bonoran Kelurahan Tikunna Malenong, Kecamatan Sanggalangi, Toraja Utara, Sulawesi Selatan. Destinasi ini menjadi salah satu lokasi di mana kamu dapat menyaksikan langsung deretan rumah adat Tongkonan khas Toraja. Daya tarik lainnya dari destinasi ini adalah kuburan batu purbakala yang sudah diakui oleh UNESCO sebagai Situs Warisan Budaya Dunia. Untuk dapat memasuki kawasan ini, kamu akan dikenakan biaya tiket masuk sebesar Rp5.000. 8. Wisata Kompleks Megalitikum Kalimbuang Bori\nKamu pernah mendengar mengenai Stonehenge di Inggris? Di Toraja kamu dapat menemukan situs purba serupa di Wisata Kompleks Megalitikum Kalimbuang Bori.",
+          "CSV File: Jumlah Wisatawan Nusantara yang Berkunjung ke Lolai Menurut Bulan, 2021.csv\nKolom: Bulan, Unnamed: 1\nTotal baris: 15"
+        ],
+        "tokens_used": 1922,
+        "response_time_sec": 54.63,
+        "faithfulness_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Ke’te’ Kesu is also known as Desa Wisata Kete Kesu.",
+              "supported": true
+            },
+            {
+              "claim": "Ke’te’ Kesu is a cultural and historical tourist area located in Kampung Bonoran, Kelurahan Tikunna‑Malenong, Kecamatan Sanggalangi, Toraja Utara, Sulawesi Selatan.",
+              "supported": true
+            },
+            {
+              "claim": "Ke’te’ Kesu contains traces of the early Toraja civilization.",
+              "supported": true
+            },
+            {
+              "claim": "Ke’te’ Kesu has remains of historical artifacts hundreds of years old, including tongkonan houses, Höru wall carvings, menhir stones, ancient artifacts, and cave and cliff tombs of the noble class.",
+              "supported": true
+            },
+            {
+              "claim": "The cave and cliff tombs in Ke’te’ Kesu are believed to be the oldest burial sites in the world.",
+              "supported": true
+            },
+            {
+              "claim": "The ancient stone tombs in Ke’te’ Kesu have been recognized as a UNESCO World Heritage Site.",
+              "supported": true
+            },
+            {
+              "claim": "The main attractions of Ke’te’ Kesu include a row of tongkonan houses, ancient stone tombs, menhir, and archaeological artifacts.",
+              "supported": true
+            },
+            {
+              "claim": "Ke’te’ Kesu is located in Kampung Bonoran, LRT (Kelurahan Tikunna‑Malenong).",
+              "supported": true
+            },
+            {
+              "claim": "The entrance fee to Ke’te’ Kesu is Rp 5,000.",
+              "supported": true
+            },
+            {
+              "claim": "Ke’te’ Kesu is often chosen by tourists who want to study Toraja history and culture and see early Toraja civilization preserved to this day.",
+              "supported": true
+            }
+          ],
+          "n_total": 10,
+          "n_supported": 10
+        },
+        "answer_relevancy_detail": {
+          "score": 0.425,
+          "generated_questions": [
+            "Apa saja atraksi utama di Ke’te’ Kesu?",
+            "Di mana letak Ke’te’ Kesu dan berapa biaya masuknya?",
+            "Kenapa Ke’te’ Kesu dianggap situs warisan budaya UNESCO?"
+          ],
+          "similarities": [
+            0.5854,
+            0.5276,
+            0.1622
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.8056,
+          "relevance_flags": [
+            true,
+            false,
+            true,
+            true,
+            false
+          ],
+          "n_relevant": 3,
+          "n_total": 5
+        },
+        "context_recall_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Ke'te Kesu' adalah desa wisata budaya bersejarah di Toraja.",
+              "attributed": true
+            },
+            {
+              "claim": "Ke'te Kesu' memiliki rumah adat Tongkonan.",
+              "attributed": true
+            },
+            {
+              "claim": "Ke'te Kesu' memiliki situs pemakaman kuno yang masih terawat.",
+              "attributed": true
+            },
+            {
+              "claim": "Kawasan Ke'te Kesu' telah dinominasikan sebagai Situs Warisan Dunia UNESCO.",
+              "attributed": true
+            }
+          ],
+          "n_total": 4,
+          "n_attributed": 4
+        }
+      }
+    },
+    {
+      "question": "Berapa harga tiket masuk ke Londa?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.9548,
+      "context_precision": 0.3333,
+      "context_recall": 0.0,
+      "overall": 0.322,
+      "details": {
+        "actual_answer": "Maaf, saya tidak memiliki data mengenai harga tiket masuk ke Londa. Jika ada informasi lain yang bisa saya bantu, silakan beri tahu!",
+        "retrieved_contexts": [
+          "Untuk menuju tempat ini, dari Kolam Makale, kalian ambil jalur yang mengarah ke Kota Makassar. Perhatikan sisi kanan jalan agar bisa melihat plang nama tempat wisata ini. #2 Ollon Bonggakaradeng\nDari semua destinasi wisata alam yang ada di Toraja, menurut saya Ollon adalah juaranya. Meski untuk sampai kesana harus melewati jalan yang cukup ekstrim, rasa lelah selama perjalanan bisa terbayar begitu melihat pemandangan alam yang ada. Banyak yang bilang, tempat ini mirip dengan Swiss. Entah benar atau tidak, yang jelas tempat ini memang menyajikan pemandangan alam yang luar biasa indah. Sungai, bukit, dan gunung, semua ada di satu tempat. Untuk bisa sampai ke tempat ini, kita perlu naik motor atau mobil yang cukup “sehat” karena medan menuju kesana cukup berat. #3 Patung Yesus Memberkati\nDestinasi wisata yang satu ini jadi incaran banyak wisatawan yang berkunjung ke Toraja. Selain patung Yesus yang tinggi badannya mencapai 45 meter, di kawasan wisata tersebut juga ada gua Bunda Maria.",
+          "Berada di ketinggian 1.700 mdpl, Patung Yesus Buntu Burake disebut-sebut sebagai\npatung Yesus tertinggi di dunia. Ketinggian Patung Yesus Buntu Burake mencapai\n45 meter, mengalahkan ketinggian patung Yesus di Rio de Janeiro Brasil yang\nmemiliki ketinggian 38 meter.",
+          "Link: https://mojok.co/terminal/7-destinasi-wisata-toraja-yang-tak-boleh-dilewatkan-wisatawan/",
+          "Untuk sampai ke Tana Toraja wisatawan dapat menggunakan kendaraan darat, dari\nMakassar berjarak sekitar 329 km dengan jarak tempuh sekitar 8 jam. Alternatif lain,\nwisatawan juga dapat menggunakan pesawat dari Bandara Makassar."
+        ],
+        "tokens_used": 924,
+        "response_time_sec": 7.55,
+        "faithfulness_detail": {
+          "score": 0.0,
+          "claims": [
+            {
+              "claim": "Saya tidak memiliki data mengenai harga tiket masuk ke Londa.",
+              "supported": false
+            },
+            {
+              "claim": "Jika ada informasi lain yang bisa saya bantu, silakan beri tahu!",
+              "supported": false
+            }
+          ],
+          "n_total": 2,
+          "n_supported": 0
+        },
+        "answer_relevancy_detail": {
+          "score": 0.9548,
+          "generated_questions": [
+            "Berapa harga tiket masuk ke Londa?",
+            "Berapa biaya masuk ke Londa?",
+            "Berapa tarif tiket ke Londa?"
+          ],
+          "similarities": [
+            1.0,
+            0.8838,
+            0.9807
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.3333,
+          "relevance_flags": [
+            false,
+            false,
+            true,
+            false
+          ],
+          "n_relevant": 1,
+          "n_total": 4
+        },
+        "context_recall_detail": {
+          "score": 0.0,
+          "claims": [
+            {
+              "claim": "Harga tiket masuk Londa adalah Rp 20.000.",
+              "attributed": false
+            }
+          ],
+          "n_total": 1,
+          "n_attributed": 0
+        }
+      }
+    },
+    {
+      "question": "Di mana lokasi Patung Yesus Memberkati?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    },
+    {
+      "question": "Kapan Toraja Highland Festival 2025 diadakan?",
+      "category": "event",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'OpenInference', 'is_byok': False, 'previous_errors': [{'code': 429, 'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    },
+    {
+      "question": "Berapa kisaran harga kamar di Toraja Heritage Hotel?",
+      "category": "akomodasi",
+      "difficulty": "factual",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    },
+    {
+      "question": "Destinasi apa yang cocok untuk melihat matahari terbit di atas awan?",
+      "category": "rekomendasi",
+      "difficulty": "reasoning",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    },
+    {
+      "question": "Apa perbedaan antara Rambu Solo' dan Rambu Tuka'?",
+      "category": "budaya",
+      "difficulty": "reasoning",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    },
+    {
+      "question": "Jika saya ingin mengunjungi situs pemakaman tebing batu yang murah dan dekat dengan hotel budget, destinasi dan hotel apa yang cocok?",
+      "category": "rekomendasi",
+      "difficulty": "multi_hop",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    },
+    {
+      "question": "Berapa total penduduk Kabupaten Toraja Utara tahun 2026?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    },
+    {
+      "question": "Siapa nama bupati Toraja Utara saat ini?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "overall": 0.0,
+      "details": {
+        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+      }
+    }
+  ]
+}

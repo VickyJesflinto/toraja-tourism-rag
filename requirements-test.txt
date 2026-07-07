@@ -1,0 +1,16 @@
+# ============================================================
+# Dependencies khusus untuk Unit Testing & Integration Testing
+# Install dengan: pip install -r requirements-test.txt --break-system-packages
+# ============================================================
+
+pytest==9.1.1
+pytest-cov==7.1.0
+
+# Catatan: requirements.txt utama (streamlit, sqlalchemy, sentence-transformers,
+# dst.) tetap harus terinstall karena modul yang diuji mengimpornya.
+
+# Dependencies untuk evaluation/ (RAGAS native implementation)
+# Catatan: TIDAK menggunakan library `ragas` karena dependency chain rapuh
+# terhadap versi langchain-community. Implementasi native hanya butuh:
+# - openai (sudah ada di requirements.txt, untuk panggil OpenRouter)
+# - numpy (sudah ada di requirements.txt, untuk cosine similarity)

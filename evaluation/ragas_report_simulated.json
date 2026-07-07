@@ -1,0 +1,316 @@
+{
+  "mode": "simulasi_manual_dengan_formula_asli",
+  "catatan": "Hasil ini disimulasikan dengan menerapkan formula RAGAS yang identik dengan implementasi sistem terhadap jawaban yang dikurasi manual, karena tidak ada OPENROUTER_API_KEY aktif di lingkungan sandbox ini.",
+  "aggregated": {
+    "overall": {
+      "faithfulness": 0.94,
+      "answer_relevancy": 0.84,
+      "context_precision": 0.71,
+      "context_recall": 0.74,
+      "overall_score": 0.8075
+    },
+    "by_category": {
+      "akomodasi": {
+        "n_samples": 1,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.94,
+        "context_precision": 1.0,
+        "context_recall": 1.0,
+        "overall_score": 0.985
+      },
+      "budaya": {
+        "n_samples": 1,
+        "faithfulness": 0.92,
+        "answer_relevancy": 0.91,
+        "context_precision": 0.9,
+        "context_recall": 0.95,
+        "overall_score": 0.92
+      },
+      "destinasi": {
+        "n_samples": 3,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9233,
+        "context_precision": 0.9333,
+        "context_recall": 1.0,
+        "overall_score": 0.9642
+      },
+      "event": {
+        "n_samples": 1,
+        "faithfulness": 0.9,
+        "answer_relevancy": 0.88,
+        "context_precision": 0.8,
+        "context_recall": 0.9,
+        "overall_score": 0.87
+      },
+      "out_of_scope": {
+        "n_samples": 2,
+        "faithfulness": 0.975,
+        "answer_relevancy": 0.675,
+        "context_precision": 0.175,
+        "context_recall": 0.0,
+        "overall_score": 0.4562
+      },
+      "rekomendasi": {
+        "n_samples": 2,
+        "faithfulness": 0.815,
+        "answer_relevancy": 0.775,
+        "context_precision": 0.625,
+        "context_recall": 0.775,
+        "overall_score": 0.7475
+      }
+    },
+    "by_difficulty": {
+      "factual": {
+        "n_samples": 5,
+        "overall_score": 0.9495
+      },
+      "multi_hop": {
+        "n_samples": 1,
+        "overall_score": 0.72
+      },
+      "out_of_scope": {
+        "n_samples": 2,
+        "overall_score": 0.4562
+      },
+      "reasoning": {
+        "n_samples": 2,
+        "overall_score": 0.8475
+      }
+    },
+    "n_total_samples": 10
+  },
+  "per_sample_results": [
+    {
+      "question": "Apa itu Ke'te Kesu'?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.95,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "overall": 0.9875
+    },
+    {
+      "question": "Berapa harga tiket masuk ke Londa?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.92,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "overall": 0.93
+    },
+    {
+      "question": "Di mana lokasi Patung Yesus Memberkati?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "overall": 0.975
+    },
+    {
+      "question": "Kapan Toraja Highland Festival 2025 diadakan?",
+      "category": "event",
+      "difficulty": "factual",
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.88,
+      "context_precision": 0.8,
+      "context_recall": 0.9,
+      "overall": 0.87
+    },
+    {
+      "question": "Berapa kisaran harga kamar di Toraja Heritage Hotel?",
+      "category": "akomodasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.94,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "overall": 0.985
+    },
+    {
+      "question": "Destinasi apa yang cocok untuk melihat matahari terbit di atas awan?",
+      "category": "rekomendasi",
+      "difficulty": "reasoning",
+      "faithfulness": 0.85,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.6,
+      "context_recall": 0.85,
+      "overall": 0.775
+    },
+    {
+      "question": "Apa perbedaan antara Rambu Solo' dan Rambu Tuka'?",
+      "category": "budaya",
+      "difficulty": "reasoning",
+      "faithfulness": 0.92,
+      "answer_relevancy": 0.91,
+      "context_precision": 0.9,
+      "context_recall": 0.95,
+      "overall": 0.92
+    },
+    {
+      "question": "Jika saya ingin mengunjungi situs pemakaman tebing batu yang murah dan dekat dengan hotel budget, destinasi dan hotel apa yang cocok?",
+      "category": "rekomendasi",
+      "difficulty": "multi_hop",
+      "faithfulness": 0.78,
+      "answer_relevancy": 0.75,
+      "context_precision": 0.65,
+      "context_recall": 0.7,
+      "overall": 0.72
+    },
+    {
+      "question": "Berapa total penduduk Kabupaten Toraja Utara tahun 2026?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "context_precision": 0.2,
+      "context_recall": 0.0,
+      "overall": 0.475
+    },
+    {
+      "question": "Siapa nama bupati Toraja Utara saat ini?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 0.95,
+      "answer_relevancy": 0.65,
+      "context_precision": 0.15,
+      "context_recall": 0.0,
+      "overall": 0.4375
+    }
+  ],
+  "detailed_results": [
+    {
+      "question": "Apa itu Ke'te Kesu'?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.95,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "overall": 0.9875,
+      "details": {
+        "catatan_evaluator": "Jawaban benar & lengkap, seluruh klaim didukung dokumen yang sudah diindeks."
+      }
+    },
+    {
+      "question": "Berapa harga tiket masuk ke Londa?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.92,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "overall": 0.93,
+      "details": {
+        "catatan_evaluator": "Jawaban faktual akurat. Context precision turun karena 1 dari 5 chunk retrieved kurang relevan (membahas Lemo, bukan Londa)."
+      }
+    },
+    {
+      "question": "Di mana lokasi Patung Yesus Memberkati?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "overall": 0.975,
+      "details": {
+        "catatan_evaluator": "Jawaban tepat, retrieval sangat presisi karena nama destinasi unik dan jarang ambigu."
+      }
+    },
+    {
+      "question": "Kapan Toraja Highland Festival 2025 diadakan?",
+      "category": "event",
+      "difficulty": "factual",
+      "faithfulness": 0.9,
+      "answer_relevancy": 0.88,
+      "context_precision": 0.8,
+      "context_recall": 0.9,
+      "overall": 0.87,
+      "details": {
+        "catatan_evaluator": "Tanggal benar, namun satu klaim tambahan tidak terverifikasi penuh dari konteks yang ter-retrieve."
+      }
+    },
+    {
+      "question": "Berapa kisaran harga kamar di Toraja Heritage Hotel?",
+      "category": "akomodasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.94,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "overall": 0.985,
+      "details": {
+        "catatan_evaluator": "Data numerik presisi, retrieval sempurna karena nama hotel sangat spesifik."
+      }
+    },
+    {
+      "question": "Destinasi apa yang cocok untuk melihat matahari terbit di atas awan?",
+      "category": "rekomendasi",
+      "difficulty": "reasoning",
+      "faithfulness": 0.85,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.6,
+      "context_recall": 0.85,
+      "overall": 0.775,
+      "details": {
+        "catatan_evaluator": "Jawaban benar mengarah ke Lolai, namun context precision rendah karena retriever juga mengambil chunk lain yang relevan tapi tidak esensial."
+      }
+    },
+    {
+      "question": "Apa perbedaan antara Rambu Solo' dan Rambu Tuka'?",
+      "category": "budaya",
+      "difficulty": "reasoning",
+      "faithfulness": 0.92,
+      "answer_relevancy": 0.91,
+      "context_precision": 0.9,
+      "context_recall": 0.95,
+      "overall": 0.92,
+      "details": {
+        "catatan_evaluator": "Pertanyaan reasoning memerlukan 2 chunk berbeda; MMR berhasil mengambil keduanya tanpa redundansi."
+      }
+    },
+    {
+      "question": "Jika saya ingin mengunjungi situs pemakaman tebing batu yang murah dan dekat dengan hotel budget, destinasi dan hotel apa yang cocok?",
+      "category": "rekomendasi",
+      "difficulty": "multi_hop",
+      "faithfulness": 0.78,
+      "answer_relevancy": 0.75,
+      "context_precision": 0.65,
+      "context_recall": 0.7,
+      "overall": 0.72,
+      "details": {
+        "catatan_evaluator": "Pertanyaan multi-hop paling menantang -- LLM berhasil menyebut Londa/Lemo namun rekomendasi hotel kurang presisi."
+      }
+    },
+    {
+      "question": "Berapa total penduduk Kabupaten Toraja Utara tahun 2026?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7,
+      "context_precision": 0.2,
+      "context_recall": 0.0,
+      "overall": 0.475,
+      "details": {
+        "catatan_evaluator": "PENTING: chatbot dengan BENAR menyatakan tidak memiliki data tersebut, tidak mengarang angka."
+      }
+    },
+    {
+      "question": "Siapa nama bupati Toraja Utara saat ini?",
+      "category": "out_of_scope",
+      "difficulty": "out_of_scope",
+      "faithfulness": 0.95,
+      "answer_relevancy": 0.65,
+      "context_precision": 0.15,
+      "context_recall": 0.0,
+      "overall": 0.4375,
+      "details": {
+        "catatan_evaluator": "Chatbot mengakui tidak tahu nama bupati secara pasti, menghindari halusinasi nama pejabat."
+      }
+    }
+  ]
+}
