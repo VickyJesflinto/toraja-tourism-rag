@@ -48,7 +48,7 @@ FAISS_INDEX_PATH = BASE_DIR / os.getenv("FAISS_INDEX_PATH", "data/faiss_index")
 FAISS_K          = int(os.getenv("FAISS_K", 10))
 
 # ─── RAGAS Evaluation — Judge LLM ──────────────────────────────────────────────
-RAGAS_JUDGE_MODEL       = os.getenv("RAGAS_JUDGE_MODEL", "google/gemma-3-27b-it")
+RAGAS_JUDGE_MODEL       = os.getenv("RAGAS_JUDGE_MODEL", "google/gemma-4-31b-it")
 RAGAS_JUDGE_TEMPERATURE = float(os.getenv("RAGAS_JUDGE_TEMPERATURE", "0.0"))
 RAGAS_JUDGE_MAX_TOKENS  = int(os.getenv("RAGAS_JUDGE_MAX_TOKENS", "800"))
 RAGAS_N_QUESTIONS       = int(os.getenv("RAGAS_N_QUESTIONS", "3"))
