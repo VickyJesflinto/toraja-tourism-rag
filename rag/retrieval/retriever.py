@@ -327,7 +327,7 @@ class RAGRetriever:
     ) -> List[RetrievedChunk]:
 
         # 1. Ambil candidate pool besar dari FAISS
-        fetch_k = max(self.fetch_k, k * 4, 20)
+        fetch_k = max(self.fetch_k, 20)
         faiss_results = self.store.search(query_vector, k=fetch_k)
         if not faiss_results:
             return []

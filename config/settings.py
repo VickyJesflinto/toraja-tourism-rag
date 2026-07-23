@@ -45,7 +45,7 @@ EMBEDDING_DIMENSION = int(os.getenv("EMBEDDING_DIMENSION", 384))
 
 # ─── FAISS ────────────────────────────────────────────────────────────────────
 FAISS_INDEX_PATH = BASE_DIR / os.getenv("FAISS_INDEX_PATH", "data/faiss_index")
-FAISS_K          = int(os.getenv("FAISS_K", 5))
+FAISS_K          = int(os.getenv("FAISS_K", 10))
 
 # ─── RAGAS Evaluation — Judge LLM ──────────────────────────────────────────────
 RAGAS_JUDGE_MODEL       = os.getenv("RAGAS_JUDGE_MODEL", "google/gemma-3-27b-it")
@@ -77,5 +77,5 @@ for _dir in [UPLOAD_DIR, FAISS_INDEX_PATH, DATA_DIR, LOGS_DIR]:
 
 # ─── MMR ────────────────────────────────────────────────────────────────────
 MMR_ENABLED=True    # aktif/matikan
-MMR_LAMBDA=0.5      # 0.0–1.0
-MMR_FETCH_K=20      # ukuran candidate pool
+MMR_LAMBDA=0.5    # 0.0–1.0
+MMR_FETCH_K=30      # ukuran candidate pool

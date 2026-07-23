@@ -198,7 +198,7 @@ Kembalikan JSON dengan struktur ini (kosongkan array jika tidak ada data):
       "name": "...",
       "type": "jalan|toilet umum|mushola|loket|restoran|parkir|pusat informasi|lainnya",
       "location": "...",
-      "condition": "baik|sedang|rusak",
+      "stat_condition": "baik|sedang|rusak",
       "description": ""
     }}
   ]
@@ -543,7 +543,7 @@ def _upsert_infrastructure(items: list[dict], session) -> list[str]:
         if not name:
             continue
 
-        cond = _clean_str(item.get("condition","baik")).lower()
+        cond = _clean_str(item.get("stat_condition","baik")).lower()
         if cond not in VALID_COND: cond = "baik"
 
         inf_type = _clean_str(item.get("type","lainnya")).lower()
@@ -555,7 +555,7 @@ def _upsert_infrastructure(items: list[dict], session) -> list[str]:
             match_id, match_name, score = match
             existing = session.query(TourismInfrastructure).filter_by(id=match_id).first()
             if existing:
-                existing.condition   = cond
+                existing.stat_condition   = cond
                 existing.last_update = datetime.utcnow()
                 _merge_fields(existing, {
                     "description": _clean_str(item.get("description",""), 2000),
@@ -569,7 +569,7 @@ def _upsert_infrastructure(items: list[dict], session) -> list[str]:
             session.add(TourismInfrastructure(
                 name=name, type=inf_type,
                 location=_clean_str(item.get("location","")),
-                condition=cond,
+                stat_condition=cond,
                 description=_clean_str(item.get("description",""), 2000),
                 last_update=datetime.utcnow(),
             ))

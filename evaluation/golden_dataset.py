@@ -52,10 +52,10 @@ GOLDEN_DATASET: List[GoldenSample] = [
         difficulty="factual",
     ),
     GoldenSample(
-        question="Berapa harga tiket masuk ke Londa?",
-        ground_truth="Harga tiket masuk Londa adalah Rp 20.000.",
+        question="Apa jenis wisata yang ditawarkan oleh Londa?",
+        ground_truth="Londa merupakan destinasi wisata budaya yang terkenal dengan kuburan tebing dan gua pemakaman tradisional Toraja.",
         ideal_context=[
-            "Londa, Sanggalangi', entry_fee 20000.00",
+            "Londa adalah objek wisata budaya berupa kuburan tebing dan gua pemakaman tradisional Toraja."
         ],
         category="destinasi",
         difficulty="factual",
@@ -68,7 +68,7 @@ GOLDEN_DATASET: List[GoldenSample] = [
         ),
         ideal_context=[
             "Monumen Patung Yesus Memberkati setinggi 40 meter yang berdiri di "
-            "dataran tinggi Kecamatan Burake, hanya 15 menit dari Kota Makale."
+            "dataran tinggi Buntu Burake, hanya 15 menit dari Kota Makale."
         ],
         category="destinasi",
         difficulty="factual",
@@ -84,10 +84,10 @@ GOLDEN_DATASET: List[GoldenSample] = [
         difficulty="factual",
     ),
     GoldenSample(
-        question="Berapa kisaran harga kamar di Toraja Heritage Hotel?",
-        ground_truth="Toraja Heritage Hotel memiliki kisaran harga Rp 850.000 - Rp 2.500.000 per malam.",
+        question="Di mana alamat Toraja Prince Hotel?",
+        ground_truth="Toraja Prince Hotel beralamat di Jalan Poros Rantepao-Palopo Km 2, Tallunglipu, Kabupaten Toraja Utara, Sulawesi Selatan",
         ideal_context=[
-            "Toraja Heritage Hotel, hotel, price_min 850000, price_max 2500000"
+            "Toraja Prince Hotel, address Jalan Poros Rantepao-Palopo Km 2, Tallunglipu, Kabupaten Toraja Utara, Sulawesi Selatan"
         ],
         category="akomodasi",
         difficulty="factual",

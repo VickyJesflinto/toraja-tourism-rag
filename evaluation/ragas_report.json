@@ -1,80 +1,82 @@
 {
-  "generated_at": "2026-07-07T06:16:35.849269",
+  "generated_at": "2026-07-22T05:46:08.967192",
   "dry_run": false,
+  "model_chatbot": "openai/gpt-oss-120b",
+  "model_judge": "google/gemma-4-31b-it",
   "aggregated": {
     "overall": {
-      "faithfulness": 0.1,
-      "answer_relevancy": 0.138,
-      "context_precision": 0.1139,
-      "context_recall": 0.1,
-      "overall_score": 0.113
+      "faithfulness": 0.7509,
+      "answer_relevancy": 0.8227,
+      "context_precision": 0.542,
+      "context_recall": 0.6307,
+      "overall_score": 0.6866
     },
     "by_category": {
       "akomodasi": {
         "n_samples": 1,
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
-        "context_precision": 0.0,
-        "context_recall": 0.0,
-        "overall_score": 0.0
+        "faithfulness": 0.2,
+        "answer_relevancy": 0.9613,
+        "context_precision": 1.0,
+        "context_recall": 0.75,
+        "overall_score": 0.7278
       },
       "budaya": {
         "n_samples": 1,
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
-        "context_precision": 0.0,
-        "context_recall": 0.0,
-        "overall_score": 0.0
+        "faithfulness": 0.8095,
+        "answer_relevancy": 0.8085,
+        "context_precision": 1.0,
+        "context_recall": 0.8571,
+        "overall_score": 0.8688
       },
       "destinasi": {
         "n_samples": 3,
-        "faithfulness": 0.3333,
-        "answer_relevancy": 0.4599,
-        "context_precision": 0.3796,
-        "context_recall": 0.3333,
-        "overall_score": 0.3765
+        "faithfulness": 0.9444,
+        "answer_relevancy": 0.6985,
+        "context_precision": 0.5341,
+        "context_recall": 0.8333,
+        "overall_score": 0.7526
       },
       "event": {
         "n_samples": 1,
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
-        "context_precision": 0.0,
-        "context_recall": 0.0,
-        "overall_score": 0.0
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9267,
+        "context_precision": 0.5,
+        "context_recall": 1.0,
+        "overall_score": 0.8567
       },
       "out_of_scope": {
         "n_samples": 2,
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
+        "faithfulness": 0.6666,
+        "answer_relevancy": 0.9385,
         "context_precision": 0.0,
         "context_recall": 0.0,
-        "overall_score": 0.0
+        "overall_score": 0.4013
       },
       "rekomendasi": {
         "n_samples": 2,
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
-        "context_precision": 0.0,
-        "context_recall": 0.0,
-        "overall_score": 0.0
+        "faithfulness": 0.6666,
+        "answer_relevancy": 0.7788,
+        "context_precision": 0.6589,
+        "context_recall": 0.6,
+        "overall_score": 0.6761
       }
     },
     "by_difficulty": {
       "factual": {
         "n_samples": 5,
-        "overall_score": 0.2259
+        "overall_score": 0.7685
       },
       "multi_hop": {
         "n_samples": 1,
-        "overall_score": 0.0
+        "overall_score": 0.5141
       },
       "out_of_scope": {
         "n_samples": 2,
-        "overall_score": 0.0
+        "overall_score": 0.4013
       },
       "reasoning": {
         "n_samples": 2,
-        "overall_score": 0.0
+        "overall_score": 0.8534
       }
     },
     "n_total_samples": 10
@@ -85,100 +87,100 @@
       "category": "destinasi",
       "difficulty": "factual",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.425,
-      "context_precision": 0.8056,
-      "context_recall": 1.0,
-      "overall": 0.8076
+      "answer_relevancy": 0.4277,
+      "context_precision": 0.5,
+      "context_recall": 0.5,
+      "overall": 0.6069
     },
     {
-      "question": "Berapa harga tiket masuk ke Londa?",
+      "question": "Apa jenis wisata yang ditawarkan oleh Londa?",
       "category": "destinasi",
       "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.9548,
-      "context_precision": 0.3333,
-      "context_recall": 0.0,
-      "overall": 0.322
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7646,
+      "context_precision": 0.2917,
+      "context_recall": 1.0,
+      "overall": 0.7641
     },
     {
       "question": "Di mana lokasi Patung Yesus Memberkati?",
       "category": "destinasi",
       "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0
+      "faithfulness": 0.8333,
+      "answer_relevancy": 0.9033,
+      "context_precision": 0.8106,
+      "context_recall": 1.0,
+      "overall": 0.8868
     },
     {
       "question": "Kapan Toraja Highland Festival 2025 diadakan?",
       "category": "event",
       "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9267,
+      "context_precision": 0.5,
+      "context_recall": 1.0,
+      "overall": 0.8567
     },
     {
-      "question": "Berapa kisaran harga kamar di Toraja Heritage Hotel?",
+      "question": "Di mana alamat Toraja Prince Hotel?",
       "category": "akomodasi",
       "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0
+      "faithfulness": 0.2,
+      "answer_relevancy": 0.9613,
+      "context_precision": 1.0,
+      "context_recall": 0.75,
+      "overall": 0.7278
     },
     {
       "question": "Destinasi apa yang cocok untuk melihat matahari terbit di atas awan?",
       "category": "rekomendasi",
       "difficulty": "reasoning",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0
+      "faithfulness": 0.7619,
+      "answer_relevancy": 0.7724,
+      "context_precision": 0.8179,
+      "context_recall": 1.0,
+      "overall": 0.838
     },
     {
       "question": "Apa perbedaan antara Rambu Solo' dan Rambu Tuka'?",
       "category": "budaya",
       "difficulty": "reasoning",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0
+      "faithfulness": 0.8095,
+      "answer_relevancy": 0.8085,
+      "context_precision": 1.0,
+      "context_recall": 0.8571,
+      "overall": 0.8688
     },
     {
       "question": "Jika saya ingin mengunjungi situs pemakaman tebing batu yang murah dan dekat dengan hotel budget, destinasi dan hotel apa yang cocok?",
       "category": "rekomendasi",
       "difficulty": "multi_hop",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0
+      "faithfulness": 0.5714,
+      "answer_relevancy": 0.7852,
+      "context_precision": 0.5,
+      "context_recall": 0.2,
+      "overall": 0.5141
     },
     {
       "question": "Berapa total penduduk Kabupaten Toraja Utara tahun 2026?",
       "category": "out_of_scope",
       "difficulty": "out_of_scope",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9688,
       "context_precision": 0.0,
       "context_recall": 0.0,
-      "overall": 0.0
+      "overall": 0.4922
     },
     {
       "question": "Siapa nama bupati Toraja Utara saat ini?",
       "category": "out_of_scope",
       "difficulty": "out_of_scope",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
+      "faithfulness": 0.3333,
+      "answer_relevancy": 0.9081,
       "context_precision": 0.0,
       "context_recall": 0.0,
-      "overall": 0.0
+      "overall": 0.3104
     }
   ],
   "detailed_results": [
@@ -187,62 +189,67 @@
       "category": "destinasi",
       "difficulty": "factual",
       "faithfulness": 1.0,
-      "answer_relevancy": 0.425,
-      "context_precision": 0.8056,
-      "context_recall": 1.0,
-      "overall": 0.8076,
+      "answer_relevancy": 0.4277,
+      "context_precision": 0.5,
+      "context_recall": 0.5,
+      "overall": 0.6069,
       "details": {
-        "actual_answer": "**Ke’te’ Kesu (Juga dikenal sebagai Desa Wisata Kete Kesu)** adalah sebuah kawasan wisata budaya dan sejarah yang terletak di **Kampung Bonoran, Kelurahan Tikunna‑Malenong, Kecamatan Sanggalangi, Toraja Utara, Sulawesi Selatan**.  \n\nBerikut beberapa fakta penting tentang Ke’te’ Kesu:\n\n| Aspek | Detail |\n|-------|--------|\n| **Sejarah & Budaya** | Tempat ini menyimpan jejak awal peradaban masyarakat Toraja. Di sini masih dapat dilihat **sisa‑sisa peninggalan bersejarah ratusan tahun**, seperti rumah tongkonan, ukiran dinding Höru, batu menhir, artefak‑artefak kuno, dan **makam gua serta tebing kaum bangsawan** yang diyakini menjadi tempat pemakaman tertua di dunia. |\n| **UNESCO** | Kuburan batu purbakala di Ke’te’ Kesu telah diakui sebagai **Situs Warisan Budaya Dunia UNESCO**. |\n| **Atraksi Utama** | • Deretan rumah adat Tongkonan khas Toraja<br>• Kuburan batu purbakala<br>• Menhir & artefak arkeologi |\n| **Akses & Biaya** | • Lokasi: Kampung Bonoran, LRT. <br>• Tiket masuk: **Rp 5.000** (dikenakan untuk masuk kawasan wisata). |\n| **Keterangan Tambahan** | Ke’te’ Kesu sering menjadi pilihan bagi wisatawan yang ingin mendalami sejarah dan budaya Toraja, serta melihat contoh awal peradaban Toraja yang masih terjaga hingga hari ini. |\n\nJadi, **Ke’te’ Kesu** adalah dispensasi wisata budaya dan arkeologi yang menampilkan warisan peradaban Toraja sejak zaman kuno, sekaligus menjadi situs UNESCO yang layak dikunjungi.",
+        "actual_answer": "**Ke'te Kesu** adalah sebuah **desa wisata** yang terletak di **Kampung Bunoran, Kelurahan Panta’rukan Lolo, Kecamatan Kesu, Toraja Utara**.  \n\n- **Keunikan:** Desa ini dikelilingi kawasan perbukitan dan persawahan yang indah, sehingga menjadi salah satu destinasi yang paling banyak dikunjungi wisatawan.  \n- **Atraksi utama:** Pengunjung dapat menelusuri **rumah adat Tongkonan** yang ada di sana; setiap sudut rumah memiliki sejarah dan makna tersendiri.  \n- **Tiket masuk:** Rp 10.000 per orang.  \n- **Jam operasional:** Buka 24 jam setiap hari, mulai dari Senin sampai Minggu.  \n\nJadi, Ke'te Kesu bukan hanya sebuah lokasi geografis, melainkan sebuah pengalaman budaya dan alam yang memperkenalkan keindahan serta tradisi rumah adat Toraja.",
         "retrieved_contexts": [
-          "Link: https://mojok.co/terminal/7-destinasi-wisata-toraja-yang-tak-boleh-dilewatkan-wisatawan/",
-          "Selanjutnya adalah Ma’Popengkalo Alang. Yaitu perarakan jenazah ke lumbung\nsebagai tempat pemakaman. Yang Terakhir, ada prosesi Ma’Palao atau Ma’Pasonglo. Yaitu proses perarakan\njenazah dari Rumah Tongkonan ke pemakaman, yang biasa disebut dengan\nLakkian. Saat proses Rante selesai, maka berlanjut dengan pertunjukan kesenian. Biasanya\nterdiri dari perarakan kerbau, pertunjukan musik dari daerah, tarian adat, adu\nkerbau, sampai penyembelihan kerbau yang biasanya akan menjadi hewan kurban. Kerbau Termasuk Hewan yang Penting\nBagi masyarakat Tana Toraja, kerbau adalah hewan yang penting pada saat\nUpacara Adat Rambu Solo Toraja ini. Karena Kerbau akan menjadi hewan kurban\nyang wajib ada sebagai persembahan pada saat upacara berlangsung. Dalam kepercayaan masyarakat Toraja, kerbau sendiri adalah hewan yang dapat\nmenjadi kendaraan yang mengantarkan roh orang yang telah meninggal ke ‘puya’.",
-          "Untuk bisa menikmati sensai negeri di atas awan memang sangat bergantung pada “keberuntungan”. Dengan kata lain, tidak ada jadwal pasti kapan hamparan awan bisa muncul untuk memanjakan para pengunjung. Namun, berdasarkan pengalaman pribadi, untuk bisa mendapatkan view awan, kalian bisa mengunjungi tempat ini saat pagi buta. Jika takut terlambat, kalian bisa menginap dengan memanfaatkan fasilitas stay cation atau camping ground. #7 Ke’te’ Kesu\nSebagai salah satu destinasi wisata andalan Toraja, khususnya Toraja Utara, nama Ke’te’ Kesu’ memang sudah sangat populer. Menariknya, tempat ini bukan destinasi wisata biasa, melainkan sebagai salah satu tempat yang menyimpan sejarah awal mula peradaban masyarakat Toraja. Di tempat ini terdapat sisa-sisa peninggalan bersejarah yang berumur ratusan tahun, mulai dari rumah tongkonan, ukiran dinding, batu menhir, artefak, hingga makam gua dan tebing kaum bangsawan Toraja yang diyakini sebagai tempat pemakaman tertua di dunia.",
-          "Kamu juga dapat memanfaatkan beberapa fasilitas seperti rumah makan, toilet, hingga area parkir. Tiket masuk destinasi ini dibanderol sebesar Rp10.000 saja. 7. Desa Wisata Kete Kesu\nDesa Wisata Kete Kesu menjadi opsi wisata budaya, edukasi, dan sejarah yang tidak boleh dilewatkan selama liburan di Toraja. Desa wisata ini berlokasi di Kampung Bonoran Kelurahan Tikunna Malenong, Kecamatan Sanggalangi, Toraja Utara, Sulawesi Selatan. Destinasi ini menjadi salah satu lokasi di mana kamu dapat menyaksikan langsung deretan rumah adat Tongkonan khas Toraja. Daya tarik lainnya dari destinasi ini adalah kuburan batu purbakala yang sudah diakui oleh UNESCO sebagai Situs Warisan Budaya Dunia. Untuk dapat memasuki kawasan ini, kamu akan dikenakan biaya tiket masuk sebesar Rp5.000. 8. Wisata Kompleks Megalitikum Kalimbuang Bori\nKamu pernah mendengar mengenai Stonehenge di Inggris? Di Toraja kamu dapat menemukan situs purba serupa di Wisata Kompleks Megalitikum Kalimbuang Bori.",
-          "CSV File: Jumlah Wisatawan Nusantara yang Berkunjung ke Lolai Menurut Bulan, 2021.csv\nKolom: Bulan, Unnamed: 1\nTotal baris: 15"
+          "Kluwak dalam\nbahasa Toraja disebut Pamarrasan. Utan Daun Dua' Kayu Tu'tu' Sola Duku' Bai\nNamanya cukup panjang ya? Artinya adalah Daun Singkong Tumbuk dan Daging\nBabi. Jadi daun singkong muda ditumbuk, kemudian dimasak bersama irisan daging\nbabi, dan diberi bumbu bawang merah, bawang putih, cabe, lengkuas, dan sereh. Biasanya menu ini disajikan dengan nasi hangat dan sambal teri. Kapurung\nMakanan ini berbahan dasar tepung sagu yang dicairkan air panas, setelah menjadi\nadonan, dibentuk bulat-bulat, kemudian dicemplungkan ke dalam kuah ikan. Biasanya ditambahkan suwiran ikan, irisan daging, sayuran, kacang goreng yang",
+          "2. Kete Kesu\nKete Kesu berlokasi di Kampung Bunoran, Kelurahan Panta’rukan Lolo, Kecamatan\nKesu, Toraja Utara. Kete Kesu merupakan desa wisata yang indah dan unik\nsehingga objek wisata ini paling banyak dikunjungi oleh wisatawan karena berada di\nkawasan perbukitan dan persawahan. Harga tiket masuknya Rp10 ribu per orang,\nbuka selama 24 jam dari hari senin sampai minggu. Disini kamu bisa menelusuri rumah adat Tongkonan di mana setiap sudut yang\ndimiliki dari rumah adat ini memiliki sejarah yang berbeda-beda. Desa ini dikelilingi",
+          "Link:\nhttps://santhiserad.com/2018/07/kaya-rasa-dan-makna-ini-catatan-10-kuliner-wajib-c\noba-di-toraja/",
+          "\"Ritual hari kedua disebut Ma'ta'da artinya meminta atau memohon kepada para\ndewa dengan mengorbankan seekor babi,\" jelas Marthen.",
+          "\"Ada Dilalan Tedong, Duang Lanta', Tallung Lanta', ada yang Patang Lanta'. Artinya\nada yang berundak cuma dua lantai, ada yang sampai empat,\" jelasnya.",
+          "6. Piong bo'bo\nPiong Bo'bo merupakan versi lain dari makanan khas toraja Piong. Jika pa'piong\nmenggunakan bahan daging babi, maka piong bo'bo menggunakan bahan beras\nketan.",
+          "Pangrangrang adalah Sate khas Toraja. Umumnya penganan ini memakai daging\nKerbau, dengan hanya diberi garam dan dibakar, kemudian disantap dengan nasi. Karena potongan daging kerbaunya besar, tusukan satenya pun lebih besar dari\ntusukan sate pada umumnya. 3. Sambal Katokkon\nSelama saya berada di Toraja, rasanya tiada hari tanpa sambal Katokkon. Katokkon\nyang bentuknya mirip Habanero, sedikit plumpy ini, pedasnya menyengat lidah\n4. Ayam Pallawa\nKali ini mari beralih ke sajian dari desa kampung To’barana. Ayam pallawa adalah\nsajian ayam kampung yang dibakar, disuwir-suwir, dan dicampur dengan parutan\nkelapa yang telah disangrai. Ayamnya dapat juga digeprek tanpa di suwir dagingnya. Makanan ini jadi spesial karena adanya ingredient Buraq atau batang pisang muda\nyang diambil bagian dalamnya. Jika susah mendapatkan Buraq di Jakarta, biasanya\ndiganti dengan kulit timun. 5.",
+          "Link:\nhttps://sulsel.idntimes.com/food/dining-guide/5-makanan-khas-yang-wajib-kamu-cici\npi-saat-di-toraja-00-lm183-t2lf6w",
+          "Sa’dan To’ Barana’\nterdiri dari 2 kata, yaitu Sa’dan yang berarti batang air dan To’ Barana’ yang\nbermakna pohon beringin. Terletak di sisi sungai Sa’dan, objek wisata ini merupakan\npusat tenun tradisional Toraja. Tongkonan To’ Barana’ pertama kali dibangun oleh\nnenek moyang keluarga To’ Barana’ yang bernama Langi’ Para’pak (Tolla’). Awalnya\ntongkonan ini terletak di Pali’pangan kemudian dipindahkan ke tongkonan To’\nNangka’ sebelum akhirnya dipindahkan ke To’ Barana’. Sa’dan To’Barana’ saat ini merupakan desa tenun yang terkenal dengan\nkeindahannya kerajinan tenun atau tenun. Para perajin wanita masih\nmenggunakannya alat tradisional yang terbuat dari kayu dan bambu untuk menenun\ndan mengikat kain warna-warni ini. Di desa ini, menenun merupakan kegiatan yang\ndilakukan secara turun temurun. Bahkan tali atau benang yang digunakan pada kain\ndibuat dari bahan alami seperti kulit kayu atau kapas dan dipintal dengan tangan\nsehingga menjadi benang.",
+          "\"Misalnya, kamu buat acara terus saya sumbang babi dua. Nah, saat saya nanti\ngelar pesta adat, ya kamu juga nyumbang dua babi begitu. Begini lah Toraja saling\nbantu membantu,\" ujarnya."
         ],
-        "tokens_used": 1922,
-        "response_time_sec": 54.63,
+        "tokens_used": 1960,
+        "response_time_sec": 20.46,
         "faithfulness_detail": {
           "score": 1.0,
           "claims": [
             {
-              "claim": "Ke’te’ Kesu is also known as Desa Wisata Kete Kesu.",
+              "claim": "Ke'te Kesu adalah sebuah desa wisata.",
               "supported": true
             },
             {
-              "claim": "Ke’te’ Kesu is a cultural and historical tourist area located in Kampung Bonoran, Kelurahan Tikunna‑Malenong, Kecamatan Sanggalangi, Toraja Utara, Sulawesi Selatan.",
+              "claim": "Ke'te Kesu terletak di Kampung Bunoran, Kelurahan Panta’rukan Lolo, Kecamatan Kesu, Toraja Utara.",
               "supported": true
             },
             {
-              "claim": "Ke’te’ Kesu contains traces of the early Toraja civilization.",
+              "claim": "Ke'te Kesu dikelilingi kawasan perbukitan.",
               "supported": true
             },
             {
-              "claim": "Ke’te’ Kesu has remains of historical artifacts hundreds of years old, including tongkonan houses, Höru wall carvings, menhir stones, ancient artifacts, and cave and cliff tombs of the noble class.",
+              "claim": "Ke'te Kesu dikelilingi persawahan yang indah.",
               "supported": true
             },
             {
-              "claim": "The cave and cliff tombs in Ke’te’ Kesu are believed to be the oldest burial sites in the world.",
+              "claim": "Ke'te Kesu merupakan salah satu destinasi yang paling banyak dikunjungi wisatawan.",
               "supported": true
             },
             {
-              "claim": "The ancient stone tombs in Ke’te’ Kesu have been recognized as a UNESCO World Heritage Site.",
+              "claim": "Pengunjung dapat menelusuri rumah adat Tongkonan di Ke'te Kesu.",
               "supported": true
             },
             {
-              "claim": "The main attractions of Ke’te’ Kesu include a row of tongkonan houses, ancient stone tombs, menhir, and archaeological artifacts.",
+              "claim": "Setiap sudut rumah adat Tongkonan di Ke'te Kesu memiliki sejarah dan makna tersendiri.",
               "supported": true
             },
             {
-              "claim": "Ke’te’ Kesu is located in Kampung Bonoran, LRT (Kelurahan Tikunna‑Malenong).",
+              "claim": "Tiket masuk Ke'te Kesu adalah Rp 10.000 per orang.",
               "supported": true
             },
             {
-              "claim": "The entrance fee to Ke’te’ Kesu is Rp 5,000.",
+              "claim": "Ke'te Kesu buka 24 jam setiap hari.",
               "supported": true
             },
             {
-              "claim": "Ke’te’ Kesu is often chosen by tourists who want to study Toraja history and culture and see early Toraja civilization preserved to this day.",
+              "claim": "Ke'te Kesu beroperasi dari hari Senin sampai Minggu.",
               "supported": true
             }
           ],
@@ -250,32 +257,37 @@
           "n_supported": 10
         },
         "answer_relevancy_detail": {
-          "score": 0.425,
+          "score": 0.4277,
           "generated_questions": [
-            "Apa saja atraksi utama di Ke’te’ Kesu?",
-            "Di mana letak Ke’te’ Kesu dan berapa biaya masuknya?",
-            "Kenapa Ke’te’ Kesu dianggap situs warisan budaya UNESCO?"
+            "Apa itu Ke'te Kesu dan di mana lokasinya?",
+            "Apa saja atraksi utama dan keunikan dari desa wisata Ke'te Kesu?",
+            "Berapa harga tiket masuk dan bagaimana jam operasional Ke'te Kesu?"
           ],
           "similarities": [
-            0.5854,
-            0.5276,
-            0.1622
+            0.6946,
+            0.4291,
+            0.1596
           ]
         },
         "context_precision_detail": {
-          "score": 0.8056,
+          "score": 0.5,
           "relevance_flags": [
-            true,
             false,
             true,
-            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
             false
           ],
-          "n_relevant": 3,
-          "n_total": 5
+          "n_relevant": 1,
+          "n_total": 10
         },
         "context_recall_detail": {
-          "score": 1.0,
+          "score": 0.5,
           "claims": [
             {
               "claim": "Ke'te Kesu' adalah desa wisata budaya bersejarah di Toraja.",
@@ -287,10 +299,653 @@
             },
             {
               "claim": "Ke'te Kesu' memiliki situs pemakaman kuno yang masih terawat.",
-              "attributed": true
+              "attributed": false
             },
             {
               "claim": "Kawasan Ke'te Kesu' telah dinominasikan sebagai Situs Warisan Dunia UNESCO.",
+              "attributed": false
+            }
+          ],
+          "n_total": 4,
+          "n_attributed": 2
+        }
+      }
+    },
+    {
+      "question": "Apa jenis wisata yang ditawarkan oleh Londa?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7646,
+      "context_precision": 0.2917,
+      "context_recall": 1.0,
+      "overall": 0.7641,
+      "details": {
+        "actual_answer": "Londa menyajikan **wisata budaya/warisan** yang khas Toraja.  \n\n- **Jenisnya**: wisata makam/peninggalan bersejarah yang terletak di tebing batu, dengan gua pemakaman, peti mati, tulang serta tengkorak berusia ratusan tahun.  \n- **Daya tariknya**: patung‑patung kayu “Tau Tau” yang melambangkan jenazah-jenazah yang dikubur di sana, memberi kesan budaya horor sekaligus menumbuhkan rasa penasaran akan tradisi pemakaman Toraja.  \n- **Klasifikasi**: dalam dokumen disebut sebagai “wisata budaya” dan “wisata makam” (Sumber 8; Sumber 3).  \n\nJadi, Londa menawarkan wisata **budaya dan sejarah** yang memperkenalkan tradisi pemakaman unik serta seni patung kayu khas Toraja.",
+        "retrieved_contexts": [
+          "Bagi detikers yang tertarik menghabiskan liburan Lebaran 2025 di daerah ini, berikut\ndaftar wisata di Tana Toraja yang bisa dikunjungi. Yuk, disimak!",
+          "7. Luta Resort\nAlamat : Jl. Sam Ratulangi No. 26, Singki', Rantepao, Toraja Utara\nHarga : Rp895.000/malam\nLuta Resort memiliki konsep taman dalam hotel yang memberi ketenangan bagi\npara pengunjung. Kesan tersebut kian terlihat lantaran hotel ini berada tepat di\ntepian Sungai Sa'dan. Sejumlah spot wisata berada tak jauh dari hotek ini seperti Kuburan Batu\nTambolang, Tugu Salib Buntu Singki' serta Danau Limbong. Fasilitas yang tersedia\ndi Luta Resort antara lain koneksi internet, restoran dan kolam renang. 8. Toraja Heritage Hotel\nAlamat : Jl. Ke'te Kesu, Kesu, Toraja Utara\nHarga minimal : Rp850.000/malam\nTerletak cukup jauh dari Kota Rantepao, Toraja Heritage Hotel lebih menonjolkan\nnuansa tradisional khas Toraja. Alhasil kamar tamu berada di seluruh Tongkonan\nyang terbuat dari kayu. Kesan klasik justru membuat para wisatawan terkesan.",
+          "Dengan tempatnya yang luas, kamu bisa mengajak\nkeluarga ke kawasan wisata Ollon ini. 3. Londa\nLonda merupakan sebuah tempat wisata di Toraja yang berlokasi di Desa Sandan Uai, 7\nkilometer sebelah Selatan Kota Rantepao. Londa merupakan pemakaman yang terletak\ndi sebuah tebing batu yang di dalamnya terdapat gua untuk makam. Di gua tersebut terdapat peti mati dan jenazah, tulang, dan tengkorak yang berusia\nratusan tahun. Di bibir tebing terdapat berbagai macam patung kayu berbentuk seperti\norang. Patung-patung tersebut merupakan patung dari setiap jenazah yang dimakamkan\ndi Londa. Patung tersebut biasa disebut Tau Tau. 4. Air Terjun Talondo Tallu\nAir Terjun Talondo merupakan salah satu tempat wisata di Toraja yang merupakan air\nterjun. Air terjun yang bercabang tiga ini sangat unik dan sangat indah untuk dijadikan\nbackground fotomu. Apalagi dengan air yang jernih dan dingin, kamu bisa menikmati\nsuasana sejuk khas dataran tinggi di salah satu tempat wisata di Toraja ini.",
+          "Lokasinya berada di Desa Baukayu, Kecamatan Bonggakaradeng, Tana\nToraja. Akses menuju lokasi wisata ini cukup jauh. Dibutuhkan waktu tempuh hingga 1,5 jam\ndari pusat Kota Makale. Walaupun jauh, rasa lelah di perjalanan akan terbayarkan dengan suguhan\nhamparan lembah perbukitan dan pemandangan yang menyejukkan mata. Menariknya, perbukitan ini dipisahkan sebuah sungai yang mengalir di bawahnya,\nmembuat keindahan alam di kawasan wisata ini semakin memukau. Daya tarik lainnya dari kawasan wisata ini yaitu keindahan matahari terbit atau\nsunrise. Tak jarang pengunjung rela mendirikan tenda dan menginap demi\nmenyaksikan keindahan tersebut. 4. Kolam Mata Air Tilanga\nDestinasi wisata berikutnya yang tak kalah menarik untuk dikunjungi saat libur\nlebaran yaitu Kolam Mata Air Tilanga. Pemandian Kolam Mata Air Tilanga ini terletak\ndi Kelurahan Sarira, Kecamatan Makale Utara, Tana Toraja. Kolam alami ini bersumber langsung dari mata air pegunungan sehingga air kolam\ntampak jernih dan berwarna biru.",
+          "Objek wisata ini juga menawarkan berbagai spot menarik dan instagramable bagi\npara wisatawan untuk mengambil foto. Selain itu, kawasan ini dilengkapi dengan\nUMKM yang menjajakan pernak-pernik, baju, hingga sarung khas Toraja sebagai\noleh-oleh.",
+          "“Famtrip ini merupakan perjalanan wisata yang bertujuan untuk memperkenalkan\natau mempromosikan destinasi wisata, produk atau layanan pariwisata Toraja Utara\nkepada Awak Media, influencer dan Konten Kreator dan agen perjalanan (Travel\nAgent) dari berbagai daerah di Indonesia sekaligus membantu promosi” urai\nKarniati. Selain itu, Karniati Lebonna mengaku hal ini juga dilakukan untuk menghidupkan\nkembali objek wisata pasar hutan bambu yang beberapa waktu terakhir vakum\nakibat pandemi Covid. Sementara, salah satu peserta Famtrip Toraja Utara 2025 asal Jakarta, Imas Munah\nResmana mengaku sangat terkesan dengan objek wisata pasar hutan bambu\nTo’kumila’ ini karena baru pertama kali melihat langsung di tengah hutan ada sebuah\npasar, yang jualan berbagai macam hasil bumi, baik itu makanan dan kopi khas\nToraja serta souvenir. Menurut Imas Munah Resmana yang paling menarik adalah transaksi jual beli tidak\nmenggunakan mata uang rupiah melainkan koin dari bambu.",
+          "Tak heran, dua kabupaten yang berbatasan langsung tersebut selalu menjadi tujuan\nwisatawan untuk menikmati momen libur Lebaran.\nTak hanya wisata alam, wisata budaya hingga wisata religi yang ada di Toraja juga\nmenjadi daya tarik tersendiri yang banyak memikat hati pada wisatawan.",
+          "Waktu yang tepat\nUntuk bisa menyaksikan keindahan di atas awan ini sekitar pukul 5.30 Wita. Bagi wisatawan yang tertarik mengunjungi objek wisata ini, sebaiknya menyediakan\njaket tebal karena suhu udara di Lolai sangatlah dingin. 7. Kuburan Londa Toraja\nKuburan Londa Toraja merupakan salah satu destinasi wisata budaya yang wajib\ndikunjungi di Toraja. Destinasi wisata yang penuh dengan tengkorak berjejer ini\nmemberikan sensasi horor sekaligus membangkitkan rasa penasaran. Untuk mengunjungi wisata makam Londa Toraja ini, wisatawan bisa mengakses jalur\ndarat sejauh 5 kilometer dari Kota Rantepao ke Desa Sangbua, Kecamatan Kesu',",
+          "8. Hotel Pison\nHotel pison terletak di daerah Rantepao yang dekat dari Gua Londa, salah satu ikon wisata\npopuler di Toraja. Jaraknya hanya 5,7 Km dengan waktu tempuh sekitar 10 menit saja.\nKamar-kamar yang disediakan di hotel ini didesain minimalis dengan nuansa seperti\nmenginap di rumah sendiri. Kamar-kamar yang tersedia juga dilengkapi dengan balkon\npribadi.\nDari dalam kamar, pengunjung juga bisa menikmati pemandangan area perbukitan dan\nsawah di sekelilingnya.\nSelain itu, fasilitas yang disediakan pun cukup lengkap mulai dari kamar mandi dengan\nbathub, kipas angin, lemari, meja, kursi hingga wifi. Bagi pengunjung yang ingin mencari\nmakan, tempat ini juga menyediakan restoran dengan beragai pilihan menu.\nUntuk menginap di hotel ini, pengunjung perlu mengeluarkan biasa sebesar Rp 250.000 per\nmalam. Harga tersebut terbilang cukup murah dan sebanding dengan fasilitas yang\ndidapatkan.\nLokasi: Jalan Pongtiku No.8, Karassik, Kecamatan Rantepao, Kabupaten Toraja Utara,\nSulawesi Selatan",
+          "Berkunjung ke Toraja belum lengkap jika belum mengunjungi objek wisata Londa. Ini\n\nadalah salah satu tempat wisata di Toraja Utara yang unik dan menarik untuk\n\ndikunjungi."
+        ],
+        "tokens_used": 2485,
+        "response_time_sec": 13.46,
+        "faithfulness_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Londa menyajikan wisata budaya/warisan yang khas Toraja.",
+              "supported": true
+            },
+            {
+              "claim": "Londa menawarkan wisata makam/peninggalan bersejarah yang terletak di tebing batu.",
+              "supported": true
+            },
+            {
+              "claim": "Londa memiliki gua pemakaman.",
+              "supported": true
+            },
+            {
+              "claim": "Londa memiliki peti mati, tulang, serta tengkorak berusia ratusan tahun.",
+              "supported": true
+            },
+            {
+              "claim": "Londa memiliki daya tarik berupa patung-patung kayu Tau Tau.",
+              "supported": true
+            },
+            {
+              "claim": "Patung Tau Tau melambangkan jenazah-jenazah yang dikubur di Londa.",
+              "supported": true
+            },
+            {
+              "claim": "Wisata Londa memberikan kesan budaya horor.",
+              "supported": true
+            },
+            {
+              "claim": "Wisata Londa menumbuhkan rasa penasaran akan tradisi pemakaman Toraja.",
+              "supported": true
+            },
+            {
+              "claim": "Londa diklasifikasikan sebagai wisata budaya.",
+              "supported": true
+            },
+            {
+              "claim": "Londa diklasifikasikan sebagai wisata makam.",
+              "supported": true
+            },
+            {
+              "claim": "Londa menawarkan wisata budaya dan sejarah.",
+              "supported": true
+            },
+            {
+              "claim": "Londa memperkenalkan tradisi pemakaman unik Toraja.",
+              "supported": true
+            },
+            {
+              "claim": "Londa memperkenalkan seni patung kayu khas Toraja.",
+              "supported": true
+            }
+          ],
+          "n_total": 13,
+          "n_supported": 13
+        },
+        "answer_relevancy_detail": {
+          "score": 0.7646,
+          "generated_questions": [
+            "Apa daya tarik utama dari wisata Londa di Toraja?",
+            "Apa jenis wisata yang ditawarkan oleh Londa?",
+            "Apa yang membuat Londa diklasifikasikan sebagai wisata budaya dan sejarah?"
+          ],
+          "similarities": [
+            0.6654,
+            1.0,
+            0.6285
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.2917,
+          "relevance_flags": [
+            false,
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false
+          ],
+          "n_relevant": 2,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Londa merupakan destinasi wisata budaya",
+              "attributed": true
+            },
+            {
+              "claim": "Londa terkenal dengan kuburan tebing",
+              "attributed": true
+            },
+            {
+              "claim": "Londa terkenal dengan gua pemakaman tradisional Toraja",
+              "attributed": true
+            }
+          ],
+          "n_total": 3,
+          "n_attributed": 3
+        }
+      }
+    },
+    {
+      "question": "Di mana lokasi Patung Yesus Memberkati?",
+      "category": "destinasi",
+      "difficulty": "factual",
+      "faithfulness": 0.8333,
+      "answer_relevancy": 0.9033,
+      "context_precision": 0.8106,
+      "context_recall": 1.0,
+      "overall": 0.8868,
+      "details": {
+        "actual_answer": "**Patung Yesus Memberkati** terletak di atas **Bukit Buntu Burake** (juga disebut Bukit Bantu Burake) yang berada di:\n\n- **Kecamatan Makale**,  \n- **Kabupaten Tana Toraja**,  \n- **Provinsi Sulawesi Selatan**, Indonesia.\n\nLokasinya berada tepat di puncak bukit, sehingga dari sana pengunjung dapat menyaksikan panorama Kota Makale dan perbukitan sekitarnya. Patung ini dapat diakses dengan kendaraan pribadi, motor, atau ojek dari pusat kota Makale, kemudian dilanjutkan dengan menaiki tangga atau jalan setapak menuju puncak bukit. \n\n> *Sumber: “Patung Yesus Memberkati” (Sumber 3, 5, 6, 7, 9, 10) serta “Monumen Yesus Memberkati” (Sumber 1, 4).*",
+        "retrieved_contexts": [
+          "14. Monumen Yesus Memberkati\nTerletak di puncak Bukit Buntu Burake, monumen ini menjadi landmark ikonik Toraja.\nPengunjung bisa mencapai lokasi dengan kendaraan pribadi atau ojek dari pusat kota\nMakale, dilanjutkan dengan menaiki tangga menuju puncak bukit.\nSelain nilai religiusnya, spot ini menawarkan panorama spektakuler kota Makale dan\nperbukitan sekitarnya. Pengunjung bisa melakukan berbagai aktivitas mulai dari berdoa,\nfotografi, hingga menikmati sunset. Area ini juga dilengkapi dengan taman yang terawat\ndan beberapa gazebo untuk beristirahat.",
+          "\"Setiap ritual itu ada hubungan dengan Tuhan. Misalnya babi dan kerbau dipotong\nitu dipercayai sebagai kendaraannya orang meninggal nanti untuk menuju alam\nbaka. Nah, sekarang kan sudah banyak agama di Toraja, jadi itu kita potong sebagai\ntanda syukur satu rumpun keluarga dalam acara itu,\" jelas Eric.",
+          "#3 Patung Yesus Memberkati\nDestinasi wisata yang satu ini jadi incaran banyak wisatawan yang berkunjung ke\nToraja. Selain patung Yesus yang tinggi badannya mencapai 45 meter, di kawasan\nwisata tersebut juga ada gua Bunda Maria. Sama seperti di Pango-Pango, di tempat\nini kita juga bisa menyaksikan pemandangan Kota Makale dari atas. Untuk bisa sampai ke Patung Yesus—yang konon katanya tertinggi di dunia—cukup\nmudah. Kita bisa menuju kesana mengendarai mobil atau motor. Lokasinya di Buntu\nBurake, Kecamatan Makale, Kabupaten Tana Toraja. Di beberapa titik sudah ada\npetunjuk jalannya, kok. Kalau masih bingung, jangan segan untuk bertanya, ya. #4 Bori’ Kalimbuang\nBori’ Kalimbuang terletak di Kecamatan Sesean, Kota Rantepao, Toraja Utara. Destinasi wisata satu ini jaraknya sekitar 5 kilometer sebelah utara dari Kota",
+          "Monumen berwarna putih ini\nmemperlihatkan sosok Yesus dengan tangan terbentang seperti sedang\nmemberkati Tana Toraja. Monumen yang berada di atas Bukit Buntu Burake ini memiliki tinggi 50\nmeter, yang terdiri atas patung setinggi 30 meter dan bangunan penopang\nsetinggi 20 meter.",
+          "oleh sawah. Selain itu kamu bisa mengunjungi situs pemakaman kuno sebagai\npeninggalan purbakala yang berusia ratusan tahun. 3. Patung Yesus Memberkati\nKamu bisa melihat patung setinggi 40 meter di atas Bukit Bantu Burake, yang\nkira-kira sebesar patung Kristus Penebus di Brazil. Patung ini bernama Patung\nYesus Memberkati yang dibangun pada bulan Mei 2015. Patung Yesus Memberkati berlokasi di Buntu Burake, Makale, Tana Toraja. Harga\ntiket masuk Rp10 ribu per orang, buka dari jam 07.00 sampai 21.00. Walaupun patung ini merupakan simbol bagi Agama Nasrani, tetapi banyak juga\norang dari berbagai latar belakang yang berkunjung ke sana. 4. Museum Ne’Gandeng\nMuseum Ne’Gandeng berlokasi di Desa Pelang, Sa’dan Balusu, Toraja Utara. Dulu\ntempat ini merupakan tempat melaksanakan prosesi penguburan salah satu tetua\nmasyarakat Toraja, yaitu Ne’Gandeng. Museum ini juga menawarkan pemandangan yang menakjubkan. Para wisatawan\nmancanegara biasanya memasukkan tempat ini sebagai destinasi yang wajib\ndikunjungi.",
+          "Di kawasan wisata ini, pengunjung bisa menikmati kemegahan patung Yesus\ntertinggi di dunia yang tingginya mencapai 45 meter. Dari tempat ini, pengunjung\nbisa menyaksikan keindahan Kota Makale secara keseluruhan. Selain memamerkan Patung Yesus tertinggi di dunia, objek wisata ini juga memiliki\nberbagai spot foto yang fotogenik. Keseruan wisata di Buntu Burake semakin\nlengkap dengan keberadaan UMKM yang menjajakan pernak-pernik, baju, hingga\nsarung khas Toraja. Bagi yang tertarik menikmati pengalaman liburan di patung Yesus tertinggi ini,\npengunjung hanya perlu merogoh kocek Rp 15 ribu untuk tiket masuk. 3. Lembah Ollon\nLembah Ollon juga menjadi destinasi favorit wisatawan untuk menghabiskan waktu\nlibur. Lokasinya berada di Desa Baukayu, Kecamatan Bonggakaradeng, Tana\nToraja. Akses menuju lokasi wisata ini cukup jauh. Dibutuhkan waktu tempuh hingga 1,5 jam\ndari pusat Kota Makale.",
+          "Destinasi wisata ini terletak di dataran tinggi Kecamatan Burake, Tana Toraja atau 15\nmenit dari Kota Makale. Di kawasan ini, pengunjung tidak hanya bisa melihat\nkemegahan patung Yesus namun juga bisa menyaksikan indahnya panorama Kota\nMakale.",
+          "Situs ini terletak dekat dengan jalan utama, sedikit tersembunyi di belakang\npagar. Dari jalan utama, terdapat anak tangga yang membawa ke pintu\ngerbang di atas dimana tiket masuk dijual. Tempat ini mudah dikenali dengan\nadanya puluhan batu menjulang yang bisa dilihat dari balik pagar. Kawasan ini merupakan kawasan terbuka dengan lebih dari 100 menhir berdiri yang\nmerepresentasikan kemuliaan jiwa-jiwa mereka yang dimakamkan di sini yang\nberbatasan dengan Bori’ Parinding. Berdampingan dengan Bori’ Parinding adalah\nsitus pemakaman tradisional dimana ceruk-ceruk makam dipahatkan di tebing\nkarang. Tulang-tulang terbaring menumpuk tertutup semak di dekat kuburan. Di\nbelakang situs pemakaman tradisional ini, di atas Bori’ Parinding terdapat\npemakaman modern. 4. Salib Bukit Singki’\nDibangun dan selesai tepat waktu untuk rangkaian Lovely December 2016 di Toraja\n(sebuah acara yang diadakan setiap akhir tahun), salib besar menghadap kota\nRantepao dengan tulisan besar nama “Toraja Utara”\ndi bawahnya.",
+          "sana, jenazah akan dimakamkan ke dalam batu. Kemudian akan dibuat\nboneka yang menyerupai jenazah tadi untuk dipasang di atasnya. Meskipun\nwisata Toraja ini merupakan sebuah lokasi pemakaman, namun tidak\nsemenyeramkan itu. Makam ini berlokasi di sebuah perbukitan kapur yang\nmemiliki bebatuan berwarna keputihan dan ada rona merah yang terlihat\nbegitu indah. 2. Monumen Yesus Memberkati\nBerikutnya ada Monumen Yesus Memberkati. Objek wisata Toraja yang satu\nini sering dikunjungi sebagai destinasi wisata religi. Di sana Anda bisa\nmenemukan patung Yesus yang membentangkan tangan seolah memberkati\nseluruh Tana Toraja. Patung ini berada di atas bukit Buntu Burake.Tidak\nhanya menjadi objek wisata religi, tempat ini juga cocok untuk para pecinta\nalam. Pemandangan yang disuguhkan di wisata Toraja ini begitu indah. Anda\nbisa menyaksikan bentangan alam Tana Toraja dari ketinggian. 3. Desa Kete Kesu\nRekomendasi wisata Toraja berikutnya adalah Desa Kete Kesu.",
+          "#3 Patung Yesus Memberkati\nDestinasi wisata yang satu ini jadi incaran banyak wisatawan yang berkunjung ke\nToraja. Selain patung Yesus yang tinggi badannya mencapai 45 meter, di kawasan\nwisata tersebut juga ada gua Bunda Maria. Sama seperti di Pango-Pango, di tempat\nini kita juga bisa menyaksikan pemandangan Kota Makale dari atas. Untuk bisa sampai ke Patung Yesus—yang konon katanya tertinggi di dunia—cukup\nmudah. Kita bisa menuju kesana mengendarai mobil atau motor. Lokasinya di Buntu\nBurake, Kecamatan Makale, Kabupaten Tana Toraja. Di beberapa titik sudah ada\npetunjuk jalannya, kok. Kalau masih bingung, jangan segan untuk bertanya, ya. #4 Bori’ Kalimbuang\nBori’ Kalimbuang terletak di Kecamatan Sesean, Kota Rantepao, Toraja Utara. Destinasi wisata satu ini jaraknya sekitar 5 kilometer sebelah utara dari Kota"
+        ],
+        "tokens_used": 2611,
+        "response_time_sec": 5.36,
+        "faithfulness_detail": {
+          "score": 0.8333,
+          "claims": [
+            {
+              "claim": "Patung Yesus Memberkati terletak di atas Bukit Buntu Burake.",
+              "supported": true
+            },
+            {
+              "claim": "Bukit Buntu Burake juga disebut sebagai Bukit Bantu Burake.",
+              "supported": true
+            },
+            {
+              "claim": "Bukit Buntu Burake berada di Kecamatan Makale.",
+              "supported": true
+            },
+            {
+              "claim": "Bukit Buntu Burake berada di Kabupaten Tana Toraja.",
+              "supported": true
+            },
+            {
+              "claim": "Bukit Buntu Burake berada di Provinsi Sulawesi Selatan, Indonesia.",
+              "supported": false
+            },
+            {
+              "claim": "Lokasi Patung Yesus Memberkati berada tepat di puncak bukit.",
+              "supported": true
+            },
+            {
+              "claim": "Pengunjung dapat menyaksikan panorama Kota Makale dari lokasi patung.",
+              "supported": true
+            },
+            {
+              "claim": "Pengunjung dapat menyaksikan panorama perbukitan sekitar dari lokasi patung.",
+              "supported": true
+            },
+            {
+              "claim": "Patung Yesus Memberkati dapat diakses dengan kendaraan pribadi dari pusat kota Makale.",
+              "supported": true
+            },
+            {
+              "claim": "Patung Yesus Memberkati dapat diakses dengan motor dari pusat kota Makale.",
+              "supported": true
+            },
+            {
+              "claim": "Patung Yesus Memberkati dapat diakses dengan ojek dari pusat kota Makale.",
+              "supported": false
+            },
+            {
+              "claim": "Akses menuju puncak bukit dilakukan dengan menaiki tangga atau jalan setapak setelah sampai dari pusat kota Makale.",
+              "supported": true
+            }
+          ],
+          "n_total": 12,
+          "n_supported": 10
+        },
+        "answer_relevancy_detail": {
+          "score": 0.9033,
+          "generated_questions": [
+            "Di mana lokasi Patung Yesus Memberkati?",
+            "Di bukit apa Patung Yesus Memberkati berada dan bagaimana cara mengaksesnya?",
+            "Di mana letak Patung Yesus Memberkati di Tana Toraja?"
+          ],
+          "similarities": [
+            1.0,
+            0.805,
+            0.9048
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.8106,
+          "relevance_flags": [
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            true,
+            true
+          ],
+          "n_relevant": 8,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Patung Yesus Memberkati (Buntu Burake) berlokasi di Burake",
+              "attributed": true
+            },
+            {
+              "claim": "Patung Yesus Memberkati (Buntu Burake) berlokasi di Kecamatan Makale",
+              "attributed": true
+            },
+            {
+              "claim": "Patung Yesus Memberkati (Buntu Burake) berjarak 15 menit dari Kota Makale",
+              "attributed": true
+            }
+          ],
+          "n_total": 3,
+          "n_attributed": 3
+        }
+      }
+    },
+    {
+      "question": "Kapan Toraja Highland Festival 2025 diadakan?",
+      "category": "event",
+      "difficulty": "factual",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9267,
+      "context_precision": 0.5,
+      "context_recall": 1.0,
+      "overall": 0.8567,
+      "details": {
+        "actual_answer": "Toraja Highland Festival (THF) 2025 diadakan pada **tanggal 11 Desember 2025 – 13 Desember 2025**.  \n\nAcara pembukaannya berlangsung pada **Kamis, 11 Desember 2025** dan festival tersebut berlangsung selama tiga hari hingga **Sabtu, 13 Desember 2025**.  \n\nLokasinya adalah **Gedung Art Center Rantepao**, Kabupaten Toraja Utara, dan pembukaan secara resmi dilakukan oleh Bupati Toraja Utara, **Frederik Victor Palimbong**.",
+        "retrieved_contexts": [
+          "H. Toraja Highland Festival 2023\nToraja Highland Festival (THF) kembali digelar untuk ketiga kalinya di Kabupaten Toraja Utara dan dibuka resmi oleh Ketua Masata Kabupaten Toraja Utara Ny. Damayanti Batti Palimbong, Kamis 26 Oktober 2023. Toraja Highland Festival (THF) 2023 tahun ini menampilkan berbagai event seperti pameran UMKM, Dodo' Pandin, Lomba Pelajar (Acoustic), Pagelaran Tari dan Musik, Jelajah Desa Wisata, Lomba Mural, dan Beauty Class. Kegiatan THF dilaksanakan selama tiga hari mulai tanggal 26 s.d. 28 Oktober 2023 di Lapangan Kodim Rantepao, Kabupaten Toraja Utara. I. Bupati Cup IV\nPemerintah Kabupaten Toraja Utara melalui Dinas Kepemudaan dan Olahraga Kabupaten Toraja Utara kembali melaksanakan kompetisi Bupati Cup IV di tahun 2024 yang diikuti para peserta di 21 Kecamatan se-Kabupaten Toraja Utara. Kegiatan pembukaan kompetisi Bupati Cup IV dilaksanakan di Lapangan Bakti Rantepao, Sabtu 27 Januari 2024, dibuka resmi oleh Bupati Toraja Utara.",
+          "Event tahunan Toraja Highland Festival (THF) 2025 resmi dibuka pada\nKamis, 11 Desember 2025, sebagai bagian dari agenda penguatan\npariwisata daerah yang mengintegrasikan budaya, kopi, dan ekonomi\nkreatif di Toraja Utara dan Tana Toraja.\nPembukaan festival yang berlangsung di Gedung Art Center Rantepao\ntersebut dibuka secara resmi oleh Bupati Toraja Utara, Frederik Victor\nPalimbong, dan dijadwalkan berlangsung hingga 13 Desember 2025.\nDalam sambutannya, Bupati menegaskan bahwa THF dirancang sebagai\nruang konsolidasi potensi unggulan daerah, bukan semata agenda\nseremonial atau hiburan.",
+          "Kegiatan yang digelar selama tiga hari (9-11 Agustus 2024) di Alun-alun Rantepao itu berubah menjadi panggung spektakuler menampilkan beragam seni dan budaya Toraja yang kaya. Dilansir dari Kemenparekraf, TIF 2024 bukan sekadar festival biasa. Acara ini menjadi ajang bagi Toraja untuk memperkenalkan kekayaan budayanya ke kancah internasional, melalui pertunjukan musik, tarian, dan seni pertunjukan lainnya. Selain tarian tradisional, TIF 2024 juga menghadirkan Opera Toraja yang menceritakan kisah-kisah legendaris masyarakat Toraja. Pertunjukan ini menjadi bukti kekayaan budaya Toraja yang terus dilestarikan dari generasi ke generasi. Selain bagi sektor pariwisata, TIF 2024 juga memberikan dampak positif bagi ekonomi lokal. Festival ini dinilai menjadi ajang promosi bagi produk-produk UMKM Toraja, seperti kerajinan tangan, tenun ikat, dan kuliner khas. E.",
+          "Zudan Arif Fakrulloh, dan Bupati Toraja Utara, Yohanis Bassang, di Alun-alun Kota Rantepao, Senin, 22 Juli 2024, dan berlangsung hingga tiga hari. Festival Budaya Kabupaten Toraja Utara Tahun 2024 dipusatkan di Alun-Alun Rantepao yang dijadwalkan mulai dari tanggal 22-24 Juli 2024 dan mementaskan Pa'lambuk, Ma'dandan, Ondo Samalele, Ma'karombi, Pa'gellu Tua, Tari To Meurang, Tari Ma'papangan, Ma'randing, Tari Dao Bulan, Gora-gora Mali', Suling Pandan, Suling Te'dek, Ma'pelle, cerita rakyat, dan fashion show baju adat. F. Internasional Nurses Day Regional V Tahun 2024\nPemerintah Kabupaten Toraja Utara bersama Persatuan Perawat Nasional Indonesia (PPNI) Regional V yang meliputi Kabupaten Toraja Utara, Kab. Luwu Timur, Kab. Luwu Utara, Kab. Luwu, Kab. Tana Toraja, dan Kota Palopo memperingati Internasional Nurse Day 2024 yang dilaksanakan di lapangan Bakti Rantepao, Jumat 07 Juni 2024.",
+          "Festival ini dinilai menjadi ajang promosi bagi produk-produk UMKM Toraja, seperti kerajinan tangan, tenun ikat, dan kuliner khas. E. Festival Budaya Toraja Utara Tahun 2024\nFestival Budaya Toraja Utara Tahun 2024 dengan tema “Pa' Tendeng Ballo” yang dilaksanakan selama 3 hari di Alun-Alun Kota Rantepao resmi dibuka, Senin 22 Juli 2024. Dalam sambutannya, Bupati Toraja Utara, Yohanis Bassang, SE., M.Si mengatakan bahwa ajang Festival Budaya merupakan sebuah pagelaran untuk memperkenalkan kembali kesenian dan budaya Toraja karena merupakan kekayaan daerah, kekayaan Provinsi Sulawesi Selatan, dan kekayaan Bangsa Indonesia yang harus dilestarikan. Festival Budaya Toraja Utara 2024 resmi dibuka oleh Penjabat Gubernur Sulawesi Selatan, Prof. Zudan Arif Fakrulloh, dan Bupati Toraja Utara, Yohanis Bassang, di Alun-alun Kota Rantepao, Senin, 22 Juli 2024, dan berlangsung hingga tiga hari.",
+          "Festival Budaya Toraja 2023 menampilkan ragam kegiatan budaya Toraja mulai dari Ma'Karombi, Ma'Daga, Ma'Geso'-geso', Ma'Dandan, Manimbong, Ma'Lambuk dan Kontes Kerbau. Kegiatan ini berlangsung di Alun-alun Kota Rantepao dan Lapangan Bakti Rantepao, pada tanggal 20-23 Juli 2023. E. Festival Kesenian Tradisional Tingkat SD\nFestival Kesenian Tradisional tingkat SD se-Kabupaten Toraja Utara berlangsung di Taman Kota Rantepao Kecamatan Rantepao, Rabu 01/08/2023. Festival tersebut dibuka oleh Bupati Toraja Utara Yohanis Bassang, SE., M.Si, didampingi Asisten I Setda Bidang Pemerintahan dan Kesra Toraja Utara Yermia T. Marewa, SE., M.Si, Kepala Dinas Pendidikan Toraja Utara Martinus Manatin, SH., MH, Camat Rantepao Jeniaty Rike Ekawaty, serta sejumlah peserta yang ikut dalam festival tersebut. Adapun kesenian tradisional yang diperlombakan yaitu Pa'Gelu' Tua, Gora-gora Mali', Ma'pelle' Musik Bambu, Suling Pandan, dan Suling Lembang.",
+          "Memasuki hari kedua pelaksanaan Fam Trip Toraja Utara 2025, para peserta\nmengikuti kunjungan ke Pasar Hutan Bambu, di objek wisata To’kumila’, Sabtu 19\nJuli 2025. Famtrip Toraja Utara 2025 ini dilaksanakan selama dua hari, mulai 18-19 Juli 2025,\ndengan peserta Famtrip sebanyak 21 orang yang berasal dari berbagai daerah\nseperti Bogor, Jakarta, Malaysia, Makassar, Sidrap, dan Toraja dengan mengunjungi\nobjek wisata unggulan Toraja Utara. Di hari kedua kegiatan Fam Trip, peserta mengunjungi berbagai lokasi seperti objek\nwisata pasar hutan bambu to’kumila’, objek wisata Lo’ko’ mata, upacara rambu solo’\ndi Lempo dan objek wisata Bori’ Kalimbuang. Kunjungan di pasar tradisional hutan bambu to’kumila’ adalah yang paling ditunggu\n– tunggu peserta. Di tempat ini akan dijumpai aktivitas pasar tradisional yang berada di bawah\nrimbunnya pohon bambu dimana pedagang menjual berbagai kebutuhan sehari –\nhari, makan tradisional dan hasil kerajinan.",
+          "Selain itu, Toraja in Art and Culture Festival 2025 juga telah sukses diselenggarakan\npada akhir April 2025 di Buntu Sarira. Geliat Pariwisata di Toraja\nFestival-festival budaya ini memiliki dampak signifikan terhadap geliat pariwisata\nToraja. Festival budaya, terutama Rambu Solo' yang megah dan TIF yang berskala\ninternasional, menarik banyak wisatawan. Kunjungan wisatawan, baik domestik\nmaupun mancanegara, cenderung meningkat saat festival-festival ini berlangsung. Kedatangan wisatawan berdampak langsung pada peningkatan aktivitas ekonomi\nmasyarakat. Sektor akomodasi (hotel, penginapan), kuliner (restoran, kafe),\nkerajinan tangan, transportasi, dan usaha kecil lainnya mengalami peningkatan\npendapatan. Festival juga menciptakan lapangan kerja bagi masyarakat lokal. Festival menjadi ajang bagi masyarakat Toraja untuk melestarikan dan menampilkan\nwarisan budaya mereka kepada generasi muda dan dunia luar.",
+          "Bupati Toraja Yohanis Bassang, SE., M.Si, yang membuka secara resmi event Toraja International Festival ini menyampaikan bahwa event seperti ini adalah momen untuk mempromosikan budaya kepada dunia luar, terutama kepada generasi penerus. Dalam kesempatan yang sama, perwakilan Kementerian Pariwisata dan Ekonomi Kreatif, Staf Ahli Bidang Manajemen Kris Fadjar Hutomo, S.T., MMT., CFP., menyampaikan apresiasi setinggi-tingginya kepada Pemerintah Kabupaten Toraja Utara atas terselenggaranya event tersebut. D. Festival Budaya Toraja 2023\nFestival Budaya Toraja Ke-2 Kabupaten Toraja Utara Tahun 2023 dengan tema “Mana' Lepongan Bulan” dihadiri dan dibuka oleh Gubernur Sulawesi Selatan Andi Sudirman Sulaiman, ST, didampingi Bupati Toraja Utara Yohanis Bassang, SE., M.Si, yang berlangsung di Lapangan Bakti Rantepao, 21 Juli 2023. Festival Budaya Toraja 2023 menampilkan ragam kegiatan budaya Toraja mulai dari Ma'Karombi, Ma'Daga, Ma'Geso'-geso', Ma'Dandan, Manimbong, Ma'Lambuk dan Kontes Kerbau.",
+          "Kegiatan Gebyar Paud dipusatkan di Gedung Olahraga Rantepao (GOR) dihadiri kurang lebih 778 peserta seluruh PAUD se-Kabupaten Toraja Utara dan dibuka resmi oleh Pjs. Bupati Toraja Utara, Senin, 21 Oktober 2024."
+        ],
+        "tokens_used": 3059,
+        "response_time_sec": 13.24,
+        "faithfulness_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Toraja Highland Festival (THF) 2025 diadakan pada tanggal 11 Desember 2025 sampai 13 Desember 2025.",
+              "supported": true
+            },
+            {
+              "claim": "Pembukaan Toraja Highland Festival (THF) 2025 berlangsung pada Kamis, 11 Desember 2025.",
+              "supported": true
+            },
+            {
+              "claim": "Toraja Highland Festival (THF) 2025 berlangsung selama tiga hari.",
+              "supported": true
+            },
+            {
+              "claim": "Toraja Highland Festival (THF) 2025 berakhir pada Sabtu, 13 Desember 2025.",
+              "supported": true
+            },
+            {
+              "claim": "Lokasi Toraja Highland Festival (THF) 2025 adalah Gedung Art Center Rantepao, Kabupaten Toraja Utara.",
+              "supported": true
+            },
+            {
+              "claim": "Pembukaan Toraja Highland Festival (THF) 2025 secara resmi dilakukan oleh Bupati Toraja Utara, Frederik Victor Palimbong.",
+              "supported": true
+            }
+          ],
+          "n_total": 6,
+          "n_supported": 6
+        },
+        "answer_relevancy_detail": {
+          "score": 0.9267,
+          "generated_questions": [
+            "Kapan dan di mana Toraja Highland Festival (THF) 2025 dilaksanakan?",
+            "Siapa yang membuka acara Toraja Highland Festival 2025 dan di mana lokasinya?",
+            "Berapa lama durasi pelaksanaan Toraja Highland Festival 2025 dan kapan tanggal pastinya?"
+          ],
+          "similarities": [
+            0.9436,
+            0.8867,
+            0.9499
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.5,
+          "relevance_flags": [
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "n_relevant": 1,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Toraja Highland Festival 2025 diadakan pada 11-13 Desember 2025",
+              "attributed": true
+            }
+          ],
+          "n_total": 1,
+          "n_attributed": 1
+        }
+      }
+    },
+    {
+      "question": "Di mana alamat Toraja Prince Hotel?",
+      "category": "akomodasi",
+      "difficulty": "factual",
+      "faithfulness": 0.2,
+      "answer_relevancy": 0.9613,
+      "context_precision": 1.0,
+      "context_recall": 0.75,
+      "overall": 0.7278,
+      "details": {
+        "actual_answer": "Toraja Prince Hotel berlokasi di **Tallunglipu, Toraja Utara**. Lokasinya cukup strategis, dekat dengan bandara serta objek‑wisata seperti Goa Londa dan Museum Ne Gandeng. (Sumber 1 & 2)",
+        "retrieved_contexts": [
+          "Telepon: (0423) 21344\n9. Toraja Prince Hotel\nToraja Prince Hotel berlokasi di Tallunglipu, Toraja Utara. Lokasinya cukup strategis dan\ndekat dari bandara maupun berbagai obyek wisata, seperti Goa Londa dan Museum Ne\nGandeng. Toraja Prince Hotel ditandai dengan desain bangunannya layaknya perumahan khas Toraja\n(Tongkonan). Area hotelnya pun ditumbuhi berbagai tanaman yang memberi kesan hijau\ndan asri. Di hotel ini juga terdapat kolam renang yang bisa dinikmati bersama keluarga atau\nteman-teman. Kemudian detikers juga dapat menikmati waktu bersantai di arae taman dan\nteras di hotel yang satu ini. Kamar yang disediakan pun terdapat beberapa tipe. Ada kamar standard, kamar deluxe,\nkamar economy twin, deluxe twin room hingga kamar superior double room. Harga untuk menginap di kamar ini berbeda-beda tergantung tipe kamarnya. Namun harga\ntermurah bisa detikers dapatkan mulai dari Rp 250.000,-an saja.",
+          "9. Toraja Prince Hotel\nToraja Prince Hotel berlokasi di Tallunglipu, Toraja Utara. Lokasinya cukup strategis dan\ndekat dari bandara maupun berbagai obyek wisata, seperti Goa Londa dan Museum Ne\nGandeng. Toraja Prince Hotel ditandai dengan desain bangunannya layaknya perumahan khas Toraja\n(Tongkonan). Area hotelnya pun ditumbuhi berbagai tanaman yang memberi kesan hijau\ndan asri. Di hotel ini juga terdapat kolam renang yang bisa dinikmati bersama keluarga atau\nteman-teman. Kemudian detikers juga dapat menikmati waktu bersantai di arae taman dan\nteras di hotel yang satu ini. Kamar yang disediakan pun terdapat beberapa tipe. Ada kamar standard, kamar deluxe,\nkamar economy twin, deluxe twin room hingga kamar superior double room. Harga untuk menginap di kamar ini berbeda-beda tergantung tipe kamarnya. Namun harga\ntermurah bisa detikers dapatkan mulai dari Rp 250.000,-an saja.",
+          "sekitar Rp 404.752. Untuk memesan atau informasi lebih detail dapat menghubungi\nkontak +62-85190049998. 4. Toraja Misiliana Hotel\nBerlokasi di Jl. Pongtiku No. 27, Lemo Menduruk, Rantepao, Tallulolo, Kec. Kesu,\nKabupaten Toraja Utara, Sulawesi Selatan. Toraja Misiliana Hotel terletak di pusat\nkota Toraja, 2 km dari kota Rantepao. Hotel ini menyuguhkan pemandangan sungai\nSa'dan, memiliki kolam renang outdoor, 2 pilihan tempat bersantap, dan parkir gratis\ndi tempat. Kamar-kamar yang nyaman di Toraja Misiliana Hotel dilengkapi TV kabel,\nminibar, dan fasilitas membuat teh/kopi. Setiap kamar memiliki kamar mandi dalam\ndengan perlengkapan mandi. Toraja Misiliana Hotel menyediakan penyewaan mobil\nserta layanan binatu. Untuk rekreasi, Anda dapat mengunjungi pusat perbelanjaan,\natau menikmati permainan tenis di lapangan tenis. Perawatan pijat tradisional juga\ntersedia di hotel. Tabang and Satung Restaurant menyajikan beragam hidangan\nkhas daerah.",
+          "Link: https://id.trip.com/hotels/north-toraja-regency-hotels-list-135234/\nHotel di Kabupaten Toraja Utara\n1. SANTAI TORAJA\nBerlokasi di Laang Tanduk, Rantepao, Kabupaten Toraja Utara, Sulawesi Selatan. Santai Toraja berada hanya 5 menit dengan berkendara dari Taman Pahlawan\nPongtiku dan Bolu Market. Hotel ini berada 4,3 mi (6,9 km) dari Gua-gua\nPemakaman Londa dan 9,4 mi (15 km) dari Tana Toraja. Hotel ini memiliki rating\nsekitar 9,5 dari 10 dan memiliki total 14 kamar. Harga minimum yang ditawarkan\nuntuk permalam sekitar Rp 833.313. Untuk memesan atau informasi lebih detail\ndapat menghubungi kontak +62-82271398238. Menikmati pemandangan di taman,\ndan memanfaatkan fasilitas seperti akses Internet nirkabel gratis. Di Santai Toraja,\nnikmati hidangan lezat di restoran.Sarapan lengkap gratis disajikan setiap hari mulai\npukul 08.00 hingga 11.00. Fasilitas unggulan antara lain check-in ekspres dan\ncheck-out ekspres. Parkir mandiri gratis tersedia di lokasi.",
+          "Nah, itulah sejumlah tempat penginapan murah di Toraja. Tertarik ingin berkunjung?",
+          "Sentuhan tradisional terlihat dari atap bangunan serta lukisan khas Toraja di setiap\nsudut hotel. Fasilitasnya pun terbilang lengkap. Ada restoran, koneksi internet serta\nkolam renang. 3. Hotel Hiltra\nAlamat : Jl. Pramuka No. 70, Rantepao, Toraja Utara\nHarga : Rp427.500/malam\nTerletak tepat di tepi Kota Rantepao, Hotel Hiltra unggul dalam letak strategis. Berada tepat di tengah keramaian sekaligus cukup dekat dari beberapa objek\nwisata, seperti Kuburan Batu Tambolang dan situs makam megalitik Rante Karassik. Fasilitas yang tersedia, antara lain: restoran, kafe yang menyajikan kopi khas Toraja,\nditambah koneksi internet. Kalau kamu liburan sambil membawa pekerjaan, hotel ini\nbisa menjadi pilihan. 4. Niel Hotel\nAlamat : Jl. Poros Makale - Rantepao, Kesu, Toraja Utara\nHarga : Rp475.000/malam\nHotelnya mungkin kecil, namun Niel Hotel Toraja tersohor berkat taman-taman yang\nberada di halaman dalam hotel. Ketenangan siap menyambut para tamu yang\nmenginap.",
+          "Lokasi: Jalan Poros Singki, Kelurahan Laang Tanduk, Kecamatan Rantepao, Kabupaten\nToraja Utara, Sulawesi Selatan\nTelepon: 0813-4369-6270\n8. Hotel Pison\nHotel pison terletak di daerah Rantepao yang dekat dari Gua Londa, salah satu ikon wisata\npopuler di Toraja. Jaraknya hanya 5,7 Km dengan waktu tempuh sekitar 10 menit saja. Kamar-kamar yang disediakan di hotel ini didesain minimalis dengan nuansa seperti\nmenginap di rumah sendiri. Kamar-kamar yang tersedia juga dilengkapi dengan balkon\npribadi. Dari dalam kamar, pengunjung juga bisa menikmati pemandangan area perbukitan dan\nsawah di sekelilingnya. Selain itu, fasilitas yang disediakan pun cukup lengkap mulai dari kamar mandi dengan\nbathub, kipas angin, lemari, meja, kursi hingga wifi. Bagi pengunjung yang ingin mencari\nmakan, tempat ini juga menyediakan restoran dengan beragai pilihan menu. Untuk menginap di hotel ini, pengunjung perlu mengeluarkan biasa sebesar Rp 250.000 per\nmalam.",
+          "Jangan ragu untuk menghubungi resepsionis, kami siap melayani\nAnda. Terdapat restoran yang menyajikan menu lezat ala Hotel Sahid Toraja khusus\nuntuk Anda. Hotel Sahid Toraja adalah akomodasi dengan fasilitas baik dan kualitas\npelayanan memuaskan menurut sebagian besar tamu. Dengan fasilitas yang\nmemadai, Hotel Sahid Toraja menjadi pilihan yang tepat untuk menginap. 3. Hotel Manggasa Makale\nBerlokasi di Jl. Ua' Saruran, Bombongan, Kec. Makale, Kabupaten Tana Toraja,\nSulawesi Selatan, Indonesia. Hotel ini memiliki rating sekitar 8,3 dari 10 dan memiliki\ntotal 29 kamar. Harga minimum yang ditawarkan untuk permalam sekitar Rp 204.664\ndan maksimum Rp 363.067. Pelayanan memuaskan serta fasilitas hotel yang\nmemadai akan membuat Anda nyaman berada di Hotel Manggasa Makale. Terdapat\nrestoran yang menyajikan menu lezat ala Hotel Manggasa Makale khusus untuk\nAnda. WiFi tersedia di seluruh area publik properti untuk membantu Anda tetap\nterhubung dengan keluarga dan teman.",
+          "Yang istimewa, selain menyediakan kamar reguler, ada pula\ntraditional camp yakni kamar berupa pondok dengan ornamen motif tradisional khas\nToraja. 2. Hotel Marante\nAlamat : Jl. Poros Rantepao - Palopo, Tondon, Toraja Utara\nHarga : Rp394.250/malam\nHotel bintang tiga ini kerap menjadi tujuan utama para wisatawan di Toraja Utara. Letaknya di wilayah pedesaan memberi nuansa tenang di Hotel Marante Toraja. Tepat di seberang hotel bahkan terdapat sawah yang membentang cukup luas.",
+          "Untuk memesan atau informasi lebih detail dapat menghubungi\nkontak +62-85343904710. 8. Toraja Heritage Hotel\nBerlokasi di Karassik, Rantepao, Kabupaten Toraja Utara, Sulawesi Selatan. Toraja\nHeritage Hotel di Rantepao memiliki akomodasi yang terletak di bangunan bergaya\nToraja tradisional. Hotel ini menawarkan sebuah kolam renang outdoor, pusat spa,\ndan pusat kebugaran. Anda dapat bersantai di taman dan menikmati pemandangan\ngunung. Semua kamar di hotel dilengkapi dengan TV layar datar, minibar, ketel dan\nmeja. Kamar mandi pribadi dilengkapi dengan perlengkapan mandi gratis. Sarapan\nKontinental disajikan setiap hari di akomodasi ini. Anda dapat menikmati sajian di\nrestoran yang menyajikan aneka hidangan Asia serta makanan Halal dan\nVegetarian. Barbekyu juga dapat diatur berdasarkan permintaan. Anda dapat\nbermain anak panah, tenis meja dan biliar di hotel bintang 4. Untuk kenyamanan\nekstra, hotel ini menyediakan penukaran mata uang, parkir valet, dan penitipan\nbagasi."
+        ],
+        "tokens_used": 2775,
+        "response_time_sec": 4.22,
+        "faithfulness_detail": {
+          "score": 0.2,
+          "claims": [
+            {
+              "claim": "Toraja Prince Hotel berlokasi di Tallunglipu, Toraja Utara.",
+              "supported": true
+            },
+            {
+              "claim": "Lokasi Toraja Prince Hotel cukup strategis.",
+              "supported": false
+            },
+            {
+              "claim": "Toraja Prince Hotel terletak dekat dengan bandara.",
+              "supported": false
+            },
+            {
+              "claim": "Toraja Prince Hotel terletak dekat dengan objek wisata Goa Londa.",
+              "supported": false
+            },
+            {
+              "claim": "Toraja Prince Hotel terletak dekat dengan Museum Ne Gandeng.",
+              "supported": false
+            }
+          ],
+          "n_total": 5,
+          "n_supported": 1
+        },
+        "answer_relevancy_detail": {
+          "score": 0.9613,
+          "generated_questions": [
+            "Di mana lokasi Toraja Prince Hotel?",
+            "Di mana alamat Toraja Prince Hotel dan apa saja objek wisata di sekitarnya?",
+            "Apakah lokasi Toraja Prince Hotel strategis?"
+          ],
+          "similarities": [
+            0.9804,
+            0.9634,
+            0.9403
+          ]
+        },
+        "context_precision_detail": {
+          "score": 1.0,
+          "relevance_flags": [
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "n_relevant": 2,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 0.75,
+          "claims": [
+            {
+              "claim": "Toraja Prince Hotel beralamat di Jalan Poros Rantepao-Palopo Km 2",
+              "attributed": false
+            },
+            {
+              "claim": "Toraja Prince Hotel berlokasi di Tallunglipu",
+              "attributed": true
+            },
+            {
+              "claim": "Toraja Prince Hotel berada di Kabupaten Toraja Utara",
+              "attributed": true
+            },
+            {
+              "claim": "Toraja Prince Hotel berada di Sulawesi Selatan",
+              "attributed": true
+            }
+          ],
+          "n_total": 4,
+          "n_attributed": 3
+        }
+      }
+    },
+    {
+      "question": "Destinasi apa yang cocok untuk melihat matahari terbit di atas awan?",
+      "category": "rekomendasi",
+      "difficulty": "reasoning",
+      "faithfulness": 0.7619,
+      "answer_relevancy": 0.7724,
+      "context_precision": 0.8179,
+      "context_recall": 1.0,
+      "overall": 0.838,
+      "details": {
+        "actual_answer": "Berikut adalah destinasi yang secara khusus disebutkan dalam konteks sebagai tempat yang **ideal untuk menyaksikan matahari terbit (sunrise) di atas awan**:\n\n| Destinasi | Keterangan utama tentang sunrise | Ketinggian | Lokasi & cara sampai |\n|-----------|-----------------------------------|------------|----------------------|\n| **Negeri di Atas Awan Toraja** | • Panorama “negeri di atas awan” dengan hamparan awan yang menyelimuti lembah.<br>• Matahari muncul perlahan dari balik awan, memberikan sinar jingga yang dipantulkan di awan.<br>• Waktu terbaik: sekitar **pukul 5.30 WITA** (fajar).<br>• Disarankan menginap atau berkemah supaya tidak ketinggalan sunrise. | ± 1.300 mdpl (beberapa sumber menyebutkan 1.300 mdpl, ada pula yang menyebutkan 1.700 mdpl) | Desa Lolai, Kecamatan Kapala Pitu, Kabupaten Toraja Utara, Sulawesi Selatan.<br>Jarak: <ul><li>≈ 19 km (≈ 1 jam) dari Bandara Pongtiku.</li><li>≈ 15 km dari Rantepao.</li></ul>Rute berliku‑liku menuju dataran tinggi. |\n| **Lembah Ollon** | • Pengunjung disarankan datang **sebelum matahari terbit** karena panorama sunrise di kawasan ini sangat indah.<br>• Tidak ada data ketinggian atau jam spesifik, namun konteks menegaskan bahwa sunrise di sini “tak boleh dilewatkan”. | – (tidak disebutkan) | – (lokasi tepat tidak diberikan dalam konteks, hanya disebutkan sebagai “Lembah Ollon”). |\n\n### Rekomendasi Praktis\n1. **Pilih Negeri di Atas Awan** jika Anda menginginkan:\n   - Pemandangan awan bergulung yang luas.\n   - Spot foto estetis dengan cahaya jingga pagi.\n   - Fasilitas rumah adat, villa, atau area camping untuk menginap.\n2. **Pertimbangkan Lembah Ollon** bila Anda berada di area tersebut dan ingin menikmati sunrise yang lebih “tersembunyi” atau menambah variasi itinerary.\n\n### Tips Agar Tidak Ketinggalan Sunrise\n- **Berangkat malam sebelumnya** atau gunakan fasilitas **stay‑cation / camping ground** di Negeri di Atas Awan (sumber menyarankan menginap agar tidak ketinggalan).\n- **Datang paling lambat pukul 5.00 WITA** untuk menyiapkan posisi foto, karena sunrise biasanya muncul sekitar **5.30 WITA**.\n- Bawa **pakaian hangat** karena suhu di ketinggian 1.300 mdpl masih cukup **dingin‑sejuk** pada pagi hari.\n\n> Jadi, destinasi yang paling cocok untuk melihat matahari terbit di atas awan di Toraja adalah **Negeri di Atas Awan Toraja** (Desa Lolai, Kapala Pitu). Jika Anda berada di sekitar Lembah Ollon, tempat ini juga menawarkan sunrise yang spektakuler.",
+        "retrieved_contexts": [
+          "Menikmati Momen Sunrise\nMenikmati momen sunrise Negeri di Atas Awan Toraja merupakan tujuan utama bagi\nsejumlah wisatawan yang berkunjung. Wisatawan dapat menyaksikan secara\nlangsung matahari muncul secara perlahan dari balik awan.",
+          "Di ketinggian 1.300 meter, Anda akan disambut panorama menakjubkan, yaitu\nlautan awan yang menyelimuti lembah. Saat sore tiba, kabut dan cahaya matahari berpadu menghadirkan suasana\nromantis. Di sini, tersedia rumah adat Toraja untuk beristirahat, atau Anda bisa berkemah dan\nbenar-benar merasakan sensasi hidup di atas awan. 2. Pango-pango, Panorama Kota Makale\nAwalnya hanyalah kebun kopi, kini Pango-pango menjelma menjadi destinasi favorit. Dari sini, pengunjung dapat menyaksikan Kota Makale dari ketinggian, ditemani\nsejuknya udara pinus. Sore hari menjadi waktu terbaik karena menyajikan awan tipis, langit berwarna\njingga, dan pemandangan matahari terbenam yang memukau. Tersedia villa dan area camping untuk Anda yang ingin bermalam. 3. Mentirotiku Batutumonga",
+          "Untuk bisa menikmati sensai negeri di atas awan memang sangat bergantung pada\n“keberuntungan”. Dengan kata lain, tidak ada jadwal pasti kapan hamparan awan\nbisa muncul untuk memanjakan para pengunjung. Namun, berdasarkan pengalaman pribadi, untuk bisa mendapatkan view awan,\nkalian bisa mengunjungi tempat ini saat pagi buta. Jika takut terlambat, kalian bisa\nmenginap dengan memanfaatkan fasilitas stay cation atau camping ground. #7 Ke’te’ Kesu\nSebagai salah satu destinasi wisata andalan Toraja, khususnya Toraja Utara, nama\nKe’te’ Kesu’ memang sudah sangat populer. Menariknya, tempat ini bukan destinasi\nwisata biasa, melainkan sebagai salah satu tempat yang menyimpan sejarah awal\nmula peradaban masyarakat Toraja. Di tempat ini terdapat sisa-sisa peninggalan bersejarah yang berumur ratusan tahun,\nmulai dari rumah tongkonan, ukiran dinding, batu menhir, artefak, hingga makam\ngua dan tebing kaum bangsawan Toraja yang diyakini sebagai tempat pemakaman\ntertua di dunia.",
+          "Keindahan panorama alam Negeri di Atas Awan ini selalu dimanfaatkan wisatawan\nuntuk berburu foto estetik dengan background awan dan sunrise. Waktu yang tepat\nUntuk bisa menyaksikan keindahan di atas awan ini sekitar pukul 5.30 Wita.",
+          "Lokasinya yang berada di ketinggian kurang lebih 1.700 mdpl membuat pengunjung\ndapat menikmati udara yang dingin dan sejuk di kawasan wisata ini. Pada pagi hari\npengunjung bisa menyaksikan sunset dan pemandangan bak negeri di atas awan.",
+          "Selain memiliki panorama alam yang indah, suasana yang sejuk dan dingin juga\nmembuat tempat ini begitu menyenangkan. Negeri di Atas Awan ini sangat cocok\nuntuk dijadikan tujuan wisata bersama teman maupun keluarga. Menikmati Momen Sunrise\nMenikmati momen sunrise Negeri di Atas Awan Toraja merupakan tujuan utama bagi\nsejumlah wisatawan yang berkunjung. Wisatawan dapat menyaksikan secara\nlangsung matahari muncul secara perlahan dari balik awan. Sekitar pukul 5.30 Wita, sang fajar akan keluar dari singgasananya dengan sinaran\njingga yang dipantulkan di awan. Suasana yang dingin secara perlahan berubah\nmenjadi sejuk, hal ini yang membuat wisatawan makin betah di tempat ini. Jika wisatawan ingin menikmati sunrise, disarankan untuk menginap di tempat ini\nagar tidak ketinggalan untuk menyaksikan momen matahari terbit. Sembari menanti\nsang fajar, wisatawan bisa sambil menikmati sajian kopi khas Toraja.",
+          "Pengunjung disarankan mendatangi Lembah Ollon sebelum Matahari terbit. Sebab,\npanorama sunrise di kawasan ini sangat indah sehingga sayang jika dilewatkan.",
+          "Pemandangan yang dimiliki Negeri di Atas Awan ini dapat dimanfaatkan wisatawan\nsebagai background untuk berfoto. Hamparan gulungan awan yang dibarengi\ndengan pantulan cahaya jingga dari sang fajar dapat menambah estetika foto. Selain keindahan alam yang begitu menarik, di tempat ini juga terdapat beberapa\nspot untuk berfoto. sehingga bisa juga dijadikan sebagai latar untuk berfoto. Lokasi dan Rute\nJika tertarik berkunjung, kawasan Negeri di atas Awan terletak di Desa Lolai,\nKecamatan Kapala Pitu, Kabupaten Toraja Utara, Provinsi Sulawesi Selatan. Kawasan wisata ini berada di ketinggian sekitar 1.300 meter di atas permukaan laut. Dari Bandar Udara Pongtiku Toraja, jaraknya sekitar 19 km atau kurang lebih 1 jam\nperjalanan. Sementara jika ditempuh dari Rantepao jaraknya kurang lebih 15 km. Untuk sampai di tempat ini terbilang tidak mudah, karena wisatawan perlu melalui\njalan yang berliku-liku sebagaimana jalan menuju dataran tinggi atau pegunungan.",
+          "Daya tarik lainnya dari kawasan wisata ini yaitu keindahan matahari terbit atau\nsunrise. Tak jarang pengunjung rela mendirikan tenda dan menginap demi\nmenyaksikan keindahan tersebut.",
+          "Waktu paling tepat untuk berkunjung ke destinasi wisata Pango-pango yakni pada\nsore hari. Pengunjung bisa menantikan Matahari terbenam dan menikmati\nkeindahan langit berwarna jingga."
+        ],
+        "tokens_used": 2615,
+        "response_time_sec": 13.57,
+        "faithfulness_detail": {
+          "score": 0.7619,
+          "claims": [
+            {
+              "claim": "Negeri di Atas Awan Toraja adalah destinasi yang ideal untuk menyaksikan matahari terbit di atas awan.",
+              "supported": true
+            },
+            {
+              "claim": "Negeri di Atas Awan Toraja memiliki panorama hamparan awan yang menyelimuti lembah.",
+              "supported": true
+            },
+            {
+              "claim": "Matahari di Negeri di Atas Awan Toraja muncul perlahan dari balik awan dengan sinar jingga yang dipantulkan di awan.",
+              "supported": true
+            },
+            {
+              "claim": "Waktu terbaik untuk melihat matahari terbit di Negeri di Atas Awan Toraja adalah sekitar pukul 5.30 WITA.",
+              "supported": true
+            },
+            {
+              "claim": "Pengunjung disarankan menginap atau berkemah di Negeri di Atas Awan Toraja agar tidak ketinggalan sunrise.",
+              "supported": true
+            },
+            {
+              "claim": "Ketinggian Negeri di Atas Awan Toraja adalah sekitar 1.300 mdpl hingga 1.700 mdpl.",
+              "supported": true
+            },
+            {
+              "claim": "Negeri di Atas Awan Toraja berlokasi di Desa Lolai, Kecamatan Kapala Pitu, Kabupaten Toraja Utara, Sulawesi Selatan.",
+              "supported": true
+            },
+            {
+              "claim": "Jarak Negeri di Atas Awan Toraja adalah sekitar 19 km atau 1 jam dari Bandara Pongtiku.",
+              "supported": true
+            },
+            {
+              "claim": "Jarak Negeri di Atas Awan Toraja adalah sekitar 15 km dari Rantepao.",
+              "supported": true
+            },
+            {
+              "claim": "Rute menuju Negeri di Atas Awan Toraja berliku-liku menuju dataran tinggi.",
+              "supported": true
+            },
+            {
+              "claim": "Lembah Ollon adalah destinasi yang menawarkan panorama sunrise yang indah.",
+              "supported": true
+            },
+            {
+              "claim": "Pengunjung Lembah Ollon disarankan datang sebelum matahari terbit.",
+              "supported": true
+            },
+            {
+              "claim": "Negeri di Atas Awan Toraja menawarkan pemandangan awan bergulung yang luas.",
+              "supported": true
+            },
+            {
+              "claim": "Negeri di Atas Awan Toraja menyediakan spot foto estetis dengan cahaya jingga pagi.",
+              "supported": true
+            },
+            {
+              "claim": "Negeri di Atas Awan Toraja memiliki fasilitas rumah adat, villa, atau area camping untuk menginap.",
+              "supported": false
+            },
+            {
+              "claim": "Lembah Ollon cocok bagi pengunjung yang ingin menikmati sunrise yang lebih tersembunyi atau menambah variasi itinerary.",
+              "supported": false
+            },
+            {
+              "claim": "Untuk melihat sunrise di Negeri di Atas Awan Toraja, pengunjung disarankan berangkat malam sebelumnya atau menggunakan fasilitas stay-cation/camping ground.",
+              "supported": true
+            },
+            {
+              "claim": "Pengunjung disarankan datang paling lambat pukul 5.00 WITA untuk menyiapkan posisi foto di Negeri di Atas Awan Toraja.",
+              "supported": false
+            },
+            {
+              "claim": "Suhu di ketinggian 1.300 mdpl pada pagi hari terasa dingin-sejuk, sehingga pengunjung disarankan membawa pakaian hangat.",
+              "supported": false
+            },
+            {
+              "claim": "Destinasi yang paling cocok untuk melihat matahari terbit di atas awan di Toraja adalah Negeri di Atas Awan Toraja di Desa Lolai, Kapala Pitu.",
+              "supported": true
+            },
+            {
+              "claim": "Lembah Ollon menawarkan sunrise yang spektakuler.",
+              "supported": false
+            }
+          ],
+          "n_total": 21,
+          "n_supported": 16
+        },
+        "answer_relevancy_detail": {
+          "score": 0.7724,
+          "generated_questions": [
+            "Di mana tempat terbaik untuk melihat matahari terbit di atas awan di Toraja?",
+            "Sebutkan destinasi di Toraja yang ideal untuk menyaksikan sunrise beserta keterangannya.",
+            "Apa saja rekomendasi tempat dan tips untuk melihat sunrise di Negeri di Atas Awan Toraja dan Lembah Ollon?"
+          ],
+          "similarities": [
+            0.8051,
+            0.6999,
+            0.8123
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.8179,
+          "relevance_flags": [
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "n_relevant": 6,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Lolai dikenal sebagai Negeri di Atas Awan.",
+              "attributed": true
+            },
+            {
+              "claim": "Lolai adalah destinasi yang menawarkan pemandangan lautan awan.",
+              "attributed": true
+            },
+            {
+              "claim": "Lolai berada pada ketinggian 1.300 mdpl.",
+              "attributed": true
+            },
+            {
+              "claim": "Lolai sangat cocok untuk melihat matahari terbit di atas awan.",
               "attributed": true
             }
           ],
@@ -300,178 +955,543 @@
       }
     },
     {
-      "question": "Berapa harga tiket masuk ke Londa?",
-      "category": "destinasi",
-      "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.9548,
-      "context_precision": 0.3333,
-      "context_recall": 0.0,
-      "overall": 0.322,
-      "details": {
-        "actual_answer": "Maaf, saya tidak memiliki data mengenai harga tiket masuk ke Londa. Jika ada informasi lain yang bisa saya bantu, silakan beri tahu!",
-        "retrieved_contexts": [
-          "Untuk menuju tempat ini, dari Kolam Makale, kalian ambil jalur yang mengarah ke Kota Makassar. Perhatikan sisi kanan jalan agar bisa melihat plang nama tempat wisata ini. #2 Ollon Bonggakaradeng\nDari semua destinasi wisata alam yang ada di Toraja, menurut saya Ollon adalah juaranya. Meski untuk sampai kesana harus melewati jalan yang cukup ekstrim, rasa lelah selama perjalanan bisa terbayar begitu melihat pemandangan alam yang ada. Banyak yang bilang, tempat ini mirip dengan Swiss. Entah benar atau tidak, yang jelas tempat ini memang menyajikan pemandangan alam yang luar biasa indah. Sungai, bukit, dan gunung, semua ada di satu tempat. Untuk bisa sampai ke tempat ini, kita perlu naik motor atau mobil yang cukup “sehat” karena medan menuju kesana cukup berat. #3 Patung Yesus Memberkati\nDestinasi wisata yang satu ini jadi incaran banyak wisatawan yang berkunjung ke Toraja. Selain patung Yesus yang tinggi badannya mencapai 45 meter, di kawasan wisata tersebut juga ada gua Bunda Maria.",
-          "Berada di ketinggian 1.700 mdpl, Patung Yesus Buntu Burake disebut-sebut sebagai\npatung Yesus tertinggi di dunia. Ketinggian Patung Yesus Buntu Burake mencapai\n45 meter, mengalahkan ketinggian patung Yesus di Rio de Janeiro Brasil yang\nmemiliki ketinggian 38 meter.",
-          "Link: https://mojok.co/terminal/7-destinasi-wisata-toraja-yang-tak-boleh-dilewatkan-wisatawan/",
-          "Untuk sampai ke Tana Toraja wisatawan dapat menggunakan kendaraan darat, dari\nMakassar berjarak sekitar 329 km dengan jarak tempuh sekitar 8 jam. Alternatif lain,\nwisatawan juga dapat menggunakan pesawat dari Bandara Makassar."
-        ],
-        "tokens_used": 924,
-        "response_time_sec": 7.55,
-        "faithfulness_detail": {
-          "score": 0.0,
-          "claims": [
-            {
-              "claim": "Saya tidak memiliki data mengenai harga tiket masuk ke Londa.",
-              "supported": false
-            },
-            {
-              "claim": "Jika ada informasi lain yang bisa saya bantu, silakan beri tahu!",
-              "supported": false
-            }
-          ],
-          "n_total": 2,
-          "n_supported": 0
-        },
-        "answer_relevancy_detail": {
-          "score": 0.9548,
-          "generated_questions": [
-            "Berapa harga tiket masuk ke Londa?",
-            "Berapa biaya masuk ke Londa?",
-            "Berapa tarif tiket ke Londa?"
-          ],
-          "similarities": [
-            1.0,
-            0.8838,
-            0.9807
-          ]
-        },
-        "context_precision_detail": {
-          "score": 0.3333,
-          "relevance_flags": [
-            false,
-            false,
-            true,
-            false
-          ],
-          "n_relevant": 1,
-          "n_total": 4
-        },
-        "context_recall_detail": {
-          "score": 0.0,
-          "claims": [
-            {
-              "claim": "Harga tiket masuk Londa adalah Rp 20.000.",
-              "attributed": false
-            }
-          ],
-          "n_total": 1,
-          "n_attributed": 0
-        }
-      }
-    },
-    {
-      "question": "Di mana lokasi Patung Yesus Memberkati?",
-      "category": "destinasi",
-      "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0,
-      "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
-      }
-    },
-    {
-      "question": "Kapan Toraja Highland Festival 2025 diadakan?",
-      "category": "event",
-      "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0,
-      "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'OpenInference', 'is_byok': False, 'previous_errors': [{'code': 429, 'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
-      }
-    },
-    {
-      "question": "Berapa kisaran harga kamar di Toraja Heritage Hotel?",
-      "category": "akomodasi",
-      "difficulty": "factual",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0,
-      "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
-      }
-    },
-    {
-      "question": "Destinasi apa yang cocok untuk melihat matahari terbit di atas awan?",
-      "category": "rekomendasi",
-      "difficulty": "reasoning",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0,
-      "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
-      }
-    },
-    {
       "question": "Apa perbedaan antara Rambu Solo' dan Rambu Tuka'?",
       "category": "budaya",
       "difficulty": "reasoning",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0,
+      "faithfulness": 0.8095,
+      "answer_relevancy": 0.8085,
+      "context_precision": 1.0,
+      "context_recall": 0.8571,
+      "overall": 0.8688,
       "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+        "actual_answer": "**Perbedaan utama antara Rambu Solo’ dan Rambu Tuka’**\n\n| Aspek | Rambu Solo’ | Rambu Tuka’ |\n|-------|-------------|--------------|\n| **Tujuan utama** | Upacara pemakaman yang bertujuan menghantarkan arwah mendiang ke **Puya** (alam arwah) agar dapat bersatu dengan leluhur. Jika tidak diupacarakan dengan benar, arwah diyakini dapat mengganggu kehidupan keluarga. <br>*(Sumber 7, 8)* | Upacara syukuran/permohonan berkat kepada Sang Pencipta dan arwah leluhur. Digunakan untuk merayakan **kelahiran anak, pernikahan, pembangunan rumah adat baru (Mangrara Banua), selesai pembuatan lumbung, atau pencapaian lain**. <br>*(Sumber 1, 10)* |\n| **Waktu pelaksanaan** | Biasanya dilaksanakan pada **malam** atau waktu yang lebih khidmat, menyertakan rangkaian ritual yang panjang. <br>*(Sumber 4, 8)* | Dilaksanakan pada **siang hari** dan bersifat **suka cita**. <br>*(Sumber 1)* |\n| **Karakter suasana** | **Solemn, sakral, megah**; melibatkan banyak persiapan dan simbolisme kematian. <br>*(Sumber 7)* | **Meriah, penuh sukacita**, dengan tarian, nyanyian, dan doa‑doa. <br>*(Sumber 1)* |\n| **Jumlah dan jenis hewan kurban** | Tidak disebutkan secara rinci di sumber, tetapi tradisi pemakaman biasanya melibatkan **kurban besar**. | **Kurban lebih sedikit**, biasanya **babi atau ayam** dengan jumlah yang lebih sedikit dibandingkan Rambu Solo’. <br>*(Sumber 1)* |\n| **Elemen budaya yang ditampilkan** | Upacara pemakaman tradisional Aluk Todolo, termasuk proses **ma'badong** (nyanyian duka) bila ada kematian. <br>*(Sumber 10)* | Tarian, nyanyian **Rambu Tuka**, doa‑doa syukur, serta **Mangrara Banua** (syukuran rumah adat baru) sebagai bentuk khusus dari Rambu Tuka’. <br>*(Sumber 1, 10)* |\n| **Keterlibatan masyarakat** | Awalnya hanya bangsawan, kini sudah **dilakukan secara luas** oleh seluruh masyarakat Toraja. <br>*(Sumber 8)* | Merupakan **ajang reuni keluarga besar**, melibatkan banyak anggota keluarga dan tetangga dalam suasana gembira. <br>*(Sumber 1)* |\n\n### Ringkasnya\n- **Rambu Solo’** = ritual **pemakaman** yang sakral, bertujuan mengantar arwah ke alam akhirat, biasanya dilaksanakan pada malam hari dengan suasana khidmat.\n- **Rambu Tuka’** = ritual **syukuran** yang bersifat **suka cita**, dilakukan di siang hari untuk merayakan keberhasilan, kelahiran, pernikahan, atau pembangunan rumah adat, dengan kurban hewan yang lebih sedikit serta tarian dan nyanyian meriah.\n\nSemoga penjelasan ini membantu Anda memahami perbedaan kedua upacara adat penting dalam budaya Toraja! 🎉🕊️",
+        "retrieved_contexts": [
+          "Ini juga menjadi ajang reuni keluarga besar. Rambu Tuka'\nBerlawanan dengan Rambu Solo', Rambu Tuka' adalah upacara yang diadakan di\nsiang hari dan bersifat suka cita. Tujuan utama prosesi ini adalah memohon berkat kepada Sang Pencipta dan arwah\nleluhur, serta ungkapan syukur atas rezeki, kelahiran anak, pernikahan, atau\npembangunan rumah adat baru (Mangrara Banua). Dalam prosesinya, melibatkan penyembelihan hewan (biasanya babi atau ayam,\njumlahnya lebih sedikit dari Rambu Solo'), tarian, nyanyian, dan doa-doa. Suasana\nlebih meriah dan penuh sukacita. Mangrara Banua (Upacara Syukuran Rumah Adat Baru)\nMerupakan salah satu bentuk dari Rambu Tuka' yang dilakukan setelah\npembangunan atau renovasi besar rumah adat tongkonan. Tujuannya untuk\nmemberkati rumah dan keluarga yang akan mendiaminya. Pentingnya Prosesi Aluk Todolo bagi Masyarakat Toraja\nProsesi ini adalah inti dari identitas Toraja, membedakan mereka dari kelompok etnis\nlain.",
+          "\"Yang paling rendah itu namanya Sali jadi ada di tengah. Sisi utara itu Palangka dia\nagak tinggi, sebelah selatan agak tinggi juga namanya Sumbung. Jadi kedua sisi\ntinggi, tengah rendah,\" jelasnya. 2. Banua Duang Lanta'\nBerbeda dengan Dilalan Tedong, Banua Duang Lanta' memiliki tatanan ketinggian\nsemakin ke belakang maka semakin tinggi. Rumah adat Tongkonan Toraja ini\nmemiliki dua ruang, yakni Sali dan Sumbung. \"Untuk Duang Lanta', lantai depan dinamakan Sali, lantai belakang adalah\nSumbung,\" ujarnya. Sumbung digunakan sebagai tempat beristirahat. Sementara Sali biasa digunakan\nuntuk tempat memasak, dan tempat menyimpan jenazah bila ada yang meninggal\nnamun belum atau akan diupacarakan. 3. Banua Talung Lanta'\nBanua Talung Lanta' memiliki tiga tatanan ketinggian ruang. Masing-masing adalah\nSali, Paluang, dan Sumbung. \"Kalau Banua Tallung Lanta' terdiri dari Sali, Paluang, dan SuImbung,\" ujar\nMarselinus.",
+          "Kluwak dalam\nbahasa Toraja disebut Pamarrasan. Utan Daun Dua' Kayu Tu'tu' Sola Duku' Bai\nNamanya cukup panjang ya? Artinya adalah Daun Singkong Tumbuk dan Daging\nBabi. Jadi daun singkong muda ditumbuk, kemudian dimasak bersama irisan daging\nbabi, dan diberi bumbu bawang merah, bawang putih, cabe, lengkuas, dan sereh. Biasanya menu ini disajikan dengan nasi hangat dan sambal teri. Kapurung\nMakanan ini berbahan dasar tepung sagu yang dicairkan air panas, setelah menjadi\nadonan, dibentuk bulat-bulat, kemudian dicemplungkan ke dalam kuah ikan. Biasanya ditambahkan suwiran ikan, irisan daging, sayuran, kacang goreng yang",
+          "Dewan Masyarakat Adat Nusantara, Eric Crystal Ranteallo mengatakan Rambu Solo\nmerupakan ritual sakral bagi masyarakat Toraja. Ritual Rambu Solo ini telah\ndilakukan oleh Aluk Todolo, atau nenek moyang dari suku Toraja.",
+          "Link:\nhttps://www.detik.com/sulsel/budaya/d-6026069/tradisi-mangrara-banua-toraja-syuku\nran-rumah-tongkonan-ratusan-babi-dipotong",
+          "Sa’dan To’ Barana’\nterdiri dari 2 kata, yaitu Sa’dan yang berarti batang air dan To’ Barana’ yang\nbermakna pohon beringin. Terletak di sisi sungai Sa’dan, objek wisata ini merupakan\npusat tenun tradisional Toraja. Tongkonan To’ Barana’ pertama kali dibangun oleh\nnenek moyang keluarga To’ Barana’ yang bernama Langi’ Para’pak (Tolla’). Awalnya\ntongkonan ini terletak di Pali’pangan kemudian dipindahkan ke tongkonan To’\nNangka’ sebelum akhirnya dipindahkan ke To’ Barana’. Sa’dan To’Barana’ saat ini merupakan desa tenun yang terkenal dengan\nkeindahannya kerajinan tenun atau tenun. Para perajin wanita masih\nmenggunakannya alat tradisional yang terbuat dari kayu dan bambu untuk menenun\ndan mengikat kain warna-warni ini. Di desa ini, menenun merupakan kegiatan yang\ndilakukan secara turun temurun. Bahkan tali atau benang yang digunakan pada kain\ndibuat dari bahan alami seperti kulit kayu atau kapas dan dipintal dengan tangan\nsehingga menjadi benang.",
+          "Rambu Solo'\nIni adalah ritual terpenting dan paling megah dalam Aluk Todolo. Rambu Solo' bukan\nsekadar pemakaman, melainkan serangkaian upacara yang bertujuan untuk\nmenghantarkan arwah mendiang ke Puya (alam arwah/akhirat) agar mendiang\ndapat bersatu dengan leluhur. Tujuan utama kepercayaan Aluk Todolo dalam ritual ini adalah menjamin perjalanan\narwah ke Puya dan menjadi tomembali puang (yang menjadi dewa/leluhur). Arwah\nyang tidak diupacarakan dengan benar dipercaya akan mengganggu kehidupan\nsanak keluarga.",
+          "Link: https://www.gotravelaindonesia.com/upacara-adat-rambu-solo/\nUpacara Adat Rambu Solo\nUpacara Adat Rambu Solo, upacara khas suku Toraja, Sulawesi Selatan. Pada\nawalnya, Upacara Adat Rambu Solo adalah upacara pemakaman yang oleh para\nbangsawan saja. Namun sekarang ini, masyarakat Tana Toraja telah melakukan\nUpacara Rambu Solo secara luas.",
+          "2. Sayur Tuttu (daun ubi)\nSayur Tuttu adalah salah satu makanan favorit orang Toraja. Sayuran ini terbuat dari\ndaun singkong yang ditumbuk atau dalam bahasa lokal disebut tuttu.",
+          "Rambu Tuka' adalah upacara adat masyarakat Toraja yang dilakukan untuk mensyukuri suatu keberhasilan. Keberhasilan yang biasa disyukuri yaitu pembuatan Rumah Adat Toraja berupa Tongkonan (Mangrara Banua), mensyukuri selesainya pembuatan Lumbung (Ma'kurre Sumanga' alang) dan upacara perkawinan juga termasuk dalam Rambu Tuka'. Ma'badong adalah nyanyian duka pada waktu ada orang meninggal, dilakukan dengan membentuk lingkaran di halaman rumah duka, tiap-tiap kampung mempunyai ciri masing-masing dalam melakukan acara ma'badong. Ma'badong dapat dilakukan pada siang hari maupun malam hari, akan tetapi banyak orang yang lebih menyenangi melakukan ma'badong pada malam hari karena menganggap suasananya lebih hening sehingga lagu yang dinyanyikan terasa begitu syahdu. Jumlah penyanyi dalam ritual kesenian ma'badong ini adalah minimal 20 orang dan sebanyak-banyaknya. Objek Wisata Buatan\nPasar Hewan Bolu merupakan pasar tradisional terbesar di Toraja, berlokasi sekitar 2 km di sebelah utara Rantepao."
+        ],
+        "tokens_used": 3078,
+        "response_time_sec": 8.61,
+        "faithfulness_detail": {
+          "score": 0.8095,
+          "claims": [
+            {
+              "claim": "Rambu Solo’ adalah upacara pemakaman yang bertujuan menghantarkan arwah mendiang ke Puya (alam arwah) agar dapat bersatu dengan leluhur.",
+              "supported": true
+            },
+            {
+              "claim": "Jika Rambu Solo’ tidak diupacarakan dengan benar, arwah diyakini dapat mengganggu kehidupan keluarga.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Solo’ biasanya dilaksanakan pada malam atau waktu yang lebih khidmat.",
+              "supported": false
+            },
+            {
+              "claim": "Rambu Solo’ menyertakan rangkaian ritual yang panjang.",
+              "supported": true
+            },
+            {
+              "claim": "Karakter suasana Rambu Solo’ adalah solemn, sakral, dan megah.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Solo’ melibatkan banyak persiapan dan simbolisme kematian.",
+              "supported": false
+            },
+            {
+              "claim": "Tradisi pemakaman Rambu Solo’ biasanya melibatkan kurban besar.",
+              "supported": false
+            },
+            {
+              "claim": "Rambu Solo’ merupakan upacara pemakaman tradisional Aluk Todolo.",
+              "supported": true
+            },
+            {
+              "claim": "Proses ma'badong (nyanyian duka) dilakukan dalam Rambu Solo’ bila ada kematian.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Solo’ awalnya hanya dilakukan oleh bangsawan, namun kini sudah dilakukan secara luas oleh seluruh masyarakat Toraja.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Tuka’ adalah upacara syukuran atau permohonan berkat kepada Sang Pencipta dan arwah leluhur.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Tuka’ digunakan untuk merayakan kelahiran anak, pernikahan, pembangunan rumah adat baru (Mangrara Banua), selesai pembuatan lumbung, atau pencapaian lain.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Tuka’ dilaksanakan pada siang hari.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Tuka’ bersifat suka cita.",
+              "supported": true
+            },
+            {
+              "claim": "Karakter suasana Rambu Tuka’ adalah meriah dan penuh sukacita.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Tuka’ melibatkan tarian, nyanyian, dan doa-doa.",
+              "supported": true
+            },
+            {
+              "claim": "Jumlah hewan kurban pada Rambu Tuka’ lebih sedikit dibandingkan Rambu Solo’.",
+              "supported": true
+            },
+            {
+              "claim": "Hewan kurban yang biasanya digunakan dalam Rambu Tuka’ adalah babi atau ayam.",
+              "supported": true
+            },
+            {
+              "claim": "Elemen budaya Rambu Tuka’ meliputi tarian, nyanyian Rambu Tuka, dan doa-doa syukur.",
+              "supported": true
+            },
+            {
+              "claim": "Mangrara Banua (syukuran rumah adat baru) adalah bentuk khusus dari Rambu Tuka’.",
+              "supported": true
+            },
+            {
+              "claim": "Rambu Tuka’ merupakan ajang reuni keluarga besar yang melibatkan banyak anggota keluarga dan tetangga.",
+              "supported": false
+            }
+          ],
+          "n_total": 21,
+          "n_supported": 17
+        },
+        "answer_relevancy_detail": {
+          "score": 0.8085,
+          "generated_questions": [
+            "Apa perbedaan antara Rambu Solo’ dan Rambu Tuka’?",
+            "Jelaskan perbedaan tujuan, waktu, dan suasana antara upacara Rambu Solo’ dan Rambu Tuka’.",
+            "Apa yang membedakan ritual pemakaman Rambu Solo’ dengan ritual syukuran Rambu Tuka’ dalam budaya Toraja?"
+          ],
+          "similarities": [
+            0.9875,
+            0.7723,
+            0.6657
+          ]
+        },
+        "context_precision_detail": {
+          "score": 1.0,
+          "relevance_flags": [
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "n_relevant": 1,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 0.8571,
+          "claims": [
+            {
+              "claim": "Rambu Solo' adalah upacara pemakaman adat Toraja.",
+              "attributed": true
+            },
+            {
+              "claim": "Rambu Solo' bersifat sakral dan duka.",
+              "attributed": true
+            },
+            {
+              "claim": "Rambu Solo' melibatkan penyembelihan kerbau.",
+              "attributed": false
+            },
+            {
+              "claim": "Rambu Tuka' adalah upacara syukuran.",
+              "attributed": true
+            },
+            {
+              "claim": "Rambu Tuka' bersifat gembira.",
+              "attributed": true
+            },
+            {
+              "claim": "Rambu Tuka' terkait peresmian Tongkonan baru.",
+              "attributed": true
+            },
+            {
+              "claim": "Rambu Tuka' terkait pernikahan adat.",
+              "attributed": true
+            }
+          ],
+          "n_total": 7,
+          "n_attributed": 6
+        }
       }
     },
     {
       "question": "Jika saya ingin mengunjungi situs pemakaman tebing batu yang murah dan dekat dengan hotel budget, destinasi dan hotel apa yang cocok?",
       "category": "rekomendasi",
       "difficulty": "multi_hop",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
-      "context_precision": 0.0,
-      "context_recall": 0.0,
-      "overall": 0.0,
+      "faithfulness": 0.5714,
+      "answer_relevancy": 0.7852,
+      "context_precision": 0.5,
+      "context_recall": 0.2,
+      "overall": 0.5141,
       "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+        "actual_answer": "**Rekomendasi : Kuburan Londa + Hotel budget di Rantepao**\n\n| Elemen | Detail dari sumber |\n|--------|-------------------|\n| **Situs pemakaman tebing batu** | **Kuburan Londa** – kompleks pemakaman tua yang terletak di tebing‑tebing batu gelap. Di dalamnya terdapat peti mati yang digantung, boneka‑boneka jenazah, serta goa dengan tulang‑belulang. <br> • Harga tiket masuk: **sekitar Rp 5.000** (sama dengan tiket masuk ke situs‑situs serupa di Toraja). <br> • Lokasi: tidak jauh dari Lemo; menurut *Spot Wisata Toraja* (sumber 6) jaraknya ≈ 4,6 km dari Gua Lemo, sehingga berada dalam radius 10 km dari pusat kota Rantepao. |\n| **Hotel budget terdekat** | **Hotel Hiltra** – berada di Jl. Pramuka No. 70, Rantepao, Toraja Utara. <br> • Harga: **Rp 427.500/malam** (pilihan yang cukup terjangkau untuk standar hotel di Toraja). <br> • Keunggulan: letak strategis di tepi kota, dekat dengan banyak objek wisata (mis. Kuburan Batu Tambolang, situs megalitik Rante Karassik). <br> • Fasilitas: restoran, kafe kopi Toraja, Wi‑Fi, dan parkir. |\n| **Alternatif hotel budget** | **Niel Hotel** – Jl. Poros Makale‑Rantepao, Kesu, Toraja Utara. <br> • Harga: **Rp 475.000/malam**. <br> • Dikenal karena taman dalam halaman yang tenang, cocok bila menginginkan suasana lebih damai setelah mengunjungi lokasi mistik. |\n| **Cara sampai** | Dari Hotel Hiltra (atau Niel Hotel) Anda dapat: <br>1. **Jalan kaki / sepeda** (≈ 10‑15 menit) ke terminal Rantepao, kemudian naik **angkutan umum (bemo) atau taksi** menuju Londa. <br>2. Jarak tempuh total sekitar **8‑12 km**, perjalanan biasanya 20‑30 menit tergantung kondisi jalan. |\n| **Kenapa cocok?** | - **Murah**: tiket masuk hanya Rp 5.000, sehingga total biaya kunjungan tetap rendah. <br> - **Dekat**: hotel berada di pusat Rantepao, sementara Kuburan Londa berada di pinggiran kota, jadi tidak memerlukan perjalanan panjang atau akomodasi di daerah terpencil. <br> - **Akses mudah**: jalan menuju Londa dapat dilalui kendaraan umum atau taksi, dan ada petunjuk jalan yang jelas dari pusat kota. <br> - **Pengalaman budaya**: selain melihat pemakaman tebing batu, Anda juga dapat melihat tau‑tau, peti mati gantung, dan goa‑goa berisi tulang‑belulang, memberikan gambaran lengkap tentang tradisi **Aluk‑To‑Dolo** Toraja. |\n\n### Ringkasan itinerary satu hari\n\n| Waktu | Kegiatan |\n|-------|----------|\n| **08.00 – 09.00** | Sarapan di hotel (kafe kopi Toraja). |\n| **09.00 – 09.30** | Check‑out (jika hanya satu malam) atau tinggalkan barang di resepsionis. |\n| **09.30 – 10.00** | Perjalanan ke Kuburan Londa (bemo/taksi). |\n| **10.00 – 12.00** | Jelajahi situs pemakaman tebing batu, foto‑foto, dan dengarkan penjelasan guide (jika ada, biaya guide tambahan Rp 25.000‑50.000). |\n| **12.00 – 13.00** | Makan siang di warung lokal (coba **pa’piong** atau **sate babi**). |\n| **13.00 – 14.00** | Kembali ke Rantepao, singgah di pasar tradisional atau **Kuburan Batu Tambolang** (jika masih ada waktu). |\n| **14.00 – 15.00** | Check‑in kembali ke hotel, istirahat atau nikmati fasilitas (Wi‑Fi, kolam renang). |\n| **Sore** | Eksplorasi pusat kota Rantepao atau bersantai di kafe hotel. |\n\n---\n\n**Kesimpulan:**  \nJika Anda mengutamakan **biaya masuk yang rendah** dan **kemudahan akses** dari akomodasi yang terjangkau, **Kuburan Londa** adalah pilihan tepat. **Hotel Hiltra** (Rp 427.500/malam) atau **Niel Hotel** (Rp 475.000/malam) berada dekat pusat Rantepao, sehingga perjalanan ke Londa menjadi singkat dan nyaman. Selamat berwisata dan merasakan keunikan budaya Toraja!  ",
+        "retrieved_contexts": [
+          "Selain lubang-lubang makan di\ndinding, terdapat juga Tau-tau yang menandakan kebangsawanan. Dari parkiran, kita cukup berjalan kaki menyusuri tangga dan pematang sawah. Waktu kunjungan saya ke sana, terdapat 2 buah tongkonan kecil yang biasanya\ndigunakan saat upacara pemakaman. Harga tiket masuk: sekitar Rp 5.000,-\n5. Londa\nLokasinya tak jauh dari Lemo. Komplek pekuburan Londa ini sudah cukup\nterkenal dikalangan wisatawan yang ingin berkunjung. Londa sendiri\nmenawarkan pengunjungnya untuk menyusuri goa yang di dalamnya terdapat\nbanyak peti mati dan tulang belulang yang diletakkan begitu saja. Agak berbeda di tempat ini, saya mendapatkan penjelasan dari guide yang\nmenemani saya. Di bagian luar, selain makam tebing, dan Tau-tau, terdapat juga\nbanyak peti mati yang digantung yang kondisinya sudah lapuk dimakan usia. Selanjutnya, bapak itu menemani kami masuk untuk menyusuri goa. Nyali saya\nsedikit teruji saat memasuki pintu goa, melihat tengkorak dan tulang-belulang\nlainnya di kiri kanan.",
+          "Sentuhan tradisional terlihat dari atap bangunan serta lukisan khas Toraja di setiap\nsudut hotel. Fasilitasnya pun terbilang lengkap. Ada restoran, koneksi internet serta\nkolam renang. 3. Hotel Hiltra\nAlamat : Jl. Pramuka No. 70, Rantepao, Toraja Utara\nHarga : Rp427.500/malam\nTerletak tepat di tepi Kota Rantepao, Hotel Hiltra unggul dalam letak strategis. Berada tepat di tengah keramaian sekaligus cukup dekat dari beberapa objek\nwisata, seperti Kuburan Batu Tambolang dan situs makam megalitik Rante Karassik. Fasilitas yang tersedia, antara lain: restoran, kafe yang menyajikan kopi khas Toraja,\nditambah koneksi internet. Kalau kamu liburan sambil membawa pekerjaan, hotel ini\nbisa menjadi pilihan. 4. Niel Hotel\nAlamat : Jl. Poros Makale - Rantepao, Kesu, Toraja Utara\nHarga : Rp475.000/malam\nHotelnya mungkin kecil, namun Niel Hotel Toraja tersohor berkat taman-taman yang\nberada di halaman dalam hotel. Ketenangan siap menyambut para tamu yang\nmenginap.",
+          "Keunikan wisata ini yaitu gua alam yang dijadikan sebagai tempat penguburan\nmasyarakat Toraja pada zaman dulu. Berbeda dengan pemakaman pada umumnya\nyang dikubur atau dikremasi, masyarakat Toraja memiliki tradisi menempatkan peti\njenazah di dalam atau tebing-tebing batu gua.",
+          "Biaya masuknya pun cukup murah, yakni Rp 10.000 per\norang. Berlaku bagi wisatawan lokal maupun mancanegara. Jika ingin masuk ke dalam goa, pengunjung bisa menyewa jasa pemandu wisata. Biayanya berkisar antara Rp 25.000 - Rp 50.000 lengkap dengan peralatan\npenerangan berupa senter atau petromak. Wisata Kompleks Megalitikum Kalimbuang Bori\nSekitar 8 km ke sebelah utara Rantepao, terdapat sebuah situs wisata berisi\nhamparan bebatuan besar mirip stonehenge di Inggris. Batu-batu besar atau yang\nmenhir ini merupakan peninggalan zaman purba megalitikum. Ratusan menhir dengan berbagai ukuran ditancapkan di sebuah lahan berumput\ndan menjulang tinggi. Oleh UNESCO, kawasan ini telah ditetapkan sebagai salah\nsatu wisata warisan dunia. Bagi masyarakat Toraja, tempat ini biasanya dijadikan tempat upacara adat\npemakaman bagi para pemuka adat atau keluarga bangsawan tinggi yang\nmeninggal. Jika beruntung, pengunjung bisa melihat langsung prosesi pemotongan\nhewan-hewan kerbau untuk upacara di tempat ini.",
+          "Link:\nhttps://www.detik.com/sulsel/wisata/d-6245765/mengenal-pohon-kuburan-bayi-di-tan\na-toraja-jejak-kepercayaan-aluk-todolo\nMengenal Pohon Kuburan Bayi di Tana Toraja, Jejak\nKepercayaan Aluk Todolo\nTana Toraja - Pohon kuburan bayi atau Baby Graves merupakan salah satu destinasi\nwisata di Tana Toraja, Sulawesi Selatan (Sulsel) yang cukup populer. Tempat wisata\nini menyimpan jejak kepercayaan Aluk Todolo yang dianut masyarakat suku Toraja\nmasa dahulu. Pohon kuburan bayi ini terletak di Kecamatan Makale Utara, Tana Toraja, Sulawesi\nSelatan (Sulsel). Tempat wisata ini juga biasa dikenal dengan nama Baby Kambira\nGrave. Penjaga pohon kuburan bayi, Mathen Domme mengatakan penguburan bayi di\npohon merupakan tradisi masyarakat terdahulu yang menganut kepercayaan leluhur\natau Aluk Todolo. Tradisi penguburan bayi pada batang pohon ini disebut Passiliran. Pohon yang digunakan dalam tradisi ini juga tidak sembarangan.",
+          "Boneka ini ditaruh di dekat dengan lokasi\nmakam dari jenazah yang bersangkutan di sebuah tebing batu. Meski terkesan menyeramkan, pemakaman ini tetap mampu memancarkan\npanorama indah berkat kombinasi warna batu keputihan berona merah dan\nboneka yang terpampang di sana. 2. Kuburan Londa\nBerjarak 4,6 km dari Gua Lemo, kamu bisa mampir ke wisata spiritual lainnya,\nyaitu kompleks pemakaman tua atau Kuburan Londa. Objek wisata ini\ndianggap punya suasana mistis yang kental karena makamnya berada di\nbebatuan berwarna gelap. Hampir mirip dengan pemakaman Gua Lemo, di sini kita juga dapat melihat\nboneka dari setiap jenazah yang sudah disemayamkan. 3. Desa Kete Kesu\nDesa adat Kete Kesu punya jarak 8,6 km dari Kuburan Londa. Lokasinya\nberupa hamparan padang rumput dan padi yang mengelilingi rumah adat\nTongkonan yang sebagiannya diperkirakan berusia 300 tahun.",
+          "Link: https://www.gotravelaindonesia.com/makam-batu-bori-parinding/\nMakam Batu Bori Parinding\nMakam Batu Bori Parinding adalah situs makam yang menjadi destinasi wisata. Makam ini merupakan situs purbakala yang kuno dan terletak di Tana Toraja,\nSulawesi Selatan. Bukannya akan merinding, kamu justru akan terkesima. Bahkan. warisan purbakala ini telah menjadi warisan dunia oleh UNESCO loh. Yuk simak\nulasannya. Makam Batu Bori Parinding : Situs Megalitikum Tana Toraja\nYang Eksotik\nTana Toraja memiliki tradisi kematian unik yang bahkan menjadi destinasi wisata. Tradisi seperti Upacara Rambu Solo hingga Tradisi Ma’nene bahkan terkenal hingga\nmancanegara yang setiap tahunnya berhasil menarik perhatian. Masyarakat Toraja sangat menghargai leluhurnya dan menghormati orang yang\ntelah pergi lebih dahulu. Mereka berkeyakinan jika jiwa jiwa yang mati adalah leluhur\nyang harus dihormati dan dihargai. Namun, tahukah kamu jika Tana Toraja masih memiliki keunikan lainnya.",
+          "Namun dibalik kemistisannya tersebut ada\npesona keindahan yang luar biasa dari wisata Toraja ini. Kuburan Londa akan\nmemberikan pengalaman wisata yang tidak terlupakan. Tempat ini digunakan\nuntuk menyimpan jenazah para leluhur dilengkapi boneka-boneka yang\nterlihat menyeramkan. Pastikan Anda mengikuti aturan dan menjaga tingkah\nlaku selama mengunjungi tempat ini. 5. Gumuk Pasir Sumalu\nBerikutnya ada Gumuk Pasir Sumalu yang juga jadi pilihan destinasi wisata\nfavorit di Toraja. Tempat wisata Toraja ini merupakan bentangan padang pasir\nyang sangat luas. Di sana juga ada bebatuan besar yang terlihat begitu\neksotis. Tempat ini cocok juga dijadikan sebagai lokasi foto karena\npanoramanya sangat indah dan unik. Tempat wisata Toraja satu ini juga\nmenjadi spot favorit untuk menikmati keindahan matahari terbit dan terbenam. Menariknya lagi, Gumuk Pasir Sumalu juga sering dijadikan sebagai tempat",
+          "Situs ini terletak dekat dengan jalan utama, sedikit tersembunyi di belakang\npagar. Dari jalan utama, terdapat anak tangga yang membawa ke pintu\ngerbang di atas dimana tiket masuk dijual. Tempat ini mudah dikenali dengan\nadanya puluhan batu menjulang yang bisa dilihat dari balik pagar. Kawasan ini merupakan kawasan terbuka dengan lebih dari 100 menhir berdiri yang\nmerepresentasikan kemuliaan jiwa-jiwa mereka yang dimakamkan di sini yang\nberbatasan dengan Bori’ Parinding. Berdampingan dengan Bori’ Parinding adalah\nsitus pemakaman tradisional dimana ceruk-ceruk makam dipahatkan di tebing\nkarang. Tulang-tulang terbaring menumpuk tertutup semak di dekat kuburan. Di\nbelakang situs pemakaman tradisional ini, di atas Bori’ Parinding terdapat\npemakaman modern. 4. Salib Bukit Singki’\nDibangun dan selesai tepat waktu untuk rangkaian Lovely December 2016 di Toraja\n(sebuah acara yang diadakan setiap akhir tahun), salib besar menghadap kota\nRantepao dengan tulisan besar nama “Toraja Utara”\ndi bawahnya.",
+          "Sembari melihat-lihat, sahabat yang menemani\nperjalanan saya — Tandik — tetap dengan setiap memberi penjelasan. 7. Bori\nKawasan wisata Bori ini cukup berbeda dengan makam-makam lain yang saya\ntemui. Di sini kita bisa melihat Batu Menhir raksasa memanjang ke atas dan\nditancapkan ke tanah. Saya berjalan menyusuri sekeliling tempat ini karena\nmemang tidak terlalu luas dan mengambil beberapa gambar untuk dijadikan\nsebagai kenangan. Harga tiket masuk: sekitar Rp 5.000,-\n8. Kete Kesu\nKete Kesu merupakan salah satu tempat wisata di Toraja yang paling sering\ndikunjungi. Jaraknya pun tak begitu jauh dari Kota Rantepao. Kete Kesu boleh\ndibilang cukup lengkap, ada Tongkonan, juga makam tebing dan goa. Harga tiket masuk: sekitar Rp 10.000,-\n9. Batutumonga\nTana Toraja begitu identik dengan kuburan dan upacara kematian. Tapi tidak bila\nkamu berkunjung ke Batutumonga yang menawarkan keindahan yang begitu\nmenakjubkan. Melihat keindahan Tana Toraja dari ketinggian. Batutumonga ibarat negeri di atas awan."
+        ],
+        "tokens_used": 4515,
+        "response_time_sec": 17.87,
+        "faithfulness_detail": {
+          "score": 0.5714,
+          "claims": [
+            {
+              "claim": "Kuburan Londa adalah kompleks pemakaman tua yang terletak di tebing-tebing batu gelap.",
+              "supported": true
+            },
+            {
+              "claim": "Di dalam Kuburan Londa terdapat peti mati yang digantung, boneka-boneka jenazah, dan goa dengan tulang-belulang.",
+              "supported": true
+            },
+            {
+              "claim": "Harga tiket masuk Kuburan Londa sekitar Rp 5.000.",
+              "supported": false
+            },
+            {
+              "claim": "Kuburan Londa berjarak sekitar 4,6 km dari Gua Lemo.",
+              "supported": true
+            },
+            {
+              "claim": "Kuburan Londa berada dalam radius 10 km dari pusat kota Rantepao.",
+              "supported": false
+            },
+            {
+              "claim": "Hotel Hiltra berada di Jl. Pramuka No. 70, Rantepao, Toraja Utara.",
+              "supported": true
+            },
+            {
+              "claim": "Harga menginap di Hotel Hiltra adalah Rp 427.500 per malam.",
+              "supported": true
+            },
+            {
+              "claim": "Hotel Hiltra terletak strategis di tepi kota dan dekat dengan Kuburan Batu Tambolang serta situs megalitik Rante Karassik.",
+              "supported": true
+            },
+            {
+              "claim": "Hotel Hiltra memiliki fasilitas restoran, kafe kopi Toraja, Wi-Fi, dan parkir.",
+              "supported": false
+            },
+            {
+              "claim": "Niel Hotel berada di Jl. Poros Makale-Rantepao, Kesu, Toraja Utara.",
+              "supported": true
+            },
+            {
+              "claim": "Harga menginap di Niel Hotel adalah Rp 475.000 per malam.",
+              "supported": true
+            },
+            {
+              "claim": "Niel Hotel memiliki taman dalam halaman yang tenang.",
+              "supported": true
+            },
+            {
+              "claim": "Dari Hotel Hiltra atau Niel Hotel, pengunjung dapat berjalan kaki atau bersepeda sekitar 10-15 menit ke terminal Rantepao.",
+              "supported": false
+            },
+            {
+              "claim": "Dari terminal Rantepao, pengunjung dapat menggunakan angkutan umum (bemo) atau taksi menuju Londa.",
+              "supported": false
+            },
+            {
+              "claim": "Jarak tempuh total dari hotel ke Londa sekitar 8-12 km.",
+              "supported": false
+            },
+            {
+              "claim": "Waktu perjalanan dari hotel ke Londa biasanya memakan waktu 20-30 menit.",
+              "supported": false
+            },
+            {
+              "claim": "Jalan menuju Londa dapat dilalui kendaraan umum atau taksi.",
+              "supported": false
+            },
+            {
+              "claim": "Di Kuburan Londa, pengunjung dapat melihat tau-tau, peti mati gantung, dan goa berisi tulang-belulang.",
+              "supported": true
+            },
+            {
+              "claim": "Tradisi pemakaman di Toraja berkaitan dengan Aluk-To-Dolo.",
+              "supported": true
+            },
+            {
+              "claim": "Biaya guide di Kuburan Londa berkisar antara Rp 25.000 hingga Rp 50.000.",
+              "supported": true
+            },
+            {
+              "claim": "Pa'piong dan sate babi adalah pilihan makanan lokal di sekitar lokasi.",
+              "supported": false
+            }
+          ],
+          "n_total": 21,
+          "n_supported": 12
+        },
+        "answer_relevancy_detail": {
+          "score": 0.7852,
+          "generated_questions": [
+            "Rekomendasikan situs pemakaman tebing batu yang murah dan hotel budget di Rantepao.",
+            "Apa rekomendasi hotel terjangkau dan tempat wisata pemakaman di Toraja yang aksesnya mudah dari pusat kota Rantepao?",
+            "Bisa buatkan itinerary satu hari untuk mengunjungi Kuburan Londa dengan rekomendasi hotel budget di Rantepao?"
+          ],
+          "similarities": [
+            0.898,
+            0.71,
+            0.7475
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.5,
+          "relevance_flags": [
+            false,
+            true,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "n_relevant": 1,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 0.2,
+          "claims": [
+            {
+              "claim": "Londa dan Lemo adalah pilihan untuk situs pemakaman tebing batu.",
+              "attributed": true
+            },
+            {
+              "claim": "Tiket masuk untuk Londa dan Lemo adalah Rp 20.000.",
+              "attributed": false
+            },
+            {
+              "claim": "Toraja Sanggalangi Homestay adalah hotel budget terdekat.",
+              "attributed": false
+            },
+            {
+              "claim": "Toraja Sanggalangi Homestay berlokasi dekat Londa & Lemo.",
+              "attributed": false
+            },
+            {
+              "claim": "Harga Toraja Sanggalangi Homestay sekitar Rp 140.000 - Rp 320.000 per malam.",
+              "attributed": false
+            }
+          ],
+          "n_total": 5,
+          "n_attributed": 1
+        }
       }
     },
     {
       "question": "Berapa total penduduk Kabupaten Toraja Utara tahun 2026?",
       "category": "out_of_scope",
       "difficulty": "out_of_scope",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9688,
       "context_precision": 0.0,
       "context_recall": 0.0,
-      "overall": 0.0,
+      "overall": 0.4922,
       "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+        "actual_answer": "Maaf, saya tidak menemukan data mengenai jumlah total penduduk Kabupaten Toraja Utara untuk tahun 2026 dalam sumber‑sumber yang Anda berikan. Jika ada sumber lain yang memuat statistik kependudukan terbaru, saya dapat membantu mencarinya.",
+        "retrieved_contexts": [
+          "Selain hunian yang layak, faktor lain yang juga harus diperhatikan adalah Rumah Makan/Restoran. Hal ini dikarenakan di Kabupaten Toraja Utara sendiri memiliki berbagai jenis makanan yang unik dan khas yang membedakan dengan daerah lainnya. Tabel 8.1.3 Jumlah Hotel dan Akomodasi Lainnya Menurut Klasifikasi di Kabupaten Toraja Utara, 2018-2023\nSumber : Disbudpar Kabupaten Toraja Utara\nTabel 8.1.4 Jumlah Rumah Makan/Restoran Menurut Kecamatan di Kabupaten Toraja Utara, 2020-2023\nSumber : BPS Kabupaten Toraja Utara\nC. Destinasi Wisata\nAlam, sejarah, budaya, religi hingga sumber daya manusia di Kabupaten Toraja Utara memiliki potensi kepariwisataan yang dapat digali lebih jauh sehingga menarik wisatawan untuk berkunjung ke Kabupaten Toraja Utara. Kabupaten Toraja Utara memiliki beraneka ragam objek wisata yang menawarkan berjuta keindahan dan nilai-nilai inspiratif bagi yang menikmatinya.",
+          "Kecamatan | 2020 | 2021 | 2022 | 2023 | 2024\nSopai | 4 | 1 | 1 | 2 | 9\nKesu | 70 | 79 | 78 | 51 | 113\nSanggalangi | 8 | 2 | 5 | 5 | 12\nBuntao | 6 | - | - | - | 6\nRantebua | 6 | - | - | - | 7\nNanggala | 4 | - | 1 | 1 | 6\nTondon | 5 | 1 | 2 | 2 | 6\nTallunglipu | 99 | 88 | 215 | 119 | 120\nRantepao | 353 | 244 | 220 | 213 | 456\nTikala | 7 | 3 | 4 | 5 | 7\nSesean | 12 | 5 | 8 | 10 | 16\nBalusu | 8 | - | - | - | 11\nSa'dan | 9 | 3 | 3 | 3 | 9\nBangkele Kila | 3 | - | - | - | 3\nSesean Suloara | 4 | 4 | 2 | - | 13\nKapala Pitu | 1 | 3 | 5 | 1 | 8\nDende Piongan Napo | 7 | - | - | - | 7\nAwan Rante Karua | 1 | - | - | - | 2\nRindingallo | 7 | 1 | 3 | 4 | 10\nBuntu Pepasan | 9 | 1 | 3 | 2 | 10\nBaruppu | 4 | - | 1 | 2 | 7\nJumlah | 627 | 435 | 551 | 420 | 838",
+          "Grafik 8.1.1 Perkembangan Jumlah Wisatawan Nusantara dan Mancanegara yang Berkunjung ke Kabupaten Toraja Utara, 2022-2024\nSumber : Disbudpar Kab. Toraja Utara\nA. Jumlah Wisatawan\nPasca Covid 19, jumlah Wisatawan yang berkunjung ke Kabupaten Toraja Utara baik Wisatawan Nusantara maupun Mancanegara berangsur membaik dan terus mengalami peningkatan jumlah wisatawan seperti yang terlihat pada Grafik 8.1.1. Jumlah Wisatawan Nusantara Tahun 2023 adalah 274.553 sedangkan tahun 2024 sebanyak 327.073, meningkat sebanyak 19,13%. Untuk Wisatawan Mancanegara Tahun 2023 berjumlah 9.728 dan di tahun 2024 berjumlah 16.084 atau meningkat 465,34%.",
+          "Memasuki hari kedua pelaksanaan Fam Trip Toraja Utara 2025, para peserta\nmengikuti kunjungan ke Pasar Hutan Bambu, di objek wisata To’kumila’, Sabtu 19\nJuli 2025. Famtrip Toraja Utara 2025 ini dilaksanakan selama dua hari, mulai 18-19 Juli 2025,\ndengan peserta Famtrip sebanyak 21 orang yang berasal dari berbagai daerah\nseperti Bogor, Jakarta, Malaysia, Makassar, Sidrap, dan Toraja dengan mengunjungi\nobjek wisata unggulan Toraja Utara. Di hari kedua kegiatan Fam Trip, peserta mengunjungi berbagai lokasi seperti objek\nwisata pasar hutan bambu to’kumila’, objek wisata Lo’ko’ mata, upacara rambu solo’\ndi Lempo dan objek wisata Bori’ Kalimbuang. Kunjungan di pasar tradisional hutan bambu to’kumila’ adalah yang paling ditunggu\n– tunggu peserta. Di tempat ini akan dijumpai aktivitas pasar tradisional yang berada di bawah\nrimbunnya pohon bambu dimana pedagang menjual berbagai kebutuhan sehari –\nhari, makan tradisional dan hasil kerajinan.",
+          "Data Statistik Sektoral Kabupaten Toraja Utara\nBAB VII\nHOTEL & PARIWISATA\nDiskominfo-SP, 2025\nJumlah Hotel\nPada tahun 2024, Kabupaten Toraja Utara memiliki hotel dengan klasifikasi Bintang 1 sebanyak 8 unit, Bintang 2 tidak tersedia, Bintang 3 sebanyak 3 unit, dan Bintang 4 sebanyak 2 unit. Objek dan Daya Tarik Wisata\nObjek dan daya tarik wisata adalah suatu bentuk dan fasilitas yang dapat menarik minat wisatawan atau pengunjung untuk datang ke suatu daerah atau tempat tertentu. Jumlah objek wisata di Kabupaten Toraja Utara Tahun 2024 adalah 301, tersebar di 21 kecamatan, dan objek wisata terbanyak terdapat di Kecamatan Sesean. Jumlah Wisatawan Nusantara Tahun 2023 adalah 274.553 dan Tahun 2024 sebanyak 327.073, meningkat sebanyak 19,13%. Jumlah Wisatawan Mancanegara Tahun 2023 adalah 9.728 dan di Tahun 2024 berjumlah 16.084, meningkat 65,33%.",
+          "Kegiatan ini turut dihadiri Wakil Bupati Toraja Utara Frederik Victor Palimbong, ST, Polsek Rantepao, perwakilan dari Dandim 1414 Tana Toraja, Camat Rantepao, Pastor Paroki Rantepao, Pastor Paroki Tondok Ratte', dan sejumlah undangan. G. Toraja Coffee Festival Tahun 2023\nWakil Bupati Toraja Utara Frederik Victor Palimbong, ST, yang juga merupakan ketua panitia Toraja Coffee Festival 2023, membuka kegiatan Barista Camp sebagai rangkaian Toraja Coffee Festival 2023 yang berlangsung di Tongkonan Se'pon Lembang Suloara' Kecamatan Sesean Suloara', Kamis 24 Agustus 2023. Pada kegiatan Barista Camp ini dilaksanakan sharing session antara barista, petani, dan juga Pemerintah Kabupaten Toraja Utara serta 85 peserta dari berbagai daerah antara lain Jakarta, Manado, Mamuju, Makassar, Bone-Bone, Belopa, Palopo, Enrekang, Bantaeng, Pare-Pare, Maros, Gowa, Polewali Mandar, dan Toraja. H.",
+          "Jumlah Wisatawan Mancanegara Tahun 2023 adalah 9.728 dan di Tahun 2024 berjumlah 16.084, meningkat 65,33%. Hal yang mempengaruhi Wisatawan Mancanegara kembali meningkat berkunjung ke Toraja Utara adalah karena tingkat partisipasi Pemerintah Daerah Toraja Utara, dalam hal ini Dinas Pariwisata semakin gencar mempromosikan destinasi wisata baik tingkat Nasional maupun tingkat Internasional, selain itu juga seni dan Budaya masyarakat Toraja yang menarik wisatawan termasuk seni Tari (seni tradisional), musik tradisional, seni kerajinan tangan, seni dekorasi dan lain-lain. Jumlah Pegiat seni di Kabupaten Toraja Utara Tahun 2024 yaitu 17 orang Pegiat Seni Rupa, 99 orang pegiat seni Tari, 1 orang pegiat seni vokal, 76 orang pegiat Seni musik tradisional, dan 9 seni sastra, dapat dilihat pada Tabel 7.1.10.",
+          "Tabel 8.1.1 Jumlah Wisatawan Mancanegara Yang Berkunjung ke Kabupaten Toraja Utara Menurut Kewarganegaraan, 2022-2024\nSumber : Disbudpar Kab. Toraja Utara\nTabel 8.1.2 Jumlah Wisatawan Nusantara Yang Berkunjung Ke Toraja Utara Dirinci Menurut Bulan, Tahun 2020-2024\nSumber : Disbudpar Kab. Toraja Utara\nB. Hotel dan Akomodasi Lainnya\nSalah satu faktor pendukung suksesnya sektor pariwisata adalah hunian yang layak bagi wisatawan, Hotel dan penginapan lainnya sangat mendukung tingkat kunjungan pariwisata di suatu daerah. Pada tahun 2023 Kabupaten Toraja Utara terdapat 12 Hotel bintang 1 sampai 4 serta 39 penginapan lainnya berupa wisma atau homestay. Selain hunian yang layak, faktor lain yang juga harus diperhatikan adalah Rumah Makan/Restoran. Hal ini dikarenakan di Kabupaten Toraja Utara sendiri memiliki berbagai jenis makanan yang unik dan khas yang membedakan dengan daerah lainnya.",
+          "Bagi detikers yang tertarik menghabiskan liburan Lebaran 2025 di daerah ini, berikut\ndaftar wisata di Tana Toraja yang bisa dikunjungi. Yuk, disimak! 1. Agrowisata Pango-pango\nJika ingin menghabiskan masa liburan di Tana Toraja, Agrowisata Pango-pango bisa\nmenjadi salah satu opsi yang menarik. Tempat wisata ini dijuluki \"negeri di atas\nawan\" karena terletak di dataran tinggi sekitar 1600 hingga 1700 meter di atas\npermukaan laut (mdpl). Dari Pango-pango, wisatawan dapat melihat indahnya bentang alam dan potret Kota\nMakale, Tana Toraja. Di sekelilingnya, dipenuhi dengan pohon pinus yang diselimuti\nawan. Tidak hanya itu, di wilayah Pango-pango juga terdapat perkebunan cengkeh serta\nkopi. Wisatawan bisa mengeksplor perkebunan dan mempelajari tentang kopi khas\nToraja yang dikenal dengan cita rasa dan aroma yang khas. Waktu paling tepat untuk berkunjung ke destinasi wisata Pango-pango yakni pada\nsore hari. Pengunjung bisa menantikan Matahari terbenam dan menikmati\nkeindahan langit berwarna jingga.",
+          "Selain itu, Toraja in Art and Culture Festival 2025 juga telah sukses diselenggarakan\npada akhir April 2025 di Buntu Sarira. Geliat Pariwisata di Toraja\nFestival-festival budaya ini memiliki dampak signifikan terhadap geliat pariwisata\nToraja. Festival budaya, terutama Rambu Solo' yang megah dan TIF yang berskala\ninternasional, menarik banyak wisatawan. Kunjungan wisatawan, baik domestik\nmaupun mancanegara, cenderung meningkat saat festival-festival ini berlangsung. Kedatangan wisatawan berdampak langsung pada peningkatan aktivitas ekonomi\nmasyarakat. Sektor akomodasi (hotel, penginapan), kuliner (restoran, kafe),\nkerajinan tangan, transportasi, dan usaha kecil lainnya mengalami peningkatan\npendapatan. Festival juga menciptakan lapangan kerja bagi masyarakat lokal. Festival menjadi ajang bagi masyarakat Toraja untuk melestarikan dan menampilkan\nwarisan budaya mereka kepada generasi muda dan dunia luar."
+        ],
+        "tokens_used": 3257,
+        "response_time_sec": 2.68,
+        "faithfulness_detail": {
+          "score": 1.0,
+          "claims": [
+            {
+              "claim": "Data mengenai jumlah total penduduk Kabupaten Toraja Utara untuk tahun 2026 tidak ditemukan dalam sumber yang diberikan.",
+              "supported": true
+            }
+          ],
+          "n_total": 1,
+          "n_supported": 1
+        },
+        "answer_relevancy_detail": {
+          "score": 0.9688,
+          "generated_questions": [
+            "Berapa jumlah total penduduk Kabupaten Toraja Utara tahun 2026?",
+            "Berapa populasi Kabupaten Toraja Utara pada tahun 2026?",
+            "Tampilkan data jumlah penduduk Toraja Utara untuk tahun 2026."
+          ],
+          "similarities": [
+            0.9979,
+            0.9913,
+            0.9172
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.0,
+          "relevance_flags": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "n_relevant": 0,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 0.0,
+          "claims": [
+            {
+              "claim": "Informasi mengenai jumlah penduduk Toraja Utara tidak tersedia dalam database sistem ini.",
+              "attributed": false
+            },
+            {
+              "claim": "Sistem menyatakan tidak memiliki data tersebut.",
+              "attributed": false
+            },
+            {
+              "claim": "Sistem tidak boleh mengarang angka.",
+              "attributed": false
+            }
+          ],
+          "n_total": 3,
+          "n_attributed": 0
+        }
       }
     },
     {
       "question": "Siapa nama bupati Toraja Utara saat ini?",
       "category": "out_of_scope",
       "difficulty": "out_of_scope",
-      "faithfulness": 0.0,
-      "answer_relevancy": 0.0,
+      "faithfulness": 0.3333,
+      "answer_relevancy": 0.9081,
       "context_precision": 0.0,
       "context_recall": 0.0,
-      "overall": 0.0,
+      "overall": 0.3104,
       "details": {
-        "error": "Error code: 429 - {'error': {'message': 'Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day', 'code': 429, 'metadata': {'headers': {'X-RateLimit-Limit': '50', 'X-RateLimit-Remaining': '0', 'X-RateLimit-Reset': '1783468800000'}, 'provider_name': None, 'previous_errors': [{'code': 429, 'message': 'Provider returned error', 'provider_name': 'OpenInference', 'raw': 'openai/gpt-oss-20b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations'}]}}, 'user_id': 'user_3Bxs6vBjW9FJWUwHXDtKcFbdKge'}"
+        "actual_answer": "Maaf, berdasarkan konteks informasi yang Anda berikan, tidak terdapat data mengenai nama bupati Toraja Utara saat ini. Jika Anda membutuhkan informasi tersebut, saya sarankan untuk mengecek sumber resmi pemerintah Kabupaten Toraja Utara atau situs berita terkini.",
+        "retrieved_contexts": [
+          "6. Gumuk Pasir Sumalu\nSiapa sangka ternyata Toraja Utara juga punya tempat wisata yang menarik berupa\ngumuk pasir. Namanya Gumuk Pasir Sumalu.",
+          "\"Yang paling rendah itu namanya Sali jadi ada di tengah. Sisi utara itu Palangka dia\nagak tinggi, sebelah selatan agak tinggi juga namanya Sumbung. Jadi kedua sisi\ntinggi, tengah rendah,\" jelasnya.",
+          "Ciri khas\nutamanya adalah atap yang melengkung seperti bentuk perahu atau tanduk kerbau. Budayawan Toraja, Marselinus Dua Lembang menjelaskan, Rumah adat Tongkonan\nToraja untuk bangsawan memiliki corak ukiran khusus yang disebut Pa'Barana'. Corak ini tidak terdapat pada Tongkonan masyarakat strata bawah. \"Kalau untuk bangsawan biasanya ada ukiran namanya Pa'barana', kalau di\nTongkonan untuk masyarakat umum biasanya tidak ada. Itu filosofinya tokoh-tokoh\nToraja itu orang yang mengayomi,\" jelasnya. Selain itu, Dia juga menjelaskan bahwa rumah adat Tongkonan Toraja juga\ndiklasifikasikan berdasarkan bentuk ruangan di dalamnya. Hal tersebut didasarkan\npada jumlah dan tatanan lantai di dalam Tongkonan. \"Ada Dilalan Tedong, Duang Lanta', Tallung Lanta', ada yang Patang Lanta'. Artinya\nada yang berundak cuma dua lantai, ada yang sampai empat,\" jelasnya. 4 Warna Dasar Rumah Adat Tongkonan Toraja\nSelain memiliki bentuk yang khas, rumah adat Tongkonan Toraja juga memiliki ciri\nkhas empat warna dasar.",
+          "Dibangun dan selesai tepat waktu untuk rangkaian Lovely December 2016 di Toraja\n(sebuah acara yang diadakan setiap akhir tahun), salib besar menghadap kota\nRantepao dengan tulisan besar nama “Toraja Utara”",
+          "\"Orang Toraja itu sangat menghargai keluarganya yang telah berpulang. Itu nomor\nsatu di Toraja, sebagai penghormatan untuk terakhir kali. Ini sudah dilakukan sejak\nleluhur kami Aluk Todolo,\" jelas Eric Crystal Ranteallo kepada detikSulsel, Jumat\n(10/6/2022).",
+          "Link:\nhttps://www.detik.com/sulsel/wisata/d-7855810/8-wisata-di-tana-toraja-yang-unik-dan\n-bersejarah-untuk-liburan-keluarga",
+          "3. Lada katokkon\nLada Katokkon sebenarnya adalah nama salah satu jenis cabe yang khas dari\ndaerah Toraja. Cabe ini sudah terkenal dengan kepedasannya hingga ke seluruh\nIndonesia.",
+          "Rante Karassik. Bangunan tradisional Toraja di Buntu Pune berasal dari abad 19\nakhir. Tongkonan di Buntu Pune dipasang oleh seorang bangsawan bernama Pong\nMaramba, yang hidup pada tahun 1980an. Dia adalah kepala desa di masa\npenjajahan Belanda tapi kemudian diasingkan ke Maluku setelah ketahuan bahwa\ndia merencanakan pemberontakan melawan pemerintah Belanda. Keturunan Pong\nMaramba masih tinggal di kawasan ini, menjadi penanam kopi besar di wilayah ini. Di bukit di belakang lumbung-lumbung padi, Anda bisa menemukan pemakanan\nkeluarga Pong Maramba dimana jenazahnya dikembalikan ke desa setelah dia\nmeninggal dalam pengasingan di Maluku. Di sisi bukit, di belakang pemakaman itu,\nmenawarkan salah satu pemandangan terbaik di Buntu Pune. Masih banyak orang tinggal di desa Buntu Pune. Ketika Anda mengeksplorasi desa,\nAnda akan melihat rumah-rumah tradisional dan bangunan modern berdampingan. Sebagian besar rumah-rumah dicat dengan warna terang khas Toraja, yaitu merah,\nkuning, putih dan hitam.",
+          "\"Ini salah satu adat Aluk Todolo (orang terdahulu) Toraja. Sebagai bentuk\nkesyukuran kepada Tuhan atas terbangunnya rumah tongkonan,\" kata salah\nseorang tokoh adat Toraja, Pong Datu kepada detikSulsel, Jumat (8/4/2022).",
+          "\"Ini pohon Tarra namanya. Pohon yang sudah berumur ratusan tahun. Bagi\nmasyarakat Toraja terdahulu, kalau ada bayi meninggal itu dimakamkan di pohon\nbesar ini,\" jelas Mathen Domme kepada detikSulsel, Jumat (19/8/2022)."
+        ],
+        "tokens_used": 1599,
+        "response_time_sec": 7.59,
+        "faithfulness_detail": {
+          "score": 0.3333,
+          "claims": [
+            {
+              "claim": "Konteks informasi yang diberikan tidak mengandung data mengenai nama bupati Toraja Utara saat ini",
+              "supported": true
+            },
+            {
+              "claim": "Informasi nama bupati Toraja Utara dapat ditemukan melalui sumber resmi pemerintah Kabupaten Toraja Utara",
+              "supported": false
+            },
+            {
+              "claim": "Informasi nama bupati Toraja Utara dapat ditemukan melalui situs berita terkini",
+              "supported": false
+            }
+          ],
+          "n_total": 3,
+          "n_supported": 1
+        },
+        "answer_relevancy_detail": {
+          "score": 0.9081,
+          "generated_questions": [
+            "Siapa nama bupati Toraja Utara saat ini?",
+            "Siapa bupati Toraja Utara sekarang?",
+            "Sebutkan nama bupati Toraja Utara."
+          ],
+          "similarities": [
+            1.0,
+            0.8282,
+            0.8961
+          ]
+        },
+        "context_precision_detail": {
+          "score": 0.0,
+          "relevance_flags": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "n_relevant": 0,
+          "n_total": 10
+        },
+        "context_recall_detail": {
+          "score": 0.0,
+          "claims": [
+            {
+              "claim": "Informasi mengenai nama bupati saat ini tidak tersedia secara pasti dalam database sistem",
+              "attributed": false
+            },
+            {
+              "claim": "Informasi nama bupati mungkin disebutkan tersirat dalam konteks event tertentu",
+              "attributed": false
+            },
+            {
+              "claim": "Sistem seharusnya tidak mengarang nama pejabat yang tidak terverifikasi",
+              "attributed": false
+            }
+          ],
+          "n_total": 3,
+          "n_attributed": 0
+        }
       }
     }
   ]

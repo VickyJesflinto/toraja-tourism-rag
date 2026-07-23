@@ -7,6 +7,7 @@ library `openai` namun dengan base_url dan api_key yang diarahkan ke OpenRouter.
 Dokumentasi: https://openrouter.ai/docs
 """
 import time
+from config.settings import FAISS_K, MMR_ENABLED, MMR_LAMBDA, MMR_FETCH_K
 from typing import List, Dict, Any, Tuple
 from loguru import logger
 import sys
@@ -73,7 +74,7 @@ class LLMChain:
         self,
         query:      str,
         history:    List[Dict[str, str]] = None,
-        k:          int   = 5,
+        k:          int   = FAISS_K,
         use_mmr:    bool  = None,
         lambda_mmr: float = None,
     ) -> Tuple[str, List[RetrievedChunk], int, float]:
@@ -127,7 +128,7 @@ class LLMChain:
         self,
         query:      str,
         history:    List[Dict[str, str]] = None,
-        k:          int   = 5,
+        k:          int   = FAISS_K,
         use_mmr:    bool  = None,
         lambda_mmr: float = None,
     ):

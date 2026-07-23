@@ -64,10 +64,11 @@ def evaluate_one_sample(sample: GoldenSample, dry_run: bool = False) -> RagasRes
 
     from rag.retrieval.llm_chain import LLMChain
     from rag.embeddings.embedder import Embedder
+    from config.settings import FAISS_K, MMR_ENABLED, MMR_LAMBDA
 
     chain = LLMChain()
     answer, retrieved_chunks, tokens_used, response_time = chain.chat(
-        sample.question, k=5, use_mmr=True, lambda_mmr=0.5,
+        sample.question, k=10, use_mmr=MMR_ENABLED, lambda_mmr=0.7,
     )
     contexts = [c.content for c in retrieved_chunks]
 
